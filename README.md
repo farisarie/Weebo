@@ -9,7 +9,7 @@
 
 # Features
 app features includes;
-- under development
+- under development 🛠
 
 
 # Screenshots!
