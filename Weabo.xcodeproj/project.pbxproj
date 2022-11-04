@@ -67,6 +67,8 @@
 		C1DD46C428FE982A0027AD80 /* ExpletusSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */; };
 		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
 		C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */; };
+		C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA93A429150E6500A2655F /* RegisterViewController.swift */; };
+		C1EA93A729150E6500A2655F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A529150E6500A2655F /* RegisterViewController.xib */; };
 		C1FFA0CA28ECB55D00044587 /* MidViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FFA0C928ECB55D00044587 /* MidViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +135,8 @@
 		C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Bold.ttf"; sourceTree = "<group>"; };
 		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
+		C1EA93A429150E6500A2655F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C1EA93A529150E6500A2655F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		C1FFA0C928ECB55D00044587 /* MidViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +183,7 @@
 		C10212F228EC4B250005436B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1EA93A329150E5900A2655F /* Register */,
 				C1EA939E2914FF1A00A2655F /* OnBoarding */,
 				C16E687628ED219B00B1F6C3 /* Extensions */,
 				C1AC243F2912C63000B991C9 /* Profile */,
@@ -320,6 +325,15 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
+		C1EA93A329150E5900A2655F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				C1EA93A429150E6500A2655F /* RegisterViewController.swift */,
+				C1EA93A529150E6500A2655F /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,6 +396,7 @@
 				C1CBEFBC28FEF3840065701C /* Inter-Regular.otf in Resources */,
 				C10212EB28EC4A750005436B /* LaunchScreen.storyboard in Resources */,
 				C1DD46C328FE982A0027AD80 /* ExpletusSans-Regular.ttf in Resources */,
+				C1EA93A729150E6500A2655F /* RegisterViewController.xib in Resources */,
 				C1DD46B028FE81370027AD80 /* NewestHeaderReusableView.xib in Resources */,
 				C10212E828EC4A750005436B /* Assets.xcassets in Resources */,
 				C1DD46BF28FE982A0027AD80 /* ExpletusSans-SemiBoldItalic.ttf in Resources */,
@@ -441,6 +456,7 @@
 				C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */,
 				C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */,
 				C16E687D28ED465200B1F6C3 /* ThirdViewCell.swift in Sources */,
+				C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */,
 				C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
