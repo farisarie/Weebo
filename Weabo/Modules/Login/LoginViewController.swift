@@ -14,6 +14,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -68,7 +72,7 @@ class LoginViewController: UIViewController {
             error.addAction(UIAlertAction(title: "OK", style: .cancel))
             present(error, animated: true)
             
-            Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (timer) in
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
                 self.nameTextField.layer.borderColor = UIColor.clear.cgColor
                 self.emailTextField.layer.borderColor = UIColor.clear.cgColor
             }
@@ -89,3 +93,15 @@ extension String {
     
 }
 
+//MARK: - UIViewController
+extension UIViewController{
+    func showLoginLandingViewController() {
+        let viewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+        window?.rootViewController = navigationController
+        
+    }
+}
+      
