@@ -97,10 +97,9 @@ extension String {
 extension UIViewController{
     func showLoginLandingViewController() {
         let viewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: viewController)
         
-        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
-        window?.rootViewController = navigationController
+        
+        navigationController?.pushViewController(viewController, animated: true)
         
     }
 }
