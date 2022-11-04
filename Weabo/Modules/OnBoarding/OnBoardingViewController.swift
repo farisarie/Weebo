@@ -21,6 +21,9 @@ class OnBoardingViewController: UIViewController {
         topImageConstraint.constant = screenWidth > lowestScreenWidth ? 40 : 20
     }
     
+    @IBAction func registerButtonTapped(_ sender: Any) {
+        showLoginLandingViewController()
+    }
     @IBAction func loginPageButtonTapped(_ sender: Any) {
         showLoginLandingViewController()
     }
