@@ -65,6 +65,8 @@
 		C1DD46C228FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46B928FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf */; };
 		C1DD46C328FE982A0027AD80 /* ExpletusSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */; };
 		C1DD46C428FE982A0027AD80 /* ExpletusSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */; };
+		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
+		C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */; };
 		C1FFA0CA28ECB55D00044587 /* MidViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FFA0C928ECB55D00044587 /* MidViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +131,8 @@
 		C1DD46B928FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Regular.ttf"; sourceTree = "<group>"; };
 		C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Bold.ttf"; sourceTree = "<group>"; };
+		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
 		C1FFA0C928ECB55D00044587 /* MidViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 		C10212F228EC4B250005436B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1EA939E2914FF1A00A2655F /* OnBoarding */,
 				C16E687628ED219B00B1F6C3 /* Extensions */,
 				C1AC243F2912C63000B991C9 /* Profile */,
 				C1AC24342912947E00B991C9 /* Login */,
@@ -306,6 +311,15 @@
 			path = "expletus-sans";
 			sourceTree = "<group>";
 		};
+		C1EA939E2914FF1A00A2655F /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */,
+				C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +399,7 @@
 				C1CBEFC728FEF3840065701C /* Inter-Italic.otf in Resources */,
 				C1CBEFC328FEF3840065701C /* Inter-SemiBold.otf in Resources */,
 				C1DD46BD28FE982A0027AD80 /* ExpletusSans-Medium.ttf in Resources */,
+				C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */,
 				C1DD46BC28FE982A0027AD80 /* ExpletusSans-Italic.ttf in Resources */,
 				C16E687E28ED465200B1F6C3 /* ThirdViewCell.xib in Resources */,
 				C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */,
@@ -419,6 +434,7 @@
 				C1CBEFD228FEF9470065701C /* SearchViewController.swift in Sources */,
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
 				C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */,
+				C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */,
 				C102130628EC95A50005436B /* TopViewCell.swift in Sources */,
 				C1FFA0CA28ECB55D00044587 /* MidViewCell.swift in Sources */,
 				C10212F628EC4B720005436B /* TabBarController.swift in Sources */,
@@ -575,7 +591,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weabo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Weebo;
-				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
+				INFOPLIST_KEY_NSMainNibFile = OnBoardingViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -605,7 +621,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weabo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Weebo;
-				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
+				INFOPLIST_KEY_NSMainNibFile = OnBoardingViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
