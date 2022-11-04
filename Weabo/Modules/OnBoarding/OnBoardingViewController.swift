@@ -22,7 +22,7 @@ class OnBoardingViewController: UIViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: Any) {
-        showLoginLandingViewController()
+        showLoginLandingViewController() // Hehe
     }
     @IBAction func loginPageButtonTapped(_ sender: Any) {
         showLoginLandingViewController()
