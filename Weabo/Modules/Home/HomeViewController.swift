@@ -152,7 +152,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                 
                 return headerView
             }
-                
+        
         default:
             return UICollectionReusableView()
         }

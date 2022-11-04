@@ -97,10 +97,7 @@ extension String {
 extension UIViewController{
     func showLoginLandingViewController() {
         let viewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-        
-        
         navigationController?.pushViewController(viewController, animated: true)
-        
     }
 }
       
