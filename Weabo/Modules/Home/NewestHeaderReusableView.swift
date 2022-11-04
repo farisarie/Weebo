@@ -20,6 +20,7 @@ class NewestHeaderReusableView: UICollectionReusableView {
     @IBAction func seeAllButtonTapped(_ sender: Any) {
         
     }
+    
     func configureHeader(title: String) {
         self.headerLabel.text = title
     }
