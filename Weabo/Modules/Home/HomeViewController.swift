@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
     
     func setup() {
         collectionView.register(UINib(nibName: "NewestHeaderReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCell")
+        collectionView.register(UINib(nibName: "SearchBarReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "searchCell")
+
         collectionView.dataSource = self
         collectionView.delegate = self
         let notifButton = UIBarButtonItem(image: UIImage(named: "bell")?.withRenderingMode(.alwaysOriginal), style: UIBarButtonItem.Style.done, target: self, action: #selector(self.notificationButtonTapped(_:)))
@@ -143,16 +145,42 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
     }
-    
+    /*
+     
+     var reusableview = UICollectionReusableView()
+     if (kind == UICollectionElementKindSectionHeader) {
+         let section = indexPath.section
+         switch (section) {
+         case 1:
+             let  firstheader: OfferHeaderCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "OfferHeaderCell", for: indexPath) as! OfferHeaderCell
+             reusableview = firstheader
+         case 2:
+             let  secondHeader: APRHeaderCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "APRHeaderCell", for: indexPath) as! APRHeaderCell
+             reusableview = secondHeader
+         default:
+             return reusableview
+
+         }
+     }
+     return reusableview
+ }
+     */
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
+            if indexPath.section == 4 {
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? NewestHeaderReusableView {
                 headerView.headerLabel.text = "Komik Terbaru"
                 
                 return headerView
+                } 
+            } else if indexPath.section == 0 {
+                if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "searchCell", for: indexPath) as? SearchBarReusableView
+                {
+                    
+                    return headerView
             }
-        
+        }
         default:
             return UICollectionReusableView()
         }
@@ -161,6 +189,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if section == 4 {
             return CGSize(width: collectionView.frame.width, height: 30)
+        } else if section == 0 {
+            return CGSize(width: collectionView.frame.width, height: 50)
         } else {
             return CGSize(width: 0, height: 0)
         }

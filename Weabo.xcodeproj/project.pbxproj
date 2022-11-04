@@ -29,6 +29,8 @@
 		C16E687E28ED465200B1F6C3 /* ThirdViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16E687C28ED465200B1F6C3 /* ThirdViewCell.xib */; };
 		C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1723CA12914C658000882E5 /* LoginViewController.swift */; };
 		C1723CA42914C658000882E5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1723CA22914C658000882E5 /* LoginViewController.xib */; };
+		C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19541542915804B00295FFF /* SearchBarReusableView.swift */; };
+		C19541572915804B00295FFF /* SearchBarReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19541552915804B00295FFF /* SearchBarReusableView.xib */; };
 		C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC24392912A8C600B991C9 /* ProfileViewController.swift */; };
 		C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AC243D2912A9A800B991C9 /* Profile.storyboard */; };
 		C1CBEFBA28FEF3840065701C /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1CBEFA628FEF3840065701C /* Inter-Bold.otf */; };
@@ -97,6 +99,8 @@
 		C16E687C28ED465200B1F6C3 /* ThirdViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewCell.xib; sourceTree = "<group>"; };
 		C1723CA12914C658000882E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1723CA22914C658000882E5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C19541542915804B00295FFF /* SearchBarReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarReusableView.swift; sourceTree = "<group>"; };
+		C19541552915804B00295FFF /* SearchBarReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarReusableView.xib; sourceTree = "<group>"; };
 		C1AC24392912A8C600B991C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C1AC243D2912A9A800B991C9 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C1CBEFA628FEF3840065701C /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				C10212F928EC4C990005436B /* HomeViewController.swift */,
+				C19541542915804B00295FFF /* SearchBarReusableView.swift */,
+				C19541552915804B00295FFF /* SearchBarReusableView.xib */,
 				C10212FB28EC4C9F0005436B /* Home.storyboard */,
 				C1DD46AD28FE81370027AD80 /* NewestHeaderReusableView.swift */,
 				C1DD46AE28FE81370027AD80 /* NewestHeaderReusableView.xib */,
@@ -411,6 +417,7 @@
 				C1CBEFCD28FEF3840065701C /* Inter-LightItalic.otf in Resources */,
 				C1DD46C028FE982A0027AD80 /* OFL.txt in Resources */,
 				C1CBEFC928FEF3840065701C /* Inter-ThinItalic.otf in Resources */,
+				C19541572915804B00295FFF /* SearchBarReusableView.xib in Resources */,
 				C1CBEFC728FEF3840065701C /* Inter-Italic.otf in Resources */,
 				C1CBEFC328FEF3840065701C /* Inter-SemiBold.otf in Resources */,
 				C1DD46BD28FE982A0027AD80 /* ExpletusSans-Medium.ttf in Resources */,
@@ -458,6 +465,7 @@
 				C16E687D28ED465200B1F6C3 /* ThirdViewCell.swift in Sources */,
 				C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */,
 				C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */,
+				C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
