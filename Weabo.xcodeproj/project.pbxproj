@@ -574,6 +574,7 @@
 				DEVELOPMENT_TEAM = 7AS32Y773Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weabo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Weebo;
 				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -603,6 +604,7 @@
 				DEVELOPMENT_TEAM = 7AS32Y773Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Weabo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Weebo;
 				INFOPLIST_KEY_NSMainNibFile = LoginViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
