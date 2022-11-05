@@ -17,12 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6tc-le-Bhm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gHF-wf-kcL">
-                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2zi-ya-KMC">
                                     <size key="itemSize" width="128" height="128"/>
@@ -37,12 +33,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gHF-wf-kcL" secondAttribute="trailing" id="Dur-cv-gIj"/>
-                            <constraint firstItem="6tc-le-Bhm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QNz-CA-Mhy"/>
-                            <constraint firstItem="6tc-le-Bhm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="TYa-vu-te5"/>
-                            <constraint firstItem="gHF-wf-kcL" firstAttribute="top" secondItem="6tc-le-Bhm" secondAttribute="bottom" id="e2Z-cS-YfM"/>
                             <constraint firstItem="gHF-wf-kcL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eM3-4Z-kOx"/>
+                            <constraint firstItem="gHF-wf-kcL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kWe-wY-y39"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gHF-wf-kcL" secondAttribute="bottom" id="mE5-cj-pVZ"/>
-                            <constraint firstItem="6tc-le-Bhm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tdq-RS-fvh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PPC-IJ-agD"/>
