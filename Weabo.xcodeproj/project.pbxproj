@@ -33,6 +33,7 @@
 		C19541572915804B00295FFF /* SearchBarReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19541552915804B00295FFF /* SearchBarReusableView.xib */; };
 		C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC24392912A8C600B991C9 /* ProfileViewController.swift */; };
 		C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AC243D2912A9A800B991C9 /* Profile.storyboard */; };
+		C1C6A61129179465006256E7 /* UISegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6A61029179465006256E7 /* UISegmentView.swift */; };
 		C1CBEFBA28FEF3840065701C /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1CBEFA628FEF3840065701C /* Inter-Bold.otf */; };
 		C1CBEFBB28FEF3840065701C /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = C1CBEFA728FEF3840065701C /* SIL Open Font License.txt */; };
 		C1CBEFBC28FEF3840065701C /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1CBEFA828FEF3840065701C /* Inter-Regular.otf */; };
@@ -67,6 +68,8 @@
 		C1DD46C228FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46B928FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf */; };
 		C1DD46C328FE982A0027AD80 /* ExpletusSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */; };
 		C1DD46C428FE982A0027AD80 /* ExpletusSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */; };
+		C1E94B22291776450077E6CE /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E94B21291776450077E6CE /* Collection.storyboard */; };
+		C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E94B23291776550077E6CE /* CollectionViewController.swift */; };
 		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
 		C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */; };
 		C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA93A429150E6500A2655F /* RegisterViewController.swift */; };
@@ -103,6 +106,7 @@
 		C19541552915804B00295FFF /* SearchBarReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarReusableView.xib; sourceTree = "<group>"; };
 		C1AC24392912A8C600B991C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C1AC243D2912A9A800B991C9 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C1C6A61029179465006256E7 /* UISegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentView.swift; sourceTree = "<group>"; };
 		C1CBEFA628FEF3840065701C /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
 		C1CBEFA728FEF3840065701C /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		C1CBEFA828FEF3840065701C /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 		C1DD46B928FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Regular.ttf"; sourceTree = "<group>"; };
 		C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Bold.ttf"; sourceTree = "<group>"; };
+		C1E94B21291776450077E6CE /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		C1E94B23291776550077E6CE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
 		C1EA93A429150E6500A2655F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 		C10212F228EC4B250005436B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C1E94B20291776300077E6CE /* Collection */,
 				C1AC24342912947E00B991C9 /* Login */,
 				C1EA93A329150E5900A2655F /* Register */,
 				C1EA939E2914FF1A00A2655F /* OnBoarding */,
@@ -322,6 +329,16 @@
 			path = "expletus-sans";
 			sourceTree = "<group>";
 		};
+		C1E94B20291776300077E6CE /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				C1E94B21291776450077E6CE /* Collection.storyboard */,
+				C1C6A61029179465006256E7 /* UISegmentView.swift */,
+				C1E94B23291776550077E6CE /* CollectionViewController.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		C1EA939E2914FF1A00A2655F /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +439,7 @@
 				C1CBEFC328FEF3840065701C /* Inter-SemiBold.otf in Resources */,
 				C1DD46BD28FE982A0027AD80 /* ExpletusSans-Medium.ttf in Resources */,
 				C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */,
+				C1E94B22291776450077E6CE /* Collection.storyboard in Resources */,
 				C1DD46BC28FE982A0027AD80 /* ExpletusSans-Italic.ttf in Resources */,
 				C16E687E28ED465200B1F6C3 /* ThirdViewCell.xib in Resources */,
 				C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */,
@@ -462,8 +480,10 @@
 				C10212F628EC4B720005436B /* TabBarController.swift in Sources */,
 				C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */,
 				C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */,
+				C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */,
 				C16E687D28ED465200B1F6C3 /* ThirdViewCell.swift in Sources */,
 				C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */,
+				C1C6A61129179465006256E7 /* UISegmentView.swift in Sources */,
 				C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */,
 				C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,

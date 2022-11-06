@@ -19,12 +19,23 @@
                     <connections>
                         <segue destination="Krb-ld-1MX" kind="relationship" relationship="viewControllers" id="Nhb-Pi-a2Z"/>
                         <segue destination="6rR-yO-Cfm" kind="relationship" relationship="viewControllers" id="GEN-fP-eXU"/>
+                        <segue destination="qko-60-v9N" kind="relationship" relationship="viewControllers" id="ZYq-h3-52q"/>
                         <segue destination="LLE-bj-2Rr" kind="relationship" relationship="viewControllers" id="lTa-Ub-4ad"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgC-wJ-Hcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="494" y="95"/>
+        </scene>
+        <!--rootCollection-->
+        <scene sceneID="bFf-DM-aad">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="rootCollection" id="qko-60-v9N" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="HkN-mr-tMP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoz-4v-b3U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-14"/>
         </scene>
         <!--rootHome-->
         <scene sceneID="xCE-Vi-g4u">
