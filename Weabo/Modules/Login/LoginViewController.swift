@@ -14,14 +14,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Masuk Akun"
+        customTitle()
         let screenWidth = UIScreen.main.bounds.width
         let lowestScreenWidth: CGFloat = 375.0
         rightWidthConstraint.constant = screenWidth > lowestScreenWidth ? 154 : 145
@@ -29,9 +25,16 @@ class LoginViewController: UIViewController {
         
     }
     
+    func customTitle(){
+        let label = UILabel(frame: .zero)
+        label.text = "Masuk Akun"
+        label.font = UIFont(name: "ABCGintoNormal-Bold-Trial", size: 20) //still hasnt changed
+        label.textColor = UIColor(hex: "292B2F")
+        navigationItem.titleView = label
+    }
+    
     func isValid() -> Bool {
         
-
         guard let email = emailTextField.text, email.isValidEmail  else {
            
                 self.emailTextField.layer.borderColor = UIColor.red.cgColor

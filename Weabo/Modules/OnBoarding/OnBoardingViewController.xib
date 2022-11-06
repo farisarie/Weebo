@@ -8,10 +8,21 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ABCGintoNormal-Medium-Trial.otf">
+            <string>ABCGintoNormalTrial-Medium</string>
+        </array>
+        <array key="whitneysemibold.otf">
+            <string>Whitney-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModule="Weabo" customModuleProvider="target">
             <connections>
                 <outlet property="bottomButtonConstraint" destination="AOX-r4-gdl" id="q8G-SL-bQg"/>
+                <outlet property="coverImage" destination="LYk-eO-fWh" id="bNX-US-lL1"/>
+                <outlet property="loginButtonOutlet" destination="j1Q-dX-QfB" id="XDg-fJ-xoe"/>
+                <outlet property="registerButtonOutlet" destination="xTq-ee-DmG" id="HF0-u2-P28"/>
                 <outlet property="topImageConstraint" destination="hai-Yj-DeS" id="xdY-bx-Rgi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,18 +39,18 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="JtU-ZH-tkO">
-                    <rect key="frame" x="20" y="394" width="374" height="80"/>
+                    <rect key="frame" x="20" y="394" width="374" height="72"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat  Datang di Weebo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="bt2-HN-ELU">
-                            <rect key="frame" x="28" y="0.0" width="318" height="33.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                            <nil key="textColor"/>
+                            <rect key="frame" x="63.5" y="0.0" width="247" height="26.5"/>
+                            <fontDescription key="fontDescription" name="ABCGintoNormalTrial-Medium" family="ABC Ginto Normal Trial" pointSize="20"/>
+                            <color key="textColor" red="0.16078431372549018" green="0.16862745098039217" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ayo bergabung dan dapatkan akses baca lebih dari 1000 komik terkini." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="nIK-bt-r2O">
-                            <rect key="frame" x="3" y="46.5" width="368" height="33.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <nil key="textColor"/>
+                            <rect key="frame" x="18.5" y="39.5" width="337" height="32.5"/>
+                            <fontDescription key="fontDescription" name="Whitney-Semibold" family="Whitney" pointSize="14"/>
+                            <color key="textColor" red="0.30980392156862746" green="0.33725490196078434" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -53,6 +64,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="xTq-ee-DmG" secondAttribute="height" multiplier="350:36" id="fAw-oe-3rW"/>
                             </constraints>
+                            <fontDescription key="fontDescription" name="Whitney-Semibold" family="Whitney" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Register">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,13 +75,14 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-dX-QfB">
                             <rect key="frame" x="0.0" y="54.5" width="374" height="38.5"/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="j1Q-dX-QfB" secondAttribute="height" multiplier="350:36" id="kzA-Vu-Vy6"/>
                             </constraints>
+                            <fontDescription key="fontDescription" name="Whitney-Semibold" family="Whitney" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                            <state key="normal" title="Register">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Masuk Akun">
+                                <color key="titleColor" red="0.30980392156862746" green="0.33725490196078434" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="loginPageButtonTapped:" destination="-1" eventType="touchUpInside" id="oe1-1Z-hqq"/>
