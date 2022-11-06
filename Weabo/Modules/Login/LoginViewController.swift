@@ -64,21 +64,21 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func LoginButtonTapped(_ sender: Any) {
-        if isValid() {
-            navigatePage()
-        }
-        else {
-            let error = UIAlertController(title: "Login Error", message: "Your email or password still empty", preferredStyle: .alert)
-            error.addAction(UIAlertAction(title: "OK", style: .cancel))
-            present(error, animated: true)
-            
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
-                self.nameTextField.layer.borderColor = UIColor.clear.cgColor
-                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
-            }
-            
-        }
-      
+//        if isValid() {
+//            navigatePage()
+//        }
+//        else {
+//            let error = UIAlertController(title: "Login Error", message: "Your email or password still empty", preferredStyle: .alert)
+//            error.addAction(UIAlertAction(title: "OK", style: .cancel))
+//            present(error, animated: true)
+//
+//            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+//                self.nameTextField.layer.borderColor = UIColor.clear.cgColor
+//                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
+//            }
+//
+//        }
+      navigatePage()
     }
     
 }

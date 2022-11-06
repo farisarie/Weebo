@@ -17,36 +17,36 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCell" id="gTV-IL-0wX" customClass="ThirdViewCell" customModule="Weabo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="148" height="176"/>
+            <rect key="frame" x="0.0" y="0.0" width="148" height="284"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="148" height="176"/>
+                <rect key="frame" x="0.0" y="0.0" width="148" height="284"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-Sy-FGc">
-                        <rect key="frame" x="0.0" y="0.0" width="148" height="176"/>
+                        <rect key="frame" x="0.0" y="0.0" width="148" height="284"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-75-aJL">
-                                <rect key="frame" x="0.0" y="0.0" width="148" height="92"/>
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="207"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="148" id="B8h-bp-0G8"/>
-                                    <constraint firstAttribute="height" constant="92" id="lqu-V8-j2j"/>
+                                    <constraint firstAttribute="height" constant="207" id="VFa-Vx-NNr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-kN-Mwe">
-                                <rect key="frame" x="8" y="104" width="31" height="15"/>
+                                <rect key="frame" x="8" y="219" width="31" height="15"/>
                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0Y-hL-4tE">
-                                <rect key="frame" x="8" y="125" width="136" height="41"/>
+                                <rect key="frame" x="8" y="240" width="136" height="34"/>
                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="JnH-HV-D0v">
-                                <rect key="frame" x="105.5" y="106" width="34.5" height="11"/>
+                                <rect key="frame" x="105.5" y="221" width="34.5" height="11"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mWf-Gs-rtT">
                                         <rect key="frame" x="0.0" y="1.5" width="11" height="8.5"/>
@@ -89,7 +89,7 @@
                 <constraint firstAttribute="bottom" secondItem="3zy-Sy-FGc" secondAttribute="bottom" id="ATY-ND-2Yv"/>
                 <constraint firstAttribute="trailing" secondItem="3zy-Sy-FGc" secondAttribute="trailing" id="yHk-Iu-LuF"/>
             </constraints>
-            <size key="customSize" width="148" height="176"/>
+            <size key="customSize" width="148" height="284"/>
             <connections>
                 <outlet property="categoryLabel" destination="Gzo-kN-Mwe" id="82r-Mb-kS3"/>
                 <outlet property="comicImage" destination="Boc-75-aJL" id="N1F-dZ-SEn"/>
@@ -97,7 +97,7 @@
                 <outlet property="titleLabel" destination="g0Y-hL-4tE" id="n5r-EY-Cp7"/>
                 <outlet property="viewBackground" destination="3zy-Sy-FGc" id="bvz-Ww-3hc"/>
             </connections>
-            <point key="canvasLocation" x="208.69565217391306" y="168.75"/>
+            <point key="canvasLocation" x="167" y="137"/>
         </collectionViewCell>
     </objects>
     <resources>

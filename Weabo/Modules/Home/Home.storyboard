@@ -121,13 +121,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4Ys-9k-4YD">
                                                             <rect key="frame" x="16" y="18.333333333333332" width="36" height="35.666666666666671"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubU-61-owk">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubU-61-owk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
                                                                     <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-1t-WJs">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWC-1t-WJs">
                                                                     <rect key="frame" x="0.0" y="21.000000000000004" width="36" height="14.666666666666668"/>
                                                                     <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                                                                     <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,34 +135,25 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="JXK-xa-TT2">
-                                                            <rect key="frame" x="255.66666666666671" y="28.666666666666668" width="84.333333333333343" height="14.666666666666668"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-AW-8qL">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="14.666666666666666"/>
-                                                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
-                                                                    <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xv-lq-O3I">
-                                                                    <rect key="frame" x="76.333333333333314" y="3.3333333333333321" width="8" height="8"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="8" id="SoG-Va-gxO"/>
-                                                                        <constraint firstAttribute="height" constant="8" id="Z14-5r-oU9"/>
-                                                                    </constraints>
-                                                                    <color key="tintColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" image="chevron.right" catalog="system"/>
-                                                                </button>
-                                                            </subviews>
-                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xv-lq-O3I">
+                                                            <rect key="frame" x="227" y="18" width="101" height="36"/>
+                                                            <color key="backgroundColor" red="0.34509803921568627" green="0.396078431372549" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="36" id="1fw-lk-kv4"/>
+                                                                <constraint firstAttribute="width" constant="101" id="Ctr-Gs-Tmg"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="tintColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Lanjut Baca"/>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="4Ys-9k-4YD" firstAttribute="leading" secondItem="BbZ-BF-IKq" secondAttribute="leading" constant="16" id="1QO-Bv-GHl"/>
-                                                        <constraint firstItem="JXK-xa-TT2" firstAttribute="centerY" secondItem="BbZ-BF-IKq" secondAttribute="centerY" id="4XC-b8-86O"/>
                                                         <constraint firstItem="4Ys-9k-4YD" firstAttribute="centerY" secondItem="BbZ-BF-IKq" secondAttribute="centerY" id="7F5-IY-oRQ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="JXK-xa-TT2" secondAttribute="trailing" constant="15" id="KsD-ka-dO0"/>
+                                                        <constraint firstItem="0xv-lq-O3I" firstAttribute="centerY" secondItem="BbZ-BF-IKq" secondAttribute="centerY" id="fh1-EZ-ONI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0xv-lq-O3I" secondAttribute="trailing" constant="27" id="jfE-57-9w1"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -176,6 +167,7 @@
                                         <size key="customSize" width="385" height="72"/>
                                         <connections>
                                             <outlet property="adsView" destination="BbZ-BF-IKq" id="gio-PX-ltf"/>
+                                            <outlet property="continouReadButton" destination="0xv-lq-O3I" id="fHQ-fG-Sb6"/>
                                             <outlet property="labelOne" destination="ubU-61-owk" id="LjE-6n-nJl"/>
                                             <outlet property="labelTwo" destination="cWC-1t-WJs" id="qbA-AX-3fm"/>
                                         </connections>
@@ -331,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="93"/>
+            <point key="canvasLocation" x="147.69230769230768" y="92.417061611374407"/>
         </scene>
         <!--Home-->
         <scene sceneID="uES-s5-ke3">
@@ -355,7 +347,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="home" width="24" height="24"/>
         <image name="home-1" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
