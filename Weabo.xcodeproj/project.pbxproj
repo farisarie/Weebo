@@ -22,6 +22,136 @@
 		C102130628EC95A50005436B /* TopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102130528EC95A50005436B /* TopViewCell.swift */; };
 		C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104E3EF28FFDA0C007BAF9D /* SearchCollectionViewCell.swift */; };
 		C104E3F228FFDA0C007BAF9D /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */; };
+		C11D1BF12918254E002CD1FD /* whitneylight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BE82918254E002CD1FD /* whitneylight.otf */; };
+		C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */; };
+		C11D1BF32918254E002CD1FD /* whitneybookitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */; };
+		C11D1BF42918254E002CD1FD /* whitneymedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEB2918254E002CD1FD /* whitneymedium.otf */; };
+		C11D1BF52918254E002CD1FD /* whitneymediumitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEC2918254E002CD1FD /* whitneymediumitalic.otf */; };
+		C11D1BF62918254E002CD1FD /* whitneybook.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BED2918254E002CD1FD /* whitneybook.otf */; };
+		C11D1BF72918254E002CD1FD /* whitneysemibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEE2918254E002CD1FD /* whitneysemibold.otf */; };
+		C11D1BF82918254E002CD1FD /* whitneybold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEF2918254E002CD1FD /* whitneybold.otf */; };
+		C11D1BF92918254E002CD1FD /* whitneylightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BF02918254E002CD1FD /* whitneylightitalic.otf */; };
+		C11D1C7929182555002CD1FD /* ABCGintoNordVariable-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BFC29182555002CD1FD /* ABCGintoNordVariable-Trial.woff2 */; };
+		C11D1C7A29182555002CD1FD /* ABCGintoNordVariable-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BFD29182555002CD1FD /* ABCGintoNordVariable-Trial.woff */; };
+		C11D1C7B29182555002CD1FD /* ABCGintoNordVariable-Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BFE29182555002CD1FD /* ABCGintoNordVariable-Trial.ttf */; };
+		C11D1C7C29182555002CD1FD /* ABCGintoNormalVariable-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0029182555002CD1FD /* ABCGintoNormalVariable-Trial.woff */; };
+		C11D1C7D29182555002CD1FD /* ABCGintoNormalVariable-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0129182555002CD1FD /* ABCGintoNormalVariable-Trial.woff2 */; };
+		C11D1C7E29182555002CD1FD /* ABCGintoNormalVariable-Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0229182555002CD1FD /* ABCGintoNormalVariable-Trial.ttf */; };
+		C11D1C7F29182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0429182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff */; };
+		C11D1C8029182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0529182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff2 */; };
+		C11D1C8129182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0629182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff */; };
+		C11D1C8229182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0729182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff */; };
+		C11D1C8329182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0829182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff */; };
+		C11D1C8429182555002CD1FD /* ABCGintoNormal-Light-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0929182555002CD1FD /* ABCGintoNormal-Light-Trial.woff2 */; };
+		C11D1C8529182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0A29182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff2 */; };
+		C11D1C8629182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0B29182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff */; };
+		C11D1C8729182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0C29182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff2 */; };
+		C11D1C8829182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0D29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff */; };
+		C11D1C8929182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0E29182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff2 */; };
+		C11D1C8A29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C0F29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff */; };
+		C11D1C8B29182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1029182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff2 */; };
+		C11D1C8C29182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1129182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.otf */; };
+		C11D1C8D29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1229182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff2 */; };
+		C11D1C8E29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1329182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.otf */; };
+		C11D1C8F29182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1429182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff */; };
+		C11D1C9029182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1529182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff2 */; };
+		C11D1C9129182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1629182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.otf */; };
+		C11D1C9229182555002CD1FD /* ABCGintoNormal-Medium-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1729182555002CD1FD /* ABCGintoNormal-Medium-Trial.otf */; };
+		C11D1C9329182555002CD1FD /* ABCGintoNormal-Thin-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1829182555002CD1FD /* ABCGintoNormal-Thin-Trial.otf */; };
+		C11D1C9429182555002CD1FD /* ABCGintoNormal-Bold-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1929182555002CD1FD /* ABCGintoNormal-Bold-Trial.otf */; };
+		C11D1C9529182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1A29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.otf */; };
+		C11D1C9629182555002CD1FD /* ABCGintoNormal-Light-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1B29182555002CD1FD /* ABCGintoNormal-Light-Trial.woff */; };
+		C11D1C9729182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1C29182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff2 */; };
+		C11D1C9829182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1D29182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff */; };
+		C11D1C9929182555002CD1FD /* ABCGintoNormal-Regular-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1E29182555002CD1FD /* ABCGintoNormal-Regular-Trial.otf */; };
+		C11D1C9A29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C1F29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff2 */; };
+		C11D1C9B29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2029182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff */; };
+		C11D1C9C29182555002CD1FD /* ABCGintoNormal-Light-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2129182555002CD1FD /* ABCGintoNormal-Light-Trial.otf */; };
+		C11D1C9D29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2229182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff2 */; };
+		C11D1C9E29182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2329182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff2 */; };
+		C11D1C9F29182555002CD1FD /* ABCGintoNormal-Black-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2429182555002CD1FD /* ABCGintoNormal-Black-Trial.woff2 */; };
+		C11D1CA029182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2529182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff */; };
+		C11D1CA129182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2629182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff */; };
+		C11D1CA229182555002CD1FD /* ABCGintoNormal-Black-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2729182555002CD1FD /* ABCGintoNormal-Black-Trial.otf */; };
+		C11D1CA329182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2829182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff2 */; };
+		C11D1CA429182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2929182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff2 */; };
+		C11D1CA529182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2A29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff2 */; };
+		C11D1CA629182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2B29182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff */; };
+		C11D1CA729182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2C29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff2 */; };
+		C11D1CA829182555002CD1FD /* ABCGintoNormal-Black-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2D29182555002CD1FD /* ABCGintoNormal-Black-Trial.woff */; };
+		C11D1CA929182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2E29182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff2 */; };
+		C11D1CAA29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C2F29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff */; };
+		C11D1CAB29182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3029182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.otf */; };
+		C11D1CAC29182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3129182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff */; };
+		C11D1CAD29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3229182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.otf */; };
+		C11D1CAE29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3329182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff */; };
+		C11D1CAF29182555002CD1FD /* ABCGintoPlusVariable-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3529182555002CD1FD /* ABCGintoPlusVariable-Trial.woff */; };
+		C11D1CB029182555002CD1FD /* ABCGintoPlusVariable-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3629182555002CD1FD /* ABCGintoPlusVariable-Trial.woff2 */; };
+		C11D1CB129182555002CD1FD /* ABCGintoPlusVariable-Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3729182555002CD1FD /* ABCGintoPlusVariable-Trial.ttf */; };
+		C11D1CB229182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3929182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff2 */; };
+		C11D1CB329182555002CD1FD /* ABCGintoNord-Medium-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3A29182555002CD1FD /* ABCGintoNord-Medium-Trial.otf */; };
+		C11D1CB429182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3B29182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff2 */; };
+		C11D1CB529182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3C29182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff */; };
+		C11D1CB629182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3D29182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff2 */; };
+		C11D1CB729182555002CD1FD /* ABCGintoNord-Bold-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3E29182555002CD1FD /* ABCGintoNord-Bold-Trial.woff2 */; };
+		C11D1CB829182555002CD1FD /* ABCGintoNord-Light-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C3F29182555002CD1FD /* ABCGintoNord-Light-Trial.woff */; };
+		C11D1CB929182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4029182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff2 */; };
+		C11D1CBA29182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4129182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff */; };
+		C11D1CBB29182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4229182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff */; };
+		C11D1CBC29182555002CD1FD /* ABCGintoNord-Hairline-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4329182555002CD1FD /* ABCGintoNord-Hairline-Trial.otf */; };
+		C11D1CBD29182555002CD1FD /* ABCGintoNord-Thin-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4429182555002CD1FD /* ABCGintoNord-Thin-Trial.woff2 */; };
+		C11D1CBE29182555002CD1FD /* ABCGintoNord-Light-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4529182555002CD1FD /* ABCGintoNord-Light-Trial.woff2 */; };
+		C11D1CBF29182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4629182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff */; };
+		C11D1CC029182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4729182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff2 */; };
+		C11D1CC129182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4829182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.otf */; };
+		C11D1CC229182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4929182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff */; };
+		C11D1CC329182555002CD1FD /* ABCGintoNord-Medium-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4A29182555002CD1FD /* ABCGintoNord-Medium-Trial.woff */; };
+		C11D1CC429182555002CD1FD /* ABCGintoNord-LightItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4B29182555002CD1FD /* ABCGintoNord-LightItalic-Trial.otf */; };
+		C11D1CC529182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4C29182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff */; };
+		C11D1CC629182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4D29182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff2 */; };
+		C11D1CC729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4E29182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff */; };
+		C11D1CC829182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C4F29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff2 */; };
+		C11D1CC929182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5029182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff2 */; };
+		C11D1CCA29182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5129182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff2 */; };
+		C11D1CCB29182555002CD1FD /* ABCGintoNord-Ultra-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5229182555002CD1FD /* ABCGintoNord-Ultra-Trial.otf */; };
+		C11D1CCC29182555002CD1FD /* ABCGintoNord-Regular-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5329182555002CD1FD /* ABCGintoNord-Regular-Trial.woff */; };
+		C11D1CCD29182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5429182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff */; };
+		C11D1CCE29182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5529182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff */; };
+		C11D1CCF29182555002CD1FD /* ABCGintoNord-Black-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5629182555002CD1FD /* ABCGintoNord-Black-Trial.woff */; };
+		C11D1CD029182555002CD1FD /* ABCGintoNord-Regular-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5729182555002CD1FD /* ABCGintoNord-Regular-Trial.otf */; };
+		C11D1CD129182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5829182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.otf */; };
+		C11D1CD229182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5929182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff */; };
+		C11D1CD329182555002CD1FD /* ABCGintoNord-Light-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5A29182555002CD1FD /* ABCGintoNord-Light-Trial.otf */; };
+		C11D1CD429182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5B29182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff */; };
+		C11D1CD529182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5C29182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff2 */; };
+		C11D1CD629182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5D29182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff2 */; };
+		C11D1CD729182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5E29182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff */; };
+		C11D1CD829182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C5F29182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff */; };
+		C11D1CD929182555002CD1FD /* ABCGintoNord-Bold-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6029182555002CD1FD /* ABCGintoNord-Bold-Trial.woff */; };
+		C11D1CDA29182555002CD1FD /* ABCGintoNord-Black-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6129182555002CD1FD /* ABCGintoNord-Black-Trial.woff2 */; };
+		C11D1CDB29182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6229182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff2 */; };
+		C11D1CDC29182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6329182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff2 */; };
+		C11D1CDD29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6429182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff */; };
+		C11D1CDE29182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6529182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff */; };
+		C11D1CDF29182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6629182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff2 */; };
+		C11D1CE029182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6729182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.otf */; };
+		C11D1CE129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6829182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf */; };
+		C11D1CE229182555002CD1FD /* ABCGintoNord-Medium-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6929182555002CD1FD /* ABCGintoNord-Medium-Trial.woff2 */; };
+		C11D1CE329182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6A29182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff */; };
+		C11D1CE429182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6B29182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff2 */; };
+		C11D1CE529182555002CD1FD /* ABCGintoNord-Regular-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6C29182555002CD1FD /* ABCGintoNord-Regular-Trial.woff2 */; };
+		C11D1CE629182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6D29182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff */; };
+		C11D1CE729182555002CD1FD /* ABCGintoNord-Thin-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6E29182555002CD1FD /* ABCGintoNord-Thin-Trial.woff */; };
+		C11D1CE829182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C6F29182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff2 */; };
+		C11D1CE929182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7029182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff2 */; };
+		C11D1CEA29182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff */; };
+		C11D1CEB29182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7229182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.otf */; };
+		C11D1CEC29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7329182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.otf */; };
+		C11D1CED29182555002CD1FD /* ABCGintoNord-Bold-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7429182555002CD1FD /* ABCGintoNord-Bold-Trial.otf */; };
+		C11D1CEE29182555002CD1FD /* ABCGintoNord-Black-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7529182555002CD1FD /* ABCGintoNord-Black-Trial.otf */; };
+		C11D1CEF29182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7629182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 */; };
+		C11D1CF029182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */; };
+		C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */; };
 		C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */; };
 		C16E687828ED34CD00B1F6C3 /* AdsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687728ED34CD00B1F6C3 /* AdsViewCell.swift */; };
 		C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687928ED463E00B1F6C3 /* BottomViewCell.swift */; };
@@ -95,6 +225,136 @@
 		C102130528EC95A50005436B /* TopViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCell.swift; sourceTree = "<group>"; };
 		C104E3EF28FFDA0C007BAF9D /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		C11D1BE82918254E002CD1FD /* whitneylight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneylight.otf; sourceTree = "<group>"; };
+		C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhitneySemiboldItalic.otf; sourceTree = "<group>"; };
+		C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneybookitalic.otf; sourceTree = "<group>"; };
+		C11D1BEB2918254E002CD1FD /* whitneymedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneymedium.otf; sourceTree = "<group>"; };
+		C11D1BEC2918254E002CD1FD /* whitneymediumitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneymediumitalic.otf; sourceTree = "<group>"; };
+		C11D1BED2918254E002CD1FD /* whitneybook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneybook.otf; sourceTree = "<group>"; };
+		C11D1BEE2918254E002CD1FD /* whitneysemibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneysemibold.otf; sourceTree = "<group>"; };
+		C11D1BEF2918254E002CD1FD /* whitneybold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneybold.otf; sourceTree = "<group>"; };
+		C11D1BF02918254E002CD1FD /* whitneylightitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneylightitalic.otf; sourceTree = "<group>"; };
+		C11D1BFC29182555002CD1FD /* ABCGintoNordVariable-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNordVariable-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1BFD29182555002CD1FD /* ABCGintoNordVariable-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNordVariable-Trial.woff"; sourceTree = "<group>"; };
+		C11D1BFE29182555002CD1FD /* ABCGintoNordVariable-Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNordVariable-Trial.ttf"; sourceTree = "<group>"; };
+		C11D1C0029182555002CD1FD /* ABCGintoNormalVariable-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormalVariable-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0129182555002CD1FD /* ABCGintoNormalVariable-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormalVariable-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C0229182555002CD1FD /* ABCGintoNormalVariable-Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormalVariable-Trial.ttf"; sourceTree = "<group>"; };
+		C11D1C0429182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BoldIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0529182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BoldIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C0629182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BlackIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0729182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-ThinItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0829182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Regular-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0929182555002CD1FD /* ABCGintoNormal-Light-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Light-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C0A29182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-RegularIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C0B29182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-RegularIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0C29182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Regular-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C0D29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BlackItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C0E29182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BlackIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C0F29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Medium-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C1029182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Thin-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C1129182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-ThinItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1229182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Medium-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C1329182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BlackItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1429182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-MediumItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C1529182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-MediumItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C1629182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-MediumItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1729182555002CD1FD /* ABCGintoNormal-Medium-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Medium-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1829182555002CD1FD /* ABCGintoNormal-Thin-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Thin-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1929182555002CD1FD /* ABCGintoNormal-Bold-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Bold-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1A29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BoldItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1B29182555002CD1FD /* ABCGintoNormal-Light-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Light-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C1C29182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Bold-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C1D29182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Bold-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C1E29182555002CD1FD /* ABCGintoNormal-Regular-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Regular-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C1F29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-MediumIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2029182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-MediumIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C2129182555002CD1FD /* ABCGintoNormal-Light-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Light-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C2229182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BoldItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2329182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-ThinIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2429182555002CD1FD /* ABCGintoNormal-Black-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Black-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2529182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-LightIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C2629182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-ThinIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C2729182555002CD1FD /* ABCGintoNormal-Black-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Black-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C2829182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-RegularItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2929182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-ThinItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2A29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-LightItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2B29182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Thin-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C2C29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BlackItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2D29182555002CD1FD /* ABCGintoNormal-Black-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-Black-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C2E29182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-LightIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C2F29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-BoldItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C3029182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-RegularItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C3129182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-RegularItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C3229182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-LightItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C3329182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNormal-LightItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C3529182555002CD1FD /* ABCGintoPlusVariable-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoPlusVariable-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C3629182555002CD1FD /* ABCGintoPlusVariable-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoPlusVariable-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C3729182555002CD1FD /* ABCGintoPlusVariable-Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoPlusVariable-Trial.ttf"; sourceTree = "<group>"; };
+		C11D1C3929182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-RegularItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C3A29182555002CD1FD /* ABCGintoNord-Medium-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Medium-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C3B29182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-MediumIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C3C29182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-HairlineItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C3D29182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-RegularIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C3E29182555002CD1FD /* ABCGintoNord-Bold-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Bold-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C3F29182555002CD1FD /* ABCGintoNord-Light-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Light-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4029182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-ThinIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C4129182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-ThinIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4229182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-LightIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4329182555002CD1FD /* ABCGintoNord-Hairline-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Hairline-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C4429182555002CD1FD /* ABCGintoNord-Thin-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Thin-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C4529182555002CD1FD /* ABCGintoNord-Light-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Light-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C4629182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-MediumIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4729182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-HairlineItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C4829182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-MediumItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C4929182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BoldItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4A29182555002CD1FD /* ABCGintoNord-Medium-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Medium-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4B29182555002CD1FD /* ABCGintoNord-LightItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-LightItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C4C29182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-MediumItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4D29182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-LightIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C4E29182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C4F29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-UltraItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C5029182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-MediumItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C5129182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-UltraIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C5229182555002CD1FD /* ABCGintoNord-Ultra-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Ultra-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C5329182555002CD1FD /* ABCGintoNord-Regular-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Regular-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5429182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Hairline-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5529182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5629182555002CD1FD /* ABCGintoNord-Black-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Black-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5729182555002CD1FD /* ABCGintoNord-Regular-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Regular-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C5829182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-HairlineItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C5929182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-HairlineIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5A29182555002CD1FD /* ABCGintoNord-Light-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Light-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C5B29182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-RegularIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5C29182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BoldItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C5D29182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BoldIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C5E29182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BoldIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C5F29182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-UltraIta-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6029182555002CD1FD /* ABCGintoNord-Bold-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Bold-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6129182555002CD1FD /* ABCGintoNord-Black-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Black-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6229182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-HairlineIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6329182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Hairline-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6429182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-UltraItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6529182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-ThinItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6629182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Ultra-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6729182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-ThinItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C6829182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-RegularItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C6929182555002CD1FD /* ABCGintoNord-Medium-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Medium-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6A29182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-LightItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6B29182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackIta-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6C29182555002CD1FD /* ABCGintoNord-Regular-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Regular-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C6D29182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Ultra-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6E29182555002CD1FD /* ABCGintoNord-Thin-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Thin-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C6F29182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C7029182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-LightItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C7129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-RegularItalic-Trial.woff"; sourceTree = "<group>"; };
+		C11D1C7229182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BoldItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C7329182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-UltraItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C7429182555002CD1FD /* ABCGintoNord-Bold-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Bold-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C7529182555002CD1FD /* ABCGintoNord-Black-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Black-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C7629182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-ThinItalic-Trial.woff2"; sourceTree = "<group>"; };
+		C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackItalic-Trial.otf"; sourceTree = "<group>"; };
+		C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Thin-Trial.otf"; sourceTree = "<group>"; };
 		C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C16E687728ED34CD00B1F6C3 /* AdsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewCell.swift; sourceTree = "<group>"; };
 		C16E687928ED463E00B1F6C3 /* BottomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewCell.swift; sourceTree = "<group>"; };
@@ -239,13 +499,206 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		C11D1BE72918254E002CD1FD /* whitneyFont-MUATEX */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1BE82918254E002CD1FD /* whitneylight.otf */,
+				C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */,
+				C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */,
+				C11D1BEB2918254E002CD1FD /* whitneymedium.otf */,
+				C11D1BEC2918254E002CD1FD /* whitneymediumitalic.otf */,
+				C11D1BED2918254E002CD1FD /* whitneybook.otf */,
+				C11D1BEE2918254E002CD1FD /* whitneysemibold.otf */,
+				C11D1BEF2918254E002CD1FD /* whitneybold.otf */,
+				C11D1BF02918254E002CD1FD /* whitneylightitalic.otf */,
+			);
+			path = "whitneyFont-MUATEX";
+			sourceTree = "<group>";
+		};
+		C11D1BFA29182555002CD1FD /* ABC Ginto */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1BFB29182555002CD1FD /* ABC Ginto Nord Variable */,
+				C11D1BFF29182555002CD1FD /* ABC Ginto Normal Variable */,
+				C11D1C0329182555002CD1FD /* ABC Ginto Normal */,
+				C11D1C3429182555002CD1FD /* ABC Ginto Plus Variable */,
+				C11D1C3829182555002CD1FD /* ABC Ginto Nord */,
+			);
+			path = "ABC Ginto";
+			sourceTree = "<group>";
+		};
+		C11D1BFB29182555002CD1FD /* ABC Ginto Nord Variable */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1BFC29182555002CD1FD /* ABCGintoNordVariable-Trial.woff2 */,
+				C11D1BFD29182555002CD1FD /* ABCGintoNordVariable-Trial.woff */,
+				C11D1BFE29182555002CD1FD /* ABCGintoNordVariable-Trial.ttf */,
+			);
+			path = "ABC Ginto Nord Variable";
+			sourceTree = "<group>";
+		};
+		C11D1BFF29182555002CD1FD /* ABC Ginto Normal Variable */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1C0029182555002CD1FD /* ABCGintoNormalVariable-Trial.woff */,
+				C11D1C0129182555002CD1FD /* ABCGintoNormalVariable-Trial.woff2 */,
+				C11D1C0229182555002CD1FD /* ABCGintoNormalVariable-Trial.ttf */,
+			);
+			path = "ABC Ginto Normal Variable";
+			sourceTree = "<group>";
+		};
+		C11D1C0329182555002CD1FD /* ABC Ginto Normal */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1C0429182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff */,
+				C11D1C0529182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff2 */,
+				C11D1C0629182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff */,
+				C11D1C0729182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff */,
+				C11D1C0829182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff */,
+				C11D1C0929182555002CD1FD /* ABCGintoNormal-Light-Trial.woff2 */,
+				C11D1C0A29182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff2 */,
+				C11D1C0B29182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff */,
+				C11D1C0C29182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff2 */,
+				C11D1C0D29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff */,
+				C11D1C0E29182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff2 */,
+				C11D1C0F29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff */,
+				C11D1C1029182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff2 */,
+				C11D1C1129182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.otf */,
+				C11D1C1229182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff2 */,
+				C11D1C1329182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.otf */,
+				C11D1C1429182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff */,
+				C11D1C1529182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff2 */,
+				C11D1C1629182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.otf */,
+				C11D1C1729182555002CD1FD /* ABCGintoNormal-Medium-Trial.otf */,
+				C11D1C1829182555002CD1FD /* ABCGintoNormal-Thin-Trial.otf */,
+				C11D1C1929182555002CD1FD /* ABCGintoNormal-Bold-Trial.otf */,
+				C11D1C1A29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.otf */,
+				C11D1C1B29182555002CD1FD /* ABCGintoNormal-Light-Trial.woff */,
+				C11D1C1C29182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff2 */,
+				C11D1C1D29182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff */,
+				C11D1C1E29182555002CD1FD /* ABCGintoNormal-Regular-Trial.otf */,
+				C11D1C1F29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff2 */,
+				C11D1C2029182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff */,
+				C11D1C2129182555002CD1FD /* ABCGintoNormal-Light-Trial.otf */,
+				C11D1C2229182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff2 */,
+				C11D1C2329182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff2 */,
+				C11D1C2429182555002CD1FD /* ABCGintoNormal-Black-Trial.woff2 */,
+				C11D1C2529182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff */,
+				C11D1C2629182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff */,
+				C11D1C2729182555002CD1FD /* ABCGintoNormal-Black-Trial.otf */,
+				C11D1C2829182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff2 */,
+				C11D1C2929182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff2 */,
+				C11D1C2A29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff2 */,
+				C11D1C2B29182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff */,
+				C11D1C2C29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff2 */,
+				C11D1C2D29182555002CD1FD /* ABCGintoNormal-Black-Trial.woff */,
+				C11D1C2E29182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff2 */,
+				C11D1C2F29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff */,
+				C11D1C3029182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.otf */,
+				C11D1C3129182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff */,
+				C11D1C3229182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.otf */,
+				C11D1C3329182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff */,
+			);
+			path = "ABC Ginto Normal";
+			sourceTree = "<group>";
+		};
+		C11D1C3429182555002CD1FD /* ABC Ginto Plus Variable */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1C3529182555002CD1FD /* ABCGintoPlusVariable-Trial.woff */,
+				C11D1C3629182555002CD1FD /* ABCGintoPlusVariable-Trial.woff2 */,
+				C11D1C3729182555002CD1FD /* ABCGintoPlusVariable-Trial.ttf */,
+			);
+			path = "ABC Ginto Plus Variable";
+			sourceTree = "<group>";
+		};
+		C11D1C3829182555002CD1FD /* ABC Ginto Nord */ = {
+			isa = PBXGroup;
+			children = (
+				C11D1C3929182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff2 */,
+				C11D1C3A29182555002CD1FD /* ABCGintoNord-Medium-Trial.otf */,
+				C11D1C3B29182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff2 */,
+				C11D1C3C29182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff */,
+				C11D1C3D29182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff2 */,
+				C11D1C3E29182555002CD1FD /* ABCGintoNord-Bold-Trial.woff2 */,
+				C11D1C3F29182555002CD1FD /* ABCGintoNord-Light-Trial.woff */,
+				C11D1C4029182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff2 */,
+				C11D1C4129182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff */,
+				C11D1C4229182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff */,
+				C11D1C4329182555002CD1FD /* ABCGintoNord-Hairline-Trial.otf */,
+				C11D1C4429182555002CD1FD /* ABCGintoNord-Thin-Trial.woff2 */,
+				C11D1C4529182555002CD1FD /* ABCGintoNord-Light-Trial.woff2 */,
+				C11D1C4629182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff */,
+				C11D1C4729182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff2 */,
+				C11D1C4829182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.otf */,
+				C11D1C4929182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff */,
+				C11D1C4A29182555002CD1FD /* ABCGintoNord-Medium-Trial.woff */,
+				C11D1C4B29182555002CD1FD /* ABCGintoNord-LightItalic-Trial.otf */,
+				C11D1C4C29182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff */,
+				C11D1C4D29182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff2 */,
+				C11D1C4E29182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff */,
+				C11D1C4F29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff2 */,
+				C11D1C5029182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff2 */,
+				C11D1C5129182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff2 */,
+				C11D1C5229182555002CD1FD /* ABCGintoNord-Ultra-Trial.otf */,
+				C11D1C5329182555002CD1FD /* ABCGintoNord-Regular-Trial.woff */,
+				C11D1C5429182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff */,
+				C11D1C5529182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff */,
+				C11D1C5629182555002CD1FD /* ABCGintoNord-Black-Trial.woff */,
+				C11D1C5729182555002CD1FD /* ABCGintoNord-Regular-Trial.otf */,
+				C11D1C5829182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.otf */,
+				C11D1C5929182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff */,
+				C11D1C5A29182555002CD1FD /* ABCGintoNord-Light-Trial.otf */,
+				C11D1C5B29182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff */,
+				C11D1C5C29182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff2 */,
+				C11D1C5D29182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff2 */,
+				C11D1C5E29182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff */,
+				C11D1C5F29182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff */,
+				C11D1C6029182555002CD1FD /* ABCGintoNord-Bold-Trial.woff */,
+				C11D1C6129182555002CD1FD /* ABCGintoNord-Black-Trial.woff2 */,
+				C11D1C6229182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff2 */,
+				C11D1C6329182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff2 */,
+				C11D1C6429182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff */,
+				C11D1C6529182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff */,
+				C11D1C6629182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff2 */,
+				C11D1C6729182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.otf */,
+				C11D1C6829182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf */,
+				C11D1C6929182555002CD1FD /* ABCGintoNord-Medium-Trial.woff2 */,
+				C11D1C6A29182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff */,
+				C11D1C6B29182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff2 */,
+				C11D1C6C29182555002CD1FD /* ABCGintoNord-Regular-Trial.woff2 */,
+				C11D1C6D29182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff */,
+				C11D1C6E29182555002CD1FD /* ABCGintoNord-Thin-Trial.woff */,
+				C11D1C6F29182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff2 */,
+				C11D1C7029182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff2 */,
+				C11D1C7129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff */,
+				C11D1C7229182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.otf */,
+				C11D1C7329182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.otf */,
+				C11D1C7429182555002CD1FD /* ABCGintoNord-Bold-Trial.otf */,
+				C11D1C7529182555002CD1FD /* ABCGintoNord-Black-Trial.otf */,
+				C11D1C7629182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 */,
+				C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */,
+				C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */,
+			);
+			path = "ABC Ginto Nord";
+			sourceTree = "<group>";
+		};
 		C16E687628ED219B00B1F6C3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C18FCCFE2917A30A00E8B2FF /* Custom UI */,
 				C1DD46B128FE981A0027AD80 /* Fonts */,
-				C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C18FCCFE2917A30A00E8B2FF /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */,
+				C1C6A61029179465006256E7 /* UISegmentView.swift */,
+			);
+			path = "Custom UI";
 			sourceTree = "<group>";
 		};
 		C1AC24342912947E00B991C9 /* Login */ = {
@@ -307,6 +760,8 @@
 		C1DD46B128FE981A0027AD80 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C11D1BFA29182555002CD1FD /* ABC Ginto */,
+				C11D1BE72918254E002CD1FD /* whitneyFont-MUATEX */,
 				C1CBEFA528FEF3840065701C /* inter */,
 				C1DD46B228FE982A0027AD80 /* expletus-sans */,
 			);
@@ -333,7 +788,6 @@
 			isa = PBXGroup;
 			children = (
 				C1E94B21291776450077E6CE /* Collection.storyboard */,
-				C1C6A61029179465006256E7 /* UISegmentView.swift */,
 				C1E94B23291776550077E6CE /* CollectionViewController.swift */,
 			);
 			path = Collection;
@@ -415,49 +869,179 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11D1CB029182555002CD1FD /* ABCGintoPlusVariable-Trial.woff2 in Resources */,
 				C10212F428EC4B510005436B /* Tabbar.storyboard in Resources */,
 				C1CBEFBC28FEF3840065701C /* Inter-Regular.otf in Resources */,
+				C11D1BF42918254E002CD1FD /* whitneymedium.otf in Resources */,
+				C11D1CAB29182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.otf in Resources */,
 				C10212EB28EC4A750005436B /* LaunchScreen.storyboard in Resources */,
+				C11D1CAC29182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff in Resources */,
+				C11D1CC729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff in Resources */,
+				C11D1C9029182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff2 in Resources */,
 				C1DD46C328FE982A0027AD80 /* ExpletusSans-Regular.ttf in Resources */,
+				C11D1C8C29182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.otf in Resources */,
+				C11D1CAE29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff in Resources */,
 				C1EA93A729150E6500A2655F /* RegisterViewController.xib in Resources */,
+				C11D1CBC29182555002CD1FD /* ABCGintoNord-Hairline-Trial.otf in Resources */,
+				C11D1CD329182555002CD1FD /* ABCGintoNord-Light-Trial.otf in Resources */,
+				C11D1CA029182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff in Resources */,
+				C11D1CAA29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff in Resources */,
+				C11D1C8B29182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff2 in Resources */,
+				C11D1BF32918254E002CD1FD /* whitneybookitalic.otf in Resources */,
 				C1DD46B028FE81370027AD80 /* NewestHeaderReusableView.xib in Resources */,
+				C11D1CF029182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf in Resources */,
 				C10212E828EC4A750005436B /* Assets.xcassets in Resources */,
 				C1DD46BF28FE982A0027AD80 /* ExpletusSans-SemiBoldItalic.ttf in Resources */,
 				C10212FC28EC4C9F0005436B /* Home.storyboard in Resources */,
 				C1CBEFD028FEF9390065701C /* Search.storyboard in Resources */,
+				C11D1CD129182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.otf in Resources */,
+				C11D1C9829182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff in Resources */,
 				C1CBEFCB28FEF3840065701C /* Inter-ExtraBoldItalic.otf in Resources */,
+				C11D1CDE29182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff in Resources */,
+				C11D1CEE29182555002CD1FD /* ABCGintoNord-Black-Trial.otf in Resources */,
+				C11D1BF82918254E002CD1FD /* whitneybold.otf in Resources */,
+				C11D1CED29182555002CD1FD /* ABCGintoNord-Bold-Trial.otf in Resources */,
+				C11D1CCE29182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff in Resources */,
+				C11D1C8A29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff in Resources */,
+				C11D1CB429182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff2 in Resources */,
 				C1DD46BE28FE982A0027AD80 /* ExpletusSans-SemiBold.ttf in Resources */,
 				C1CBEFBE28FEF3840065701C /* Inter-Thin.otf in Resources */,
+				C11D1CE129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf in Resources */,
+				C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */,
+				C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */,
+				C11D1CB829182555002CD1FD /* ABCGintoNord-Light-Trial.woff in Resources */,
+				C11D1CD929182555002CD1FD /* ABCGintoNord-Bold-Trial.woff in Resources */,
 				C1DD46C228FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf in Resources */,
+				C11D1CA229182555002CD1FD /* ABCGintoNormal-Black-Trial.otf in Resources */,
+				C11D1CE429182555002CD1FD /* ABCGintoNord-BlackIta-Trial.woff2 in Resources */,
 				C102130428EC93AB0005436B /* SecondViewCell.xib in Resources */,
 				C1CBEFC028FEF3840065701C /* Inter-V.ttf in Resources */,
+				C11D1CB629182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff2 in Resources */,
+				C11D1CB229182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff2 in Resources */,
+				C11D1CE529182555002CD1FD /* ABCGintoNord-Regular-Trial.woff2 in Resources */,
 				C1CBEFCD28FEF3840065701C /* Inter-LightItalic.otf in Resources */,
+				C11D1CC129182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.otf in Resources */,
 				C1DD46C028FE982A0027AD80 /* OFL.txt in Resources */,
+				C11D1C9C29182555002CD1FD /* ABCGintoNormal-Light-Trial.otf in Resources */,
 				C1CBEFC928FEF3840065701C /* Inter-ThinItalic.otf in Resources */,
 				C19541572915804B00295FFF /* SearchBarReusableView.xib in Resources */,
+				C11D1CB929182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff2 in Resources */,
+				C11D1CE829182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.woff2 in Resources */,
+				C11D1CC029182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff2 in Resources */,
+				C11D1CC229182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff in Resources */,
 				C1CBEFC728FEF3840065701C /* Inter-Italic.otf in Resources */,
+				C11D1C9E29182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff2 in Resources */,
 				C1CBEFC328FEF3840065701C /* Inter-SemiBold.otf in Resources */,
+				C11D1C8829182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff in Resources */,
 				C1DD46BD28FE982A0027AD80 /* ExpletusSans-Medium.ttf in Resources */,
+				C11D1CEA29182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.woff in Resources */,
+				C11D1CD729182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff in Resources */,
+				C11D1CA329182555002CD1FD /* ABCGintoNormal-RegularItalic-Trial.woff2 in Resources */,
+				C11D1CDF29182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff2 in Resources */,
 				C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */,
+				C11D1C7B29182555002CD1FD /* ABCGintoNordVariable-Trial.ttf in Resources */,
 				C1E94B22291776450077E6CE /* Collection.storyboard in Resources */,
+				C11D1CD029182555002CD1FD /* ABCGintoNord-Regular-Trial.otf in Resources */,
+				C11D1CC929182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff2 in Resources */,
+				C11D1C9F29182555002CD1FD /* ABCGintoNormal-Black-Trial.woff2 in Resources */,
+				C11D1C7E29182555002CD1FD /* ABCGintoNormalVariable-Trial.ttf in Resources */,
+				C11D1CA729182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.woff2 in Resources */,
+				C11D1C7C29182555002CD1FD /* ABCGintoNormalVariable-Trial.woff in Resources */,
 				C1DD46BC28FE982A0027AD80 /* ExpletusSans-Italic.ttf in Resources */,
 				C16E687E28ED465200B1F6C3 /* ThirdViewCell.xib in Resources */,
 				C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */,
+				C11D1CEF29182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 in Resources */,
+				C11D1C8229182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff in Resources */,
+				C11D1CC629182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff2 in Resources */,
+				C11D1CD629182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff2 in Resources */,
+				C11D1C8D29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff2 in Resources */,
+				C11D1CB729182555002CD1FD /* ABCGintoNord-Bold-Trial.woff2 in Resources */,
+				C11D1CA829182555002CD1FD /* ABCGintoNormal-Black-Trial.woff in Resources */,
+				C11D1C9929182555002CD1FD /* ABCGintoNormal-Regular-Trial.otf in Resources */,
+				C11D1CB129182555002CD1FD /* ABCGintoPlusVariable-Trial.ttf in Resources */,
+				C11D1CE329182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff in Resources */,
+				C11D1C7A29182555002CD1FD /* ABCGintoNordVariable-Trial.woff in Resources */,
+				C11D1C8729182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff2 in Resources */,
+				C11D1CA429182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff2 in Resources */,
 				C1CBEFCA28FEF3840065701C /* Inter-ExtraLight.otf in Resources */,
+				C11D1C9229182555002CD1FD /* ABCGintoNormal-Medium-Trial.otf in Resources */,
+				C11D1CD829182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff in Resources */,
+				C11D1CC529182555002CD1FD /* ABCGintoNord-MediumItalic-Trial.woff in Resources */,
+				C11D1CDB29182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff2 in Resources */,
+				C11D1CA629182555002CD1FD /* ABCGintoNormal-Thin-Trial.woff in Resources */,
+				C11D1C8629182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff in Resources */,
+				C11D1CDD29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff in Resources */,
+				C11D1CAD29182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.otf in Resources */,
+				C11D1CC329182555002CD1FD /* ABCGintoNord-Medium-Trial.woff in Resources */,
+				C11D1CC829182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.woff2 in Resources */,
+				C11D1CDC29182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff2 in Resources */,
+				C11D1C9729182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff2 in Resources */,
+				C11D1C9329182555002CD1FD /* ABCGintoNormal-Thin-Trial.otf in Resources */,
+				C11D1C7929182555002CD1FD /* ABCGintoNordVariable-Trial.woff2 in Resources */,
 				C1DD46C128FE982A0027AD80 /* ExpletusSans-BoldItalic.ttf in Resources */,
+				C11D1C9D29182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.woff2 in Resources */,
+				C11D1CAF29182555002CD1FD /* ABCGintoPlusVariable-Trial.woff in Resources */,
+				C11D1CCF29182555002CD1FD /* ABCGintoNord-Black-Trial.woff in Resources */,
 				C102130028EC92B50005436B /* FirstViewCell.xib in Resources */,
+				C11D1CBB29182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff in Resources */,
+				C11D1C8529182555002CD1FD /* ABCGintoNormal-RegularIta-Trial.woff2 in Resources */,
+				C11D1CBA29182555002CD1FD /* ABCGintoNord-ThinIta-Trial.woff in Resources */,
+				C11D1CDA29182555002CD1FD /* ABCGintoNord-Black-Trial.woff2 in Resources */,
 				C1CBEFBD28FEF3840065701C /* Inter-SemiBoldItalic.otf in Resources */,
+				C11D1CA129182555002CD1FD /* ABCGintoNormal-ThinIta-Trial.woff in Resources */,
+				C11D1CEC29182555002CD1FD /* ABCGintoNord-UltraItalic-Trial.otf in Resources */,
 				C1CBEFCC28FEF3840065701C /* Inter-BoldItalic.otf in Resources */,
 				C1DD46C428FE982A0027AD80 /* ExpletusSans-Bold.ttf in Resources */,
+				C11D1C8029182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff2 in Resources */,
+				C11D1CD229182555002CD1FD /* ABCGintoNord-HairlineIta-Trial.woff in Resources */,
+				C11D1CE929182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff2 in Resources */,
+				C11D1CCC29182555002CD1FD /* ABCGintoNord-Regular-Trial.woff in Resources */,
 				C1CBEFC628FEF3840065701C /* Inter-Black.otf in Resources */,
+				C11D1BF12918254E002CD1FD /* whitneylight.otf in Resources */,
+				C11D1BF52918254E002CD1FD /* whitneymediumitalic.otf in Resources */,
+				C11D1CE629182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff in Resources */,
 				C1CBEFC428FEF3840065701C /* Inter-BlackItalic.otf in Resources */,
+				C11D1BF72918254E002CD1FD /* whitneysemibold.otf in Resources */,
+				C11D1CBD29182555002CD1FD /* ABCGintoNord-Thin-Trial.woff2 in Resources */,
+				C11D1C9629182555002CD1FD /* ABCGintoNormal-Light-Trial.woff in Resources */,
+				C11D1CD529182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.woff2 in Resources */,
 				C1CBEFBA28FEF3840065701C /* Inter-Bold.otf in Resources */,
+				C11D1BF62918254E002CD1FD /* whitneybook.otf in Resources */,
+				C11D1CB529182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff in Resources */,
+				C11D1CCA29182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff2 in Resources */,
+				C11D1C8129182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff in Resources */,
 				C1CBEFBF28FEF3840065701C /* Inter-Light.otf in Resources */,
 				C1CBEFC128FEF3840065701C /* Inter-ExtraLightItalic.otf in Resources */,
+				C11D1CE229182555002CD1FD /* ABCGintoNord-Medium-Trial.woff2 in Resources */,
+				C11D1C8F29182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff in Resources */,
+				C11D1C9529182555002CD1FD /* ABCGintoNormal-BoldItalic-Trial.otf in Resources */,
+				C11D1CBF29182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff in Resources */,
+				C11D1CE729182555002CD1FD /* ABCGintoNord-Thin-Trial.woff in Resources */,
+				C11D1CB329182555002CD1FD /* ABCGintoNord-Medium-Trial.otf in Resources */,
+				C11D1CCD29182555002CD1FD /* ABCGintoNord-Hairline-Trial.woff in Resources */,
+				C11D1C7D29182555002CD1FD /* ABCGintoNormalVariable-Trial.woff2 in Resources */,
+				C11D1C8429182555002CD1FD /* ABCGintoNormal-Light-Trial.woff2 in Resources */,
 				C1CBEFBB28FEF3840065701C /* SIL Open Font License.txt in Resources */,
+				C11D1C8929182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff2 in Resources */,
+				C11D1CC429182555002CD1FD /* ABCGintoNord-LightItalic-Trial.otf in Resources */,
+				C11D1CD429182555002CD1FD /* ABCGintoNord-RegularIta-Trial.woff in Resources */,
+				C11D1C9129182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.otf in Resources */,
 				C1CBEFC228FEF3840065701C /* Inter-Medium.otf in Resources */,
+				C11D1BF92918254E002CD1FD /* whitneylightitalic.otf in Resources */,
+				C11D1CA929182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff2 in Resources */,
 				C104E3F228FFDA0C007BAF9D /* SearchCollectionViewCell.xib in Resources */,
+				C11D1CE029182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.otf in Resources */,
+				C11D1CCB29182555002CD1FD /* ABCGintoNord-Ultra-Trial.otf in Resources */,
+				C11D1C8329182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff in Resources */,
+				C11D1C7F29182555002CD1FD /* ABCGintoNormal-BoldIta-Trial.woff in Resources */,
+				C11D1CA529182555002CD1FD /* ABCGintoNormal-LightItalic-Trial.woff2 in Resources */,
+				C11D1CEB29182555002CD1FD /* ABCGintoNord-BoldItalic-Trial.otf in Resources */,
+				C11D1C8E29182555002CD1FD /* ABCGintoNormal-BlackItalic-Trial.otf in Resources */,
+				C11D1C9B29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff in Resources */,
+				C11D1C9A29182555002CD1FD /* ABCGintoNormal-MediumIta-Trial.woff2 in Resources */,
 				C1CBEFC828FEF3840065701C /* Inter-ExtraBold.otf in Resources */,
+				C11D1CBE29182555002CD1FD /* ABCGintoNord-Light-Trial.woff2 in Resources */,
+				C11D1C9429182555002CD1FD /* ABCGintoNormal-Bold-Trial.otf in Resources */,
 				C1CBEFC528FEF3840065701C /* Inter-MediumItalic.otf in Resources */,
 				C1723CA42914C658000882E5 /* LoginViewController.xib in Resources */,
 			);
@@ -650,7 +1234,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -680,7 +1264,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

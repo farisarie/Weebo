@@ -15,6 +15,7 @@ class CollectionViewController: UIViewController {
         super.viewDidLoad()
         title = "Collection"
         navigationController?.navigationBar.prefersLargeTitles = true
+        collectionView.register(UINib(nibName: "NewestHeaderReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCell")
         collectionView.dataSource = self
         collectionView.delegate = self
         self.segmentedControl.frame = CGRect(
@@ -63,6 +64,28 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? NewestHeaderReusableView {
+                headerView.headerLabel.text = "10 Komik"
+                return headerView
+                }
+            
+        default:
+            return UICollectionReusableView()
+        }
+        return UICollectionReusableView()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if section == 0 {
+            return CGSize(width: collectionView.frame.width, height: 30)
+        } else {
+            return CGSize(width: 0, height: 0)
+        }
     }
     
 }
