@@ -31,7 +31,7 @@ extension BottomViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdCell", for: indexPath) as! ThirdViewCell
-        cell.comicImage.image = UIImage(named: "blank")
+        cell.comicImage.image = UIImage(named: "denji")
         cell.titleLabel.text = "Lorem ipsum dolor sit"
         cell.categoryLabel.text = "Category"
         return cell
@@ -40,7 +40,7 @@ extension BottomViewCell: UICollectionViewDataSource {
 
 extension BottomViewCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-       return CGSize(width: 150, height: 176)
+       return CGSize(width: 150, height: 284)
    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

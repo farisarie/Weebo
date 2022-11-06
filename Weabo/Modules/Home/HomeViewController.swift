@@ -91,9 +91,9 @@ extension HomeViewController: UICollectionViewDataSource {
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newestCell", for: indexPath) as!
                 NewestViewCell
-            cell.imageView.image = UIImage(named: "blank")
+            cell.imageView.image = UIImage(named: "chainsawman")
             cell.categoryLabel.text = "Kategori"
-            cell.comicTitle.text = "Lorem ipsum dolor sit"
+            cell.comicTitle.text = "Chainsawman"
             cell.accessDateLabel.text = "Diakses pada 9 September 2022"
             return cell
         default:
@@ -122,7 +122,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             
             
         case 3:
-            return CGSize(width: self.view.frame.width, height: 230)
+            return CGSize(width: self.view.frame.width, height: 330)
             
         case 4:
             return CGSize(width: self.view.frame.width, height: 78)

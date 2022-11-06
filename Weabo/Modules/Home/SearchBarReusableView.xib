@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="YND-Zf-Tg8">
+                <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YND-Zf-Tg8">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
@@ -29,7 +29,7 @@
             <connections>
                 <outlet property="searchBar" destination="YND-Zf-Tg8" id="nGZ-Tb-jye"/>
             </connections>
-            <point key="canvasLocation" x="139" y="124"/>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </collectionReusableView>
     </objects>
 </document>
