@@ -11,8 +11,9 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var rightWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var leftWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var nameTextField: UITextField!
+  
+    @IBOutlet weak var passwordTextField: WeeboTextField!
+    @IBOutlet weak var emailTextField: WeeboTextField!
     
    
     override func viewDidLoad() {
@@ -46,13 +47,13 @@ class LoginViewController: UIViewController {
             return false
         }
         
-        guard let name = nameTextField.text, name.count >= 3 else {
+        guard let name = passwordTextField.text, name.count >= 3 else {
             
             print("Name error")
-            self.nameTextField.layer.borderColor = UIColor.red.cgColor
-            self.nameTextField.layer.borderWidth = 0.5
-            self.nameTextField.layer.cornerRadius = 5
-            self.nameTextField.layer.masksToBounds = true
+            self.passwordTextField.layer.borderColor = UIColor.red.cgColor
+            self.passwordTextField.layer.borderWidth = 0.5
+            self.passwordTextField.layer.cornerRadius = 5
+            self.passwordTextField.layer.masksToBounds = true
         
         
             return false

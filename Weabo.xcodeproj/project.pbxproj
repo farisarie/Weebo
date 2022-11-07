@@ -152,6 +152,7 @@
 		C11D1CEF29182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7629182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 */; };
 		C11D1CF029182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */; };
 		C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */; };
+		C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D1CF42918323A002CD1FD /* WeeboTextField.swift */; };
 		C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */; };
 		C16E687828ED34CD00B1F6C3 /* AdsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687728ED34CD00B1F6C3 /* AdsViewCell.swift */; };
 		C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687928ED463E00B1F6C3 /* BottomViewCell.swift */; };
@@ -355,6 +356,7 @@
 		C11D1C7629182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-ThinItalic-Trial.woff2"; sourceTree = "<group>"; };
 		C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackItalic-Trial.otf"; sourceTree = "<group>"; };
 		C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Thin-Trial.otf"; sourceTree = "<group>"; };
+		C11D1CF42918323A002CD1FD /* WeeboTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeboTextField.swift; sourceTree = "<group>"; };
 		C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C16E687728ED34CD00B1F6C3 /* AdsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewCell.swift; sourceTree = "<group>"; };
 		C16E687928ED463E00B1F6C3 /* BottomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewCell.swift; sourceTree = "<group>"; };
@@ -453,15 +455,8 @@
 		C10212F228EC4B250005436B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C1E94B20291776300077E6CE /* Collection */,
-				C1AC24342912947E00B991C9 /* Login */,
-				C1EA93A329150E5900A2655F /* Register */,
-				C1EA939E2914FF1A00A2655F /* OnBoarding */,
 				C16E687628ED219B00B1F6C3 /* Extensions */,
-				C1AC243F2912C63000B991C9 /* Profile */,
-				C1CBEFCE28FEF9240065701C /* Search */,
-				C10212F828EC4C820005436B /* Home */,
-				C10212F728EC4C7A0005436B /* TabBar */,
+				C18AE2B12918B56E009C3499 /* Classes */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -692,11 +687,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C18AE2B12918B56E009C3499 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1E94B20291776300077E6CE /* Collection */,
+				C1AC24342912947E00B991C9 /* Login */,
+				C1EA93A329150E5900A2655F /* Register */,
+				C1EA939E2914FF1A00A2655F /* OnBoarding */,
+				C1AC243F2912C63000B991C9 /* Profile */,
+				C1CBEFCE28FEF9240065701C /* Search */,
+				C10212F828EC4C820005436B /* Home */,
+				C10212F728EC4C7A0005436B /* TabBar */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		C18FCCFE2917A30A00E8B2FF /* Custom UI */ = {
 			isa = PBXGroup;
 			children = (
 				C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */,
 				C1C6A61029179465006256E7 /* UISegmentView.swift */,
+				C11D1CF42918323A002CD1FD /* WeeboTextField.swift */,
 			);
 			path = "Custom UI";
 			sourceTree = "<group>";
@@ -1072,6 +1083,7 @@
 				C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
+				C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
 				C10212E128EC4A730005436B /* SceneDelegate.swift in Sources */,
 				C1DD46AA28FE79E00027AD80 /* NewestViewCell.swift in Sources */,
