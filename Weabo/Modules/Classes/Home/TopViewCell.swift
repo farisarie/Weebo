@@ -32,7 +32,7 @@ extension TopViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstCell", for: indexPath) as! FirstViewCell
-        cell.imgView.image = UIImage(named: "ads")
+        cell.imgView.image = UIImage(named: "denjis")
         return cell
     }
 }
@@ -55,3 +55,4 @@ extension TopViewCell: UICollectionViewDelegateFlowLayout {
     }
     
 }
+

@@ -46,7 +46,7 @@
                                 <segments>
                                     <segment title="History"/>
                                     <segment title="Favorite"/>
-                                    <segment title="Komentas"/>
+                                    <segment title="Komentar"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentControlDidChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="A0G-2M-5tC"/>

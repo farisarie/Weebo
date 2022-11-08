@@ -7,8 +7,27 @@
 
 import UIKit
 
+// MARK: - Code Broken
+protocol MidViewCellDelegate: AnyObject {
+    func midViewCellSeeAllButtonTapped()
+}
+
 class MidViewCell: UICollectionViewCell {
+    @IBOutlet weak var seeAllButtonOutlet: UIButton!
     @IBOutlet weak var midCollectionView: UICollectionView!
+    weak var delegate: MidViewCellDelegate?
+    
+    let screenWidth = UIScreen.main.bounds.width
+    let lowestScreenWidth: CGFloat = 375.0
+    
+    let categoryHome: [Category] = [
+        Category(categoryImage: "action", name: "Action"),
+        Category(categoryImage: "comedy", name: "Comedy"),
+        Category(categoryImage: "drama", name: "Drama"),
+        Category(categoryImage: "fantasy", name: "Fantasi"),
+        Category(categoryImage: "romantic", name: "Romantic"),
+    ]
+    
     
     
     override func awakeFromNib() {
@@ -17,6 +36,11 @@ class MidViewCell: UICollectionViewCell {
         self.midCollectionView.dataSource = self
         self.midCollectionView.delegate = self
     }
+    
+    @IBAction func seeAllButtonTapped(_ sender: Any) {
+        delegate?.midViewCellSeeAllButtonTapped()
+    }
+    
 }
 
 extension MidViewCell: UICollectionViewDataSource {
@@ -25,13 +49,14 @@ extension MidViewCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return categoryHome.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondCell", for: indexPath) as! SecondViewCell
-        cell.imageView.image = UIImage(named: "empty")
-        cell.descText.text = "Lorem"
+        let cellCategory = categoryHome[indexPath.item]
+        cell.imageView.image = UIImage(named: cellCategory.categoryImage)
+        cell.descText.text = cellCategory.name
         return cell
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -23,10 +24,11 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         let notifButton = UIBarButtonItem(image: UIImage(named: "bell")?.withRenderingMode(.alwaysOriginal), style: UIBarButtonItem.Style.done, target: self, action: #selector(self.notificationButtonTapped(_:)))
         self.navigationItem.rightBarButtonItem  = notifButton
+        
     }
     
     @objc func notificationButtonTapped(_ sender: Any) {
-        print("Notification button is tapped")
+        presentCategoryPage()
     }
 }
 
@@ -64,18 +66,17 @@ extension HomeViewController: UICollectionViewDataSource {
         case 0:
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainCell", for: indexPath) as! TopViewCell
-        
         return cell
             
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subCell", for: indexPath) as!
             MidViewCell
-            
+            cell.seeAllButtonOutlet.addTarget(self, action: #selector(self.notificationButtonTapped(_:)), for: .touchUpInside)
             return cell
             
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "adsCell", for: indexPath) as! AdsViewCell
-            
+            cell.comicThumbnail.image = UIImage(named: "chainsawman")
             return cell
             
         case 3:
@@ -94,7 +95,7 @@ extension HomeViewController: UICollectionViewDataSource {
             cell.imageView.image = UIImage(named: "chainsawman")
             cell.categoryLabel.text = "Kategori"
             cell.comicTitle.text = "Chainsawman"
-            cell.accessDateLabel.text = "Diakses pada 9 September 2022"
+            cell.accessDateLabel.text = "Shigeo Kageyama atau lebih akrab disebut adalah seorang anak kelas 2 SMP yang mendam-bakan kehidupan yang normal namun..."
             return cell
         default:
             return UICollectionViewCell()
@@ -118,14 +119,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: self.view.frame.width, height: 130)
             
         case 2:
-            return CGSize(width: self.view.frame.width, height: 72)
+            return CGSize(width: self.view.frame.width, height: 115)
             
             
         case 3:
             return CGSize(width: self.view.frame.width, height: 330)
             
         case 4:
-            return CGSize(width: self.view.frame.width, height: 78)
+            return CGSize(width: self.view.frame.width, height: 108)
         default:
             return CGSize()
             
@@ -176,6 +177,21 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         } else {
             return CGSize(width: 0, height: 0)
         }
+    }
+    
+}
+
+// MARK: - Code Broken
+extension HomeViewController: MidViewCellDelegate {
+    func midViewCellSeeAllButtonTapped() {
+        presentCategoryPage()
+    }
+    
+}
+
+extension HomeViewController: FirstViewCellDelegate {
+    func readButton() {
+        presentCategoryPage()
     }
     
 }

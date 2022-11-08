@@ -29,7 +29,7 @@ class UISegmentView: UISegmentedControl {
     func highlightSelectedSegment(){
         removeBorder()
         let lineWidth : CGFloat = self.bounds.size.width / CGFloat(self.numberOfSegments)
-        let lineHeight: CGFloat = 7.0
+        let lineHeight: CGFloat = 2.0
         let lineXPosition = CGFloat(selectedSegmentIndex * Int(lineWidth))
         let lineYPosition = self.bounds.size.height - 6.0
         let underLineFrame = CGRect(x: lineXPosition, y: lineYPosition, width: screenWidth > lowestScreenWidth ? lineWidth : lineWidth - 10, height: lineHeight)

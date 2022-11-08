@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="Weabo" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentedControl" destination="y5F-xX-6v6" id="ycb-tI-JFe"/>
+                <outlet property="tableView" destination="nwJ-wc-oX0" id="cYf-pz-b1M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nwJ-wc-oX0">
+                    <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y5F-xX-6v6" customClass="UISegmentView" customModule="Weabo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                    <segments>
+                        <segment title="Comedy"/>
+                        <segment title="Action"/>
+                        <segment title="Drama"/>
+                        <segment title="Fantasy"/>
+                        <segment title="Romance"/>
+                    </segments>
+                    <connections>
+                        <action selector="scrollViewDidChange:" destination="-1" eventType="valueChanged" id="1Yi-ep-wWx"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="nwJ-wc-oX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9n5-Sf-944"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y5F-xX-6v6" secondAttribute="trailing" id="CdZ-88-02w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nwJ-wc-oX0" secondAttribute="bottom" id="Rma-oH-tFl"/>
+                <constraint firstItem="nwJ-wc-oX0" firstAttribute="top" secondItem="y5F-xX-6v6" secondAttribute="bottom" id="VZn-Ab-V91"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nwJ-wc-oX0" secondAttribute="trailing" id="m0l-NW-rwY"/>
+                <constraint firstItem="y5F-xX-6v6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tT8-kN-Vix"/>
+                <constraint firstItem="y5F-xX-6v6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xjp-kV-DXr"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
