@@ -157,6 +157,10 @@
 		C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */; };
 		C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D1CF42918323A002CD1FD /* WeeboTextField.swift */; };
 		C12A24582918B7DE0097B048 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A24572918B7DE0097B048 /* Category.swift */; };
+		C143A2F9291A8DAC0031279D /* searchComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2F7291A8DAC0031279D /* searchComic.swift */; };
+		C143A2FA291A8DAC0031279D /* ListComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2F8291A8DAC0031279D /* ListComic.swift */; };
+		C143A2FE291A8DBE0031279D /* ComicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2FC291A8DBE0031279D /* ComicProvider.swift */; };
+		C143A2FF291A8DBE0031279D /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2FD291A8DBE0031279D /* ApiProvider.swift */; };
 		C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1640315291968DD000FF732 /* CategoryViewController.swift */; };
 		C1640318291968DD000FF732 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1640316291968DD000FF732 /* CategoryViewController.xib */; };
 		C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */; };
@@ -206,6 +210,7 @@
 		C1DD46C228FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46B928FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf */; };
 		C1DD46C328FE982A0027AD80 /* ExpletusSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */; };
 		C1DD46C428FE982A0027AD80 /* ExpletusSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */; };
+		C1E71111291AA5BA003DE7F0 /* PopularComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71110291AA5BA003DE7F0 /* PopularComic.swift */; };
 		C1E94B22291776450077E6CE /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E94B21291776450077E6CE /* Collection.storyboard */; };
 		C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E94B23291776550077E6CE /* CollectionViewController.swift */; };
 		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
@@ -369,6 +374,10 @@
 		C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Thin-Trial.otf"; sourceTree = "<group>"; };
 		C11D1CF42918323A002CD1FD /* WeeboTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeboTextField.swift; sourceTree = "<group>"; };
 		C12A24572918B7DE0097B048 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C143A2F7291A8DAC0031279D /* searchComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchComic.swift; sourceTree = "<group>"; };
+		C143A2F8291A8DAC0031279D /* ListComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListComic.swift; sourceTree = "<group>"; };
+		C143A2FC291A8DBE0031279D /* ComicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicProvider.swift; sourceTree = "<group>"; };
+		C143A2FD291A8DBE0031279D /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		C1640315291968DD000FF732 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C1640316291968DD000FF732 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -418,6 +427,7 @@
 		C1DD46B928FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Regular.ttf"; sourceTree = "<group>"; };
 		C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Bold.ttf"; sourceTree = "<group>"; };
+		C1E71110291AA5BA003DE7F0 /* PopularComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularComic.swift; sourceTree = "<group>"; };
 		C1E94B21291776450077E6CE /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
 		C1E94B23291776550077E6CE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
@@ -446,7 +456,6 @@
 				CF17B503FC55219C9682B4A6 /* Pods-Weabo.debug.xcconfig */,
 				52014B97B3F3DFCE2742DB92 /* Pods-Weabo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -492,7 +501,7 @@
 		C10212F228EC4B250005436B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C143A2F6291A772B0031279D /* Network */,
+				C143A2FB291A8DBE0031279D /* Providers */,
 				C12A24562918B7CB0097B048 /* Model */,
 				C16E687628ED219B00B1F6C3 /* Extensions */,
 				C18AE2B12918B56E009C3499 /* Classes */,
@@ -720,16 +729,21 @@
 		C12A24562918B7CB0097B048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C143A2F8291A8DAC0031279D /* ListComic.swift */,
+				C1E71110291AA5BA003DE7F0 /* PopularComic.swift */,
+				C143A2F7291A8DAC0031279D /* searchComic.swift */,
 				C12A24572918B7DE0097B048 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C143A2F6291A772B0031279D /* Network */ = {
+		C143A2FB291A8DBE0031279D /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				C143A2FC291A8DBE0031279D /* ComicProvider.swift */,
+				C143A2FD291A8DBE0031279D /* ApiProvider.swift */,
 			);
-			path = Network;
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		C164031029194CA7000FF732 /* Category */ = {
@@ -1187,20 +1201,25 @@
 				C1FFA0CA28ECB55D00044587 /* MidViewCell.swift in Sources */,
 				C10212F628EC4B720005436B /* TabBarController.swift in Sources */,
 				C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */,
+				C1E71111291AA5BA003DE7F0 /* PopularComic.swift in Sources */,
 				C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */,
 				C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */,
 				C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */,
 				C12A24582918B7DE0097B048 /* Category.swift in Sources */,
+				C143A2FA291A8DAC0031279D /* ListComic.swift in Sources */,
 				C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */,
 				C16E687D28ED465200B1F6C3 /* ThirdViewCell.swift in Sources */,
 				C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */,
+				C143A2FF291A8DBE0031279D /* ApiProvider.swift in Sources */,
 				C1C6A61129179465006256E7 /* UISegmentView.swift in Sources */,
+				C143A2FE291A8DBE0031279D /* ComicProvider.swift in Sources */,
 				C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */,
 				C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
 				C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
+				C143A2F9291A8DAC0031279D /* searchComic.swift in Sources */,
 				C10212E128EC4A730005436B /* SceneDelegate.swift in Sources */,
 				C19D982F291A11DF00F3D4B2 /* SecondaryButton.swift in Sources */,
 				C1DD46AA28FE79E00027AD80 /* NewestViewCell.swift in Sources */,

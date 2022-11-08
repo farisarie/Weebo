@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BottomViewCell: UICollectionViewCell {
+    var comic: [Datum]?
+    var popular: [Comic]?
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bottomCollectionView: UICollectionView!
@@ -16,6 +19,33 @@ class BottomViewCell: UICollectionViewCell {
         self.bottomCollectionView.register(nibCell, forCellWithReuseIdentifier: "ThirdCell")
         self.bottomCollectionView.dataSource = self
         self.bottomCollectionView.delegate = self
+        loadAllComic()
+    }
+    
+    func popularComic(){
+        ComicProvider.shared.popularComic { [weak self] (result) in
+            switch result {
+            case .success(let data):
+                self?.popular = data
+                self?.bottomCollectionView.reloadData()
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func loadAllComic(){
+        ComicProvider.shared.listComic { [weak self] (result) in
+            switch result {
+            case .success(let data):
+                self?.comic = data
+                self?.bottomCollectionView.reloadData()
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
 }
@@ -26,15 +56,40 @@ extension BottomViewCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        switch section{
+        case 0:
+            return comic?.count ?? 2
+        case 1:
+            return popular?.count ?? 2
+        default:
+           return 5
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdCell", for: indexPath) as! ThirdViewCell
-        cell.comicImage.image = UIImage(named: "denji")
-        cell.titleLabel.text = "Lorem ipsum dolor sit"
-        cell.categoryLabel.text = "Category"
-        return cell
+        switch indexPath.section {
+        case 0:
+          
+            let comicApi = comic?[indexPath.item]
+            cell.titleLabel.text = comicApi?.title
+            cell.categoryLabel.text = "Category"
+            cell.comicImage.kf.setImage(with: URL(string: comicApi?.thumbnailURL ?? ""))
+            return cell
+            
+        case 1:
+            let comicsApi = popular?[indexPath.item]
+            cell.titleLabel.text = comicsApi?.title
+            cell.categoryLabel.text = comicsApi?.typeComic
+            cell.comicImage.kf.setImage(with: URL(string: comicsApi?.thumbnailURL ?? ""))
+            return cell
+            
+        default:
+            return UICollectionViewCell()
+        }
+       return  UICollectionViewCell()
+        
     }
 }
 

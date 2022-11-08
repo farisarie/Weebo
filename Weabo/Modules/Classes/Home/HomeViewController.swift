@@ -22,10 +22,13 @@ class HomeViewController: UIViewController {
 
         collectionView.dataSource = self
         collectionView.delegate = self
+  
         let notifButton = UIBarButtonItem(image: UIImage(named: "bell")?.withRenderingMode(.alwaysOriginal), style: UIBarButtonItem.Style.done, target: self, action: #selector(self.notificationButtonTapped(_:)))
         self.navigationItem.rightBarButtonItem  = notifButton
         
     }
+    
+    
     
     @objc func notificationButtonTapped(_ sender: Any) {
         presentCategoryPage()
@@ -82,6 +85,7 @@ extension HomeViewController: UICollectionViewDataSource {
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bottomCell", for: indexPath) as!
                 BottomViewCell
+            
             if indexPath.row == 0 {
                 cell.titleLabel.text = "Sedang Trending"
             } else {
