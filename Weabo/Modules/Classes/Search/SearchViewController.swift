@@ -12,6 +12,19 @@ class SearchViewController: UIViewController {
     let screenWidth = UIScreen.main.bounds.width
     let lowestScreenWidth: CGFloat = 375.0
     
+    let category: [Category] = [
+        Category(categoryImage: "romantics", name: "Romantic"),
+        Category(categoryImage: "fantasies", name: "Fantasy"),
+        Category(categoryImage: "dramas", name: "Drama"),
+        Category(categoryImage: "comedies", name: "Comedy"),
+        Category(categoryImage: "actions", name: "Action"),
+    ]
+    
+    let rank: [Category] = [
+        Category(categoryImage: "rank", name: "Peringkat Teratas"),
+        Category(categoryImage: "blank", name: "Sedang Trending")
+    ]
+    
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +53,9 @@ extension SearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 2
+            return rank.count
         case 1:
-            return 3
+            return category.count
             
         default:
             return 0
@@ -53,12 +66,16 @@ extension SearchViewController: UICollectionViewDataSource {
         switch indexPath.section {
         case 0:
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "searchCell", for: indexPath) as! SearchCollectionViewCell
-        
+            let rankCell = rank[indexPath.row]
+            cell.searchLabelText.text = rankCell.name
+            cell.searchImageView.image = UIImage(named: rankCell.categoryImage)
         return cell
             
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "searchCell", for: indexPath) as! SearchCollectionViewCell
-            cell.searchLabelText.text = "Sedang Trending"
+            let categoriCell = category[indexPath.row]
+            cell.searchLabelText.text = categoriCell.name
+            cell.searchImageView.image = UIImage(named: categoriCell.categoryImage)
             return cell
         default:
             return UICollectionViewCell()
@@ -90,7 +107,7 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
             if indexPath.section == 1 {
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? NewestHeaderReusableView {
             
-                    headerView.headerLabel.text = "Lorem Ipsum"
+                    headerView.headerLabel.text = "Kategori Komik"
                 headerView.seeAllLabel.isHidden = true
         
                 return headerView
@@ -109,7 +126,7 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if section == 1 {
-            return CGSize(width: collectionView.frame.width, height: 15)
+            return CGSize(width: collectionView.frame.width, height: 20)
         } else if section == 0{
             return CGSize(width: collectionView.frame.width, height: 50)
         } else {

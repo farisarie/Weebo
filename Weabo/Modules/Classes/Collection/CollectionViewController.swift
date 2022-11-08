@@ -28,7 +28,7 @@ class CollectionViewController: UIViewController {
     
     
     @IBAction func segmentControlDidChange(_ sender: Any) {
-        print("test")
+       
         segmentedControl.underlinePosition()
     }
     

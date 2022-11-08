@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3CF7F97DF12443234AECFEB /* Pods_Weabo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1F3BF36C0CA3F553CB1D5E /* Pods_Weabo.framework */; };
 		C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10212DE28EC4A730005436B /* AppDelegate.swift */; };
 		C10212E128EC4A730005436B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10212E028EC4A730005436B /* SceneDelegate.swift */; };
 		C10212E828EC4A750005436B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10212E728EC4A750005436B /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 		C102130628EC95A50005436B /* TopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102130528EC95A50005436B /* TopViewCell.swift */; };
 		C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C104E3EF28FFDA0C007BAF9D /* SearchCollectionViewCell.swift */; };
 		C104E3F228FFDA0C007BAF9D /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */; };
+		C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C106FC37291A68C000671BA7 /* CategoryTableViewCell.swift */; };
+		C106FC3A291A68C100671BA7 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C106FC38291A68C100671BA7 /* CategoryTableViewCell.xib */; };
 		C11D1BF12918254E002CD1FD /* whitneylight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BE82918254E002CD1FD /* whitneylight.otf */; };
 		C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */; };
 		C11D1BF32918254E002CD1FD /* whitneybookitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */; };
@@ -153,6 +156,9 @@
 		C11D1CF029182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */; };
 		C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */; };
 		C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D1CF42918323A002CD1FD /* WeeboTextField.swift */; };
+		C12A24582918B7DE0097B048 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12A24572918B7DE0097B048 /* Category.swift */; };
+		C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1640315291968DD000FF732 /* CategoryViewController.swift */; };
+		C1640318291968DD000FF732 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1640316291968DD000FF732 /* CategoryViewController.xib */; };
 		C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */; };
 		C16E687828ED34CD00B1F6C3 /* AdsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687728ED34CD00B1F6C3 /* AdsViewCell.swift */; };
 		C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687928ED463E00B1F6C3 /* BottomViewCell.swift */; };
@@ -162,6 +168,7 @@
 		C1723CA42914C658000882E5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1723CA22914C658000882E5 /* LoginViewController.xib */; };
 		C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19541542915804B00295FFF /* SearchBarReusableView.swift */; };
 		C19541572915804B00295FFF /* SearchBarReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19541552915804B00295FFF /* SearchBarReusableView.xib */; };
+		C19D982F291A11DF00F3D4B2 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */; };
 		C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC24392912A8C600B991C9 /* ProfileViewController.swift */; };
 		C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AC243D2912A9A800B991C9 /* Profile.storyboard */; };
 		C1C6A61129179465006256E7 /* UISegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6A61029179465006256E7 /* UISegmentView.swift */; };
@@ -209,6 +216,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52014B97B3F3DFCE2742DB92 /* Pods-Weabo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weabo.release.xcconfig"; path = "Target Support Files/Pods-Weabo/Pods-Weabo.release.xcconfig"; sourceTree = "<group>"; };
+		8F1F3BF36C0CA3F553CB1D5E /* Pods_Weabo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weabo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10212DB28EC4A730005436B /* Weabo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weabo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10212DE28EC4A730005436B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C10212E028EC4A730005436B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +235,8 @@
 		C102130528EC95A50005436B /* TopViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCell.swift; sourceTree = "<group>"; };
 		C104E3EF28FFDA0C007BAF9D /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		C106FC37291A68C000671BA7 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		C106FC38291A68C100671BA7 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		C11D1BE82918254E002CD1FD /* whitneylight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneylight.otf; sourceTree = "<group>"; };
 		C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhitneySemiboldItalic.otf; sourceTree = "<group>"; };
 		C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneybookitalic.otf; sourceTree = "<group>"; };
@@ -357,6 +368,9 @@
 		C11D1C7729182555002CD1FD /* ABCGintoNord-BlackItalic-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-BlackItalic-Trial.otf"; sourceTree = "<group>"; };
 		C11D1C7829182555002CD1FD /* ABCGintoNord-Thin-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ABCGintoNord-Thin-Trial.otf"; sourceTree = "<group>"; };
 		C11D1CF42918323A002CD1FD /* WeeboTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeboTextField.swift; sourceTree = "<group>"; };
+		C12A24572918B7DE0097B048 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C1640315291968DD000FF732 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		C1640316291968DD000FF732 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C16E687728ED34CD00B1F6C3 /* AdsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsViewCell.swift; sourceTree = "<group>"; };
 		C16E687928ED463E00B1F6C3 /* BottomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewCell.swift; sourceTree = "<group>"; };
@@ -366,6 +380,7 @@
 		C1723CA22914C658000882E5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C19541542915804B00295FFF /* SearchBarReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarReusableView.swift; sourceTree = "<group>"; };
 		C19541552915804B00295FFF /* SearchBarReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarReusableView.xib; sourceTree = "<group>"; };
+		C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		C1AC24392912A8C600B991C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C1AC243D2912A9A800B991C9 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C1C6A61029179465006256E7 /* UISegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentView.swift; sourceTree = "<group>"; };
@@ -410,6 +425,7 @@
 		C1EA93A429150E6500A2655F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C1EA93A529150E6500A2655F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		C1FFA0C928ECB55D00044587 /* MidViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidViewCell.swift; sourceTree = "<group>"; };
+		CF17B503FC55219C9682B4A6 /* Pods-Weabo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weabo.debug.xcconfig"; path = "Target Support Files/Pods-Weabo/Pods-Weabo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,17 +433,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CF7F97DF12443234AECFEB /* Pods_Weabo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81EDD2018E66BF61F52A2215 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF17B503FC55219C9682B4A6 /* Pods-Weabo.debug.xcconfig */,
+				52014B97B3F3DFCE2742DB92 /* Pods-Weabo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A163D00DD6278D8BAEC3400B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F1F3BF36C0CA3F553CB1D5E /* Pods_Weabo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C10212D228EC4A730005436B = {
 			isa = PBXGroup;
 			children = (
 				C10212DD28EC4A730005436B /* Weabo */,
 				C10212DC28EC4A730005436B /* Products */,
+				81EDD2018E66BF61F52A2215 /* Pods */,
+				A163D00DD6278D8BAEC3400B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -455,6 +492,8 @@
 		C10212F228EC4B250005436B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C143A2F6291A772B0031279D /* Network */,
+				C12A24562918B7CB0097B048 /* Model */,
 				C16E687628ED219B00B1F6C3 /* Extensions */,
 				C18AE2B12918B56E009C3499 /* Classes */,
 			);
@@ -678,6 +717,32 @@
 			path = "ABC Ginto Nord";
 			sourceTree = "<group>";
 		};
+		C12A24562918B7CB0097B048 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C12A24572918B7DE0097B048 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C143A2F6291A772B0031279D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C164031029194CA7000FF732 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C1640315291968DD000FF732 /* CategoryViewController.swift */,
+				C106FC37291A68C000671BA7 /* CategoryTableViewCell.swift */,
+				C106FC38291A68C100671BA7 /* CategoryTableViewCell.xib */,
+				C1640316291968DD000FF732 /* CategoryViewController.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		C16E687628ED219B00B1F6C3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,6 +755,7 @@
 		C18AE2B12918B56E009C3499 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C164031029194CA7000FF732 /* Category */,
 				C1E94B20291776300077E6CE /* Collection */,
 				C1AC24342912947E00B991C9 /* Login */,
 				C1EA93A329150E5900A2655F /* Register */,
@@ -707,6 +773,7 @@
 			children = (
 				C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */,
 				C1C6A61029179465006256E7 /* UISegmentView.swift */,
+				C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */,
 				C11D1CF42918323A002CD1FD /* WeeboTextField.swift */,
 			);
 			path = "Custom UI";
@@ -829,9 +896,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C10212EF28EC4A750005436B /* Build configuration list for PBXNativeTarget "Weabo" */;
 			buildPhases = (
+				9458DAC83C331A1C7E6E1B16 /* [CP] Check Pods Manifest.lock */,
 				C10212D728EC4A730005436B /* Sources */,
 				C10212D828EC4A730005436B /* Frameworks */,
 				C10212D928EC4A730005436B /* Resources */,
+				9F1B0D939D64E126EEEE9555 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -920,6 +989,7 @@
 				C11D1CE129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf in Resources */,
 				C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */,
 				C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */,
+				C1640318291968DD000FF732 /* CategoryViewController.xib in Resources */,
 				C11D1CB829182555002CD1FD /* ABCGintoNord-Light-Trial.woff in Resources */,
 				C11D1CD929182555002CD1FD /* ABCGintoNord-Bold-Trial.woff in Resources */,
 				C1DD46C228FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf in Resources */,
@@ -1020,6 +1090,7 @@
 				C11D1BF62918254E002CD1FD /* whitneybook.otf in Resources */,
 				C11D1CB529182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.woff in Resources */,
 				C11D1CCA29182555002CD1FD /* ABCGintoNord-UltraIta-Trial.woff2 in Resources */,
+				C106FC3A291A68C100671BA7 /* CategoryTableViewCell.xib in Resources */,
 				C11D1C8129182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff in Resources */,
 				C1CBEFBF28FEF3840065701C /* Inter-Light.otf in Resources */,
 				C1CBEFC128FEF3840065701C /* Inter-ExtraLightItalic.otf in Resources */,
@@ -1060,6 +1131,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9458DAC83C331A1C7E6E1B16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Weabo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1B0D939D64E126EEEE9555 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weabo/Pods-Weabo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Weabo/Pods-Weabo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Weabo/Pods-Weabo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C10212D728EC4A730005436B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1075,6 +1188,9 @@
 				C10212F628EC4B720005436B /* TabBarController.swift in Sources */,
 				C1AC243B2912A8C600B991C9 /* ProfileViewController.swift in Sources */,
 				C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */,
+				C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */,
+				C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */,
+				C12A24582918B7DE0097B048 /* Category.swift in Sources */,
 				C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */,
 				C16E687D28ED465200B1F6C3 /* ThirdViewCell.swift in Sources */,
 				C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */,
@@ -1086,6 +1202,7 @@
 				C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
 				C10212E128EC4A730005436B /* SceneDelegate.swift in Sources */,
+				C19D982F291A11DF00F3D4B2 /* SecondaryButton.swift in Sources */,
 				C1DD46AA28FE79E00027AD80 /* NewestViewCell.swift in Sources */,
 				C10212FA28EC4C990005436B /* HomeViewController.swift in Sources */,
 				C16E687828ED34CD00B1F6C3 /* AdsViewCell.swift in Sources */,
@@ -1222,6 +1339,7 @@
 		};
 		C10212F028EC4A750005436B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF17B503FC55219C9682B4A6 /* Pods-Weabo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1252,6 +1370,7 @@
 		};
 		C10212F128EC4A750005436B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52014B97B3F3DFCE2742DB92 /* Pods-Weabo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     func customTitle(){
         let label = UILabel(frame: .zero)
         label.text = "Masuk Akun"
-        label.font = UIFont(name: "ABCGintoNormal-Bold-Trial", size: 20) //still hasnt changed
+        label.font = UIFont(name: "ABCGintoNormal-Bold-Trial", size: 20)
         label.textColor = UIColor(hex: "292B2F")
         navigationItem.titleView = label
     }
@@ -77,16 +77,15 @@ class LoginViewController: UIViewController {
 //            present(error, animated: true)
 //
 //            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
-//                self.nameTextField.layer.borderColor = UIColor.clear.cgColor
+//                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
 //                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
 //            }
 //
 //        }
-      navigatePage()
+//    }
+        navigatePage()
     }
-    
 }
-
 
 extension String {
     var isValidEmail: Bool {

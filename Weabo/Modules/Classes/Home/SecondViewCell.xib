@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Inter-Regular.otf">
-            <string>Inter-Regular</string>
+        <array key="whitneymedium.otf">
+            <string>Whitney-Medium</string>
         </array>
     </customFonts>
     <objects>
@@ -28,11 +28,14 @@
                             <constraint firstAttribute="height" constant="56" id="W7Q-ya-WUN"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3J-zD-bnv">
-                        <rect key="frame" x="5" y="66" width="45" height="17"/>
-                        <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3J-zD-bnv">
+                        <rect key="frame" x="5" y="66" width="45" height="13"/>
+                        <fontDescription key="fontDescription" name="Whitney-Medium" family="Whitney" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="Whitney-Medium" family="Whitney" pointSize="11"/>
+                        </variation>
                     </label>
                 </subviews>
             </view>

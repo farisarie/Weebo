@@ -8,8 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Inter-Regular.otf">
-            <string>Inter-Regular</string>
+        <array key="ABCGintoNormal-Bold-Trial.otf">
+            <string>ABCGintoNormalTrial-Bold</string>
+        </array>
+        <array key="whitneysemibold.otf">
+            <string>Whitney-Semibold</string>
         </array>
     </customFonts>
     <objects>
@@ -20,16 +23,17 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5q-eU-4QM">
-                    <rect key="frame" x="16" y="14" width="46.5" height="22"/>
-                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="18"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="16" y="13" width="47.5" height="24"/>
+                    <fontDescription key="fontDescription" name="ABCGintoNormalTrial-Bold" family="ABC Ginto Normal Trial" pointSize="18"/>
+                    <color key="textColor" red="0.16078431372549018" green="0.16862745098039217" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GS6-xk-33d">
-                    <rect key="frame" x="220" y="10" width="85" height="30"/>
+                    <rect key="frame" x="232" y="10.5" width="73" height="29"/>
+                    <fontDescription key="fontDescription" name="Whitney-Semibold" family="Whitney" pointSize="14"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Lihat Semua">
-                        <color key="titleColor" red="0.37254901959999998" green="0.20000000000000001" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="seeAllButtonTapped:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="SaL-ux-gaz"/>
