@@ -213,6 +213,15 @@ extension SearchViewController: UISearchBarDelegate {
         return true
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        if let comics = comic?[indexPath.row] {
+            presentDetailViewController(comics)
+            
+        }
+    }
+    
+    
 }
 
 
