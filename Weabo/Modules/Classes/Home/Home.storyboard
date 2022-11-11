@@ -382,35 +382,6 @@
             </objects>
             <point key="canvasLocation" x="147.69230769230768" y="92.417061611374407"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="AaE-pc-MEM">
-            <objects>
-                <viewController id="m8h-fh-ycY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dkP-F7-bdW">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MW-go-YUj">
-                                <rect key="frame" x="97" y="270" width="73" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="chevron.down" catalog="system">
-                                    <color key="titleColor" systemColor="systemPinkColor"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system" title="Button">
-                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9I7-E4-fnO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s81-48-g69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1070" y="164"/>
-        </scene>
         <!--Home-->
         <scene sceneID="uES-s5-ke3">
             <objects>
@@ -433,18 +404,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="continueread" width="360" height="120"/>
         <image name="home" width="24" height="24"/>
         <image name="home-1" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

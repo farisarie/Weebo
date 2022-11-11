@@ -161,6 +161,8 @@
 		C143A2FA291A8DAC0031279D /* ListComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2F8291A8DAC0031279D /* ListComic.swift */; };
 		C143A2FE291A8DBE0031279D /* ComicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2FC291A8DBE0031279D /* ComicProvider.swift */; };
 		C143A2FF291A8DBE0031279D /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2FD291A8DBE0031279D /* ApiProvider.swift */; };
+		C144F51D291D202D0003E2AF /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144F51C291D202D0003E2AF /* UISearchBar.swift */; };
+		C146C03D291CDE7600D7A7E6 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146C03C291CDE7600D7A7E6 /* test.swift */; };
 		C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1640315291968DD000FF732 /* CategoryViewController.swift */; };
 		C1640318291968DD000FF732 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1640316291968DD000FF732 /* CategoryViewController.xib */; };
 		C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */; };
@@ -211,6 +213,9 @@
 		C1DD46C328FE982A0027AD80 /* ExpletusSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */; };
 		C1DD46C428FE982A0027AD80 /* ExpletusSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */; };
 		C1E71111291AA5BA003DE7F0 /* PopularComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71110291AA5BA003DE7F0 /* PopularComic.swift */; };
+		C1E71114291ABE7E003DE7F0 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71112291ABE7E003DE7F0 /* ListCollectionViewCell.swift */; };
+		C1E71115291ABE7E003DE7F0 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */; };
+		C1E71117291AC194003DE7F0 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71116291AC194003DE7F0 /* ListModel.swift */; };
 		C1E94B22291776450077E6CE /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E94B21291776450077E6CE /* Collection.storyboard */; };
 		C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E94B23291776550077E6CE /* CollectionViewController.swift */; };
 		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
@@ -378,6 +383,8 @@
 		C143A2F8291A8DAC0031279D /* ListComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListComic.swift; sourceTree = "<group>"; };
 		C143A2FC291A8DBE0031279D /* ComicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicProvider.swift; sourceTree = "<group>"; };
 		C143A2FD291A8DBE0031279D /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		C144F51C291D202D0003E2AF /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
+		C146C03C291CDE7600D7A7E6 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		C1640315291968DD000FF732 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C1640316291968DD000FF732 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -428,6 +435,9 @@
 		C1DD46BA28FE982A0027AD80 /* ExpletusSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Regular.ttf"; sourceTree = "<group>"; };
 		C1DD46BB28FE982A0027AD80 /* ExpletusSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ExpletusSans-Bold.ttf"; sourceTree = "<group>"; };
 		C1E71110291AA5BA003DE7F0 /* PopularComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularComic.swift; sourceTree = "<group>"; };
+		C1E71112291ABE7E003DE7F0 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
+		C1E71116291AC194003DE7F0 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		C1E94B21291776450077E6CE /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
 		C1E94B23291776550077E6CE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
@@ -733,6 +743,7 @@
 				C1E71110291AA5BA003DE7F0 /* PopularComic.swift */,
 				C143A2F7291A8DAC0031279D /* searchComic.swift */,
 				C12A24572918B7DE0097B048 /* Category.swift */,
+				C1E71116291AC194003DE7F0 /* ListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -787,6 +798,7 @@
 			children = (
 				C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */,
 				C1C6A61029179465006256E7 /* UISegmentView.swift */,
+				C144F51C291D202D0003E2AF /* UISearchBar.swift */,
 				C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */,
 				C11D1CF42918323A002CD1FD /* WeeboTextField.swift */,
 			);
@@ -843,6 +855,9 @@
 			children = (
 				C1CBEFCF28FEF9390065701C /* Search.storyboard */,
 				C1CBEFD128FEF9470065701C /* SearchViewController.swift */,
+				C146C03C291CDE7600D7A7E6 /* test.swift */,
+				C1E71112291ABE7E003DE7F0 /* ListCollectionViewCell.swift */,
+				C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */,
 				C104E3EF28FFDA0C007BAF9D /* SearchCollectionViewCell.swift */,
 				C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */,
 			);
@@ -1047,6 +1062,7 @@
 				C1AC243E2912A9A800B991C9 /* Profile.storyboard in Resources */,
 				C11D1CEF29182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.woff2 in Resources */,
 				C11D1C8229182555002CD1FD /* ABCGintoNormal-ThinItalic-Trial.woff in Resources */,
+				C1E71115291ABE7E003DE7F0 /* ListCollectionViewCell.xib in Resources */,
 				C11D1CC629182555002CD1FD /* ABCGintoNord-LightIta-Trial.woff2 in Resources */,
 				C11D1CD629182555002CD1FD /* ABCGintoNord-BoldIta-Trial.woff2 in Resources */,
 				C11D1C8D29182555002CD1FD /* ABCGintoNormal-Medium-Trial.woff2 in Resources */,
@@ -1196,6 +1212,7 @@
 				C1CBEFD228FEF9470065701C /* SearchViewController.swift in Sources */,
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
 				C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */,
+				C1E71117291AC194003DE7F0 /* ListModel.swift in Sources */,
 				C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */,
 				C102130628EC95A50005436B /* TopViewCell.swift in Sources */,
 				C1FFA0CA28ECB55D00044587 /* MidViewCell.swift in Sources */,
@@ -1204,6 +1221,8 @@
 				C1E71111291AA5BA003DE7F0 /* PopularComic.swift in Sources */,
 				C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */,
 				C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */,
+				C146C03D291CDE7600D7A7E6 /* test.swift in Sources */,
+				C1E71114291ABE7E003DE7F0 /* ListCollectionViewCell.swift in Sources */,
 				C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */,
 				C12A24582918B7DE0097B048 /* Category.swift in Sources */,
 				C143A2FA291A8DAC0031279D /* ListComic.swift in Sources */,
@@ -1218,6 +1237,7 @@
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
 				C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */,
+				C144F51D291D202D0003E2AF /* UISearchBar.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
 				C143A2F9291A8DAC0031279D /* searchComic.swift in Sources */,
 				C10212E128EC4A730005436B /* SceneDelegate.swift in Sources */,

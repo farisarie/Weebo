@@ -34,8 +34,8 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gHF-wf-kcL" secondAttribute="trailing" id="Dur-cv-gIj"/>
                             <constraint firstItem="gHF-wf-kcL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eM3-4Z-kOx"/>
-                            <constraint firstItem="gHF-wf-kcL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kWe-wY-y39"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gHF-wf-kcL" secondAttribute="bottom" id="mE5-cj-pVZ"/>
+                            <constraint firstItem="gHF-wf-kcL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ptd-be-lz3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PPC-IJ-agD"/>
