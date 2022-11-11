@@ -172,6 +172,14 @@
 		C16E687E28ED465200B1F6C3 /* ThirdViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16E687C28ED465200B1F6C3 /* ThirdViewCell.xib */; };
 		C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1723CA12914C658000882E5 /* LoginViewController.swift */; };
 		C1723CA42914C658000882E5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1723CA22914C658000882E5 /* LoginViewController.xib */; };
+		C1916087291EAC3000B17170 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1916085291EAC3000B17170 /* DetailViewController.swift */; };
+		C1916088291EAC3000B17170 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1916086291EAC3000B17170 /* DetailViewController.xib */; };
+		C191608B291EAD5100B17170 /* ComicDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1916089291EAD5100B17170 /* ComicDetailViewCell.swift */; };
+		C191608C291EAD5100B17170 /* ComicDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C191608A291EAD5100B17170 /* ComicDetailViewCell.xib */; };
+		C191608F291EB32F00B17170 /* readComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191608D291EB32F00B17170 /* readComic.swift */; };
+		C1916090291EB32F00B17170 /* detailComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191608E291EB32F00B17170 /* detailComic.swift */; };
+		C1916093291EBC5E00B17170 /* EpisodeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1916091291EBC5E00B17170 /* EpisodeViewCell.swift */; };
+		C1916094291EBC5E00B17170 /* EpisodeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1916092291EBC5E00B17170 /* EpisodeViewCell.xib */; };
 		C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19541542915804B00295FFF /* SearchBarReusableView.swift */; };
 		C19541572915804B00295FFF /* SearchBarReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19541552915804B00295FFF /* SearchBarReusableView.xib */; };
 		C19D982F291A11DF00F3D4B2 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */; };
@@ -394,6 +402,14 @@
 		C16E687C28ED465200B1F6C3 /* ThirdViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewCell.xib; sourceTree = "<group>"; };
 		C1723CA12914C658000882E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1723CA22914C658000882E5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C1916085291EAC3000B17170 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C1916086291EAC3000B17170 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		C1916089291EAD5100B17170 /* ComicDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewCell.swift; sourceTree = "<group>"; };
+		C191608A291EAD5100B17170 /* ComicDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicDetailViewCell.xib; sourceTree = "<group>"; };
+		C191608D291EB32F00B17170 /* readComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = readComic.swift; sourceTree = "<group>"; };
+		C191608E291EB32F00B17170 /* detailComic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailComic.swift; sourceTree = "<group>"; };
+		C1916091291EBC5E00B17170 /* EpisodeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewCell.swift; sourceTree = "<group>"; };
+		C1916092291EBC5E00B17170 /* EpisodeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewCell.xib; sourceTree = "<group>"; };
 		C19541542915804B00295FFF /* SearchBarReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarReusableView.swift; sourceTree = "<group>"; };
 		C19541552915804B00295FFF /* SearchBarReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarReusableView.xib; sourceTree = "<group>"; };
 		C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
@@ -742,6 +758,8 @@
 				C143A2F8291A8DAC0031279D /* ListComic.swift */,
 				C1E71110291AA5BA003DE7F0 /* PopularComic.swift */,
 				C143A2F7291A8DAC0031279D /* searchComic.swift */,
+				C191608E291EB32F00B17170 /* detailComic.swift */,
+				C191608D291EB32F00B17170 /* readComic.swift */,
 				C12A24572918B7DE0097B048 /* Category.swift */,
 				C1E71116291AC194003DE7F0 /* ListModel.swift */,
 			);
@@ -780,6 +798,7 @@
 		C18AE2B12918B56E009C3499 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C1916084291EABD500B17170 /* Read */,
 				C164031029194CA7000FF732 /* Category */,
 				C1E94B20291776300077E6CE /* Collection */,
 				C1AC24342912947E00B991C9 /* Login */,
@@ -803,6 +822,19 @@
 				C11D1CF42918323A002CD1FD /* WeeboTextField.swift */,
 			);
 			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		C1916084291EABD500B17170 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				C1916085291EAC3000B17170 /* DetailViewController.swift */,
+				C1916091291EBC5E00B17170 /* EpisodeViewCell.swift */,
+				C1916092291EBC5E00B17170 /* EpisodeViewCell.xib */,
+				C1916089291EAD5100B17170 /* ComicDetailViewCell.swift */,
+				C191608A291EAD5100B17170 /* ComicDetailViewCell.xib */,
+				C1916086291EAC3000B17170 /* DetailViewController.xib */,
+			);
+			path = Read;
 			sourceTree = "<group>";
 		};
 		C1AC24342912947E00B991C9 /* Login */ = {
@@ -1070,6 +1102,7 @@
 				C11D1CA829182555002CD1FD /* ABCGintoNormal-Black-Trial.woff in Resources */,
 				C11D1C9929182555002CD1FD /* ABCGintoNormal-Regular-Trial.otf in Resources */,
 				C11D1CB129182555002CD1FD /* ABCGintoPlusVariable-Trial.ttf in Resources */,
+				C1916094291EBC5E00B17170 /* EpisodeViewCell.xib in Resources */,
 				C11D1CE329182555002CD1FD /* ABCGintoNord-LightItalic-Trial.woff in Resources */,
 				C11D1C7A29182555002CD1FD /* ABCGintoNordVariable-Trial.woff in Resources */,
 				C11D1C8729182555002CD1FD /* ABCGintoNormal-Regular-Trial.woff2 in Resources */,
@@ -1123,6 +1156,7 @@
 				C106FC3A291A68C100671BA7 /* CategoryTableViewCell.xib in Resources */,
 				C11D1C8129182555002CD1FD /* ABCGintoNormal-BlackIta-Trial.woff in Resources */,
 				C1CBEFBF28FEF3840065701C /* Inter-Light.otf in Resources */,
+				C191608C291EAD5100B17170 /* ComicDetailViewCell.xib in Resources */,
 				C1CBEFC128FEF3840065701C /* Inter-ExtraLightItalic.otf in Resources */,
 				C11D1CE229182555002CD1FD /* ABCGintoNord-Medium-Trial.woff2 in Resources */,
 				C11D1C8F29182555002CD1FD /* ABCGintoNormal-MediumItalic-Trial.woff in Resources */,
@@ -1141,6 +1175,7 @@
 				C1CBEFC228FEF3840065701C /* Inter-Medium.otf in Resources */,
 				C11D1BF92918254E002CD1FD /* whitneylightitalic.otf in Resources */,
 				C11D1CA929182555002CD1FD /* ABCGintoNormal-LightIta-Trial.woff2 in Resources */,
+				C1916088291EAC3000B17170 /* DetailViewController.xib in Resources */,
 				C104E3F228FFDA0C007BAF9D /* SearchCollectionViewCell.xib in Resources */,
 				C11D1CE029182555002CD1FD /* ABCGintoNord-ThinItalic-Trial.otf in Resources */,
 				C11D1CCB29182555002CD1FD /* ABCGintoNord-Ultra-Trial.otf in Resources */,
@@ -1211,6 +1246,7 @@
 				C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */,
 				C1CBEFD228FEF9470065701C /* SearchViewController.swift in Sources */,
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
+				C1916090291EB32F00B17170 /* detailComic.swift in Sources */,
 				C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */,
 				C1E71117291AC194003DE7F0 /* ListModel.swift in Sources */,
 				C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */,
@@ -1225,7 +1261,9 @@
 				C1E71114291ABE7E003DE7F0 /* ListCollectionViewCell.swift in Sources */,
 				C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */,
 				C12A24582918B7DE0097B048 /* Category.swift in Sources */,
+				C191608F291EB32F00B17170 /* readComic.swift in Sources */,
 				C143A2FA291A8DAC0031279D /* ListComic.swift in Sources */,
+				C191608B291EAD5100B17170 /* ComicDetailViewCell.swift in Sources */,
 				C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */,
 				C16E687D28ED465200B1F6C3 /* ThirdViewCell.swift in Sources */,
 				C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */,
@@ -1237,11 +1275,13 @@
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
 				C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */,
+				C1916087291EAC3000B17170 /* DetailViewController.swift in Sources */,
 				C144F51D291D202D0003E2AF /* UISearchBar.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
 				C143A2F9291A8DAC0031279D /* searchComic.swift in Sources */,
 				C10212E128EC4A730005436B /* SceneDelegate.swift in Sources */,
 				C19D982F291A11DF00F3D4B2 /* SecondaryButton.swift in Sources */,
+				C1916093291EBC5E00B17170 /* EpisodeViewCell.swift in Sources */,
 				C1DD46AA28FE79E00027AD80 /* NewestViewCell.swift in Sources */,
 				C10212FA28EC4C990005436B /* HomeViewController.swift in Sources */,
 				C16E687828ED34CD00B1F6C3 /* AdsViewCell.swift in Sources */,
