@@ -53,7 +53,7 @@ extension HomeViewController: UICollectionViewDataSource {
             return 1
             
         case 3:
-            return 2
+            return 1
             
         case 4:
             return 4
@@ -86,11 +86,8 @@ extension HomeViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bottomCell", for: indexPath) as!
                 BottomViewCell
             
-            if indexPath.row == 0 {
                 cell.titleLabel.text = "Sedang Trending"
-            } else {
-                cell.titleLabel.text = "Rekomendasi Untukmu"
-            }
+            
         return cell
             
         case 4:
