@@ -172,6 +172,10 @@
 		C16E687E28ED465200B1F6C3 /* ThirdViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16E687C28ED465200B1F6C3 /* ThirdViewCell.xib */; };
 		C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1723CA12914C658000882E5 /* LoginViewController.swift */; };
 		C1723CA42914C658000882E5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1723CA22914C658000882E5 /* LoginViewController.xib */; };
+		C17DE213291EC6BA00E429ED /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DE211291EC6BA00E429ED /* ReadViewController.swift */; };
+		C17DE214291EC6BA00E429ED /* ReadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17DE212291EC6BA00E429ED /* ReadViewController.xib */; };
+		C17DE217291EC6F300E429ED /* ReadViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17DE215291EC6F300E429ED /* ReadViewCell.xib */; };
+		C17DE218291EC6F300E429ED /* ReadViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DE216291EC6F300E429ED /* ReadViewCell.swift */; };
 		C1916087291EAC3000B17170 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1916085291EAC3000B17170 /* DetailViewController.swift */; };
 		C1916088291EAC3000B17170 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1916086291EAC3000B17170 /* DetailViewController.xib */; };
 		C191608B291EAD5100B17170 /* ComicDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1916089291EAD5100B17170 /* ComicDetailViewCell.swift */; };
@@ -402,6 +406,10 @@
 		C16E687C28ED465200B1F6C3 /* ThirdViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewCell.xib; sourceTree = "<group>"; };
 		C1723CA12914C658000882E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1723CA22914C658000882E5 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C17DE211291EC6BA00E429ED /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		C17DE212291EC6BA00E429ED /* ReadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadViewController.xib; sourceTree = "<group>"; };
+		C17DE215291EC6F300E429ED /* ReadViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadViewCell.xib; sourceTree = "<group>"; };
+		C17DE216291EC6F300E429ED /* ReadViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewCell.swift; sourceTree = "<group>"; };
 		C1916085291EAC3000B17170 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1916086291EAC3000B17170 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		C1916089291EAD5100B17170 /* ComicDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewCell.swift; sourceTree = "<group>"; };
@@ -795,10 +803,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C17DE210291EC68E00E429ED /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				C17DE211291EC6BA00E429ED /* ReadViewController.swift */,
+				C17DE216291EC6F300E429ED /* ReadViewCell.swift */,
+				C17DE215291EC6F300E429ED /* ReadViewCell.xib */,
+				C17DE212291EC6BA00E429ED /* ReadViewController.xib */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
 		C18AE2B12918B56E009C3499 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C1916084291EABD500B17170 /* Read */,
+				C17DE210291EC68E00E429ED /* Read */,
+				C1916084291EABD500B17170 /* Detail */,
 				C164031029194CA7000FF732 /* Category */,
 				C1E94B20291776300077E6CE /* Collection */,
 				C1AC24342912947E00B991C9 /* Login */,
@@ -824,7 +844,7 @@
 			path = "Custom UI";
 			sourceTree = "<group>";
 		};
-		C1916084291EABD500B17170 /* Read */ = {
+		C1916084291EABD500B17170 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				C1916085291EAC3000B17170 /* DetailViewController.swift */,
@@ -834,7 +854,7 @@
 				C191608A291EAD5100B17170 /* ComicDetailViewCell.xib */,
 				C1916086291EAC3000B17170 /* DetailViewController.xib */,
 			);
-			path = Read;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C1AC24342912947E00B991C9 /* Login */ = {
@@ -1051,6 +1071,7 @@
 				C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */,
 				C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */,
 				C1640318291968DD000FF732 /* CategoryViewController.xib in Resources */,
+				C17DE217291EC6F300E429ED /* ReadViewCell.xib in Resources */,
 				C11D1CB829182555002CD1FD /* ABCGintoNord-Light-Trial.woff in Resources */,
 				C11D1CD929182555002CD1FD /* ABCGintoNord-Bold-Trial.woff in Resources */,
 				C1DD46C228FE982A0027AD80 /* ExpletusSans-MediumItalic.ttf in Resources */,
@@ -1142,6 +1163,7 @@
 				C11D1CCC29182555002CD1FD /* ABCGintoNord-Regular-Trial.woff in Resources */,
 				C1CBEFC628FEF3840065701C /* Inter-Black.otf in Resources */,
 				C11D1BF12918254E002CD1FD /* whitneylight.otf in Resources */,
+				C17DE214291EC6BA00E429ED /* ReadViewController.xib in Resources */,
 				C11D1BF52918254E002CD1FD /* whitneymediumitalic.otf in Resources */,
 				C11D1CE629182555002CD1FD /* ABCGintoNord-Ultra-Trial.woff in Resources */,
 				C1CBEFC428FEF3840065701C /* Inter-BlackItalic.otf in Resources */,
@@ -1258,6 +1280,7 @@
 				C104E3F128FFDA0C007BAF9D /* SearchCollectionViewCell.swift in Sources */,
 				C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */,
 				C146C03D291CDE7600D7A7E6 /* test.swift in Sources */,
+				C17DE213291EC6BA00E429ED /* ReadViewController.swift in Sources */,
 				C1E71114291ABE7E003DE7F0 /* ListCollectionViewCell.swift in Sources */,
 				C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */,
 				C12A24582918B7DE0097B048 /* Category.swift in Sources */,
@@ -1270,6 +1293,7 @@
 				C143A2FF291A8DBE0031279D /* ApiProvider.swift in Sources */,
 				C1C6A61129179465006256E7 /* UISegmentView.swift in Sources */,
 				C143A2FE291A8DBE0031279D /* ComicProvider.swift in Sources */,
+				C17DE218291EC6F300E429ED /* ReadViewCell.swift in Sources */,
 				C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */,
 				C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,

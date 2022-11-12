@@ -19,6 +19,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         loadDetailComic()
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib(nibName: "ComicDetailViewCell", bundle: nil), forCellReuseIdentifier: "cell_detail")
         tableView.register(UINib(nibName: "EpisodeViewCell", bundle: nil), forCellReuseIdentifier: "episodeCell")
     }
@@ -95,12 +96,22 @@ extension DetailViewController: UITableViewDataSource {
     }
 }
 
+extension DetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let detailComics = detailComic?[indexPath.row] {
+            presentReadViewController(detailComics, comic)
+            
+        }
+    }
+}
 
 
 extension UIViewController{
     func presentDetailViewController(_ comic: Comic) {
         let viewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
         viewController.comic = comic
-        present(viewController, animated: true, completion: nil)
+        self.tabBarController?.tabBar.isHidden = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
