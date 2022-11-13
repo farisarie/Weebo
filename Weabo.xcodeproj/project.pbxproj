@@ -228,6 +228,7 @@
 		C1E71114291ABE7E003DE7F0 /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71112291ABE7E003DE7F0 /* ListCollectionViewCell.swift */; };
 		C1E71115291ABE7E003DE7F0 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */; };
 		C1E71117291AC194003DE7F0 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71116291AC194003DE7F0 /* ListModel.swift */; };
+		C1E740AC2920DB2500F7106E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E740AB2920DB2500F7106E /* GoogleService-Info.plist */; };
 		C1E94B22291776450077E6CE /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E94B21291776450077E6CE /* Collection.storyboard */; };
 		C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E94B23291776550077E6CE /* CollectionViewController.swift */; };
 		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
@@ -462,6 +463,7 @@
 		C1E71112291ABE7E003DE7F0 /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		C1E71116291AC194003DE7F0 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		C1E740AB2920DB2500F7106E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1E94B21291776450077E6CE /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
 		C1E94B23291776550077E6CE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 				C10212E028EC4A730005436B /* SceneDelegate.swift */,
 				C10212E728EC4A750005436B /* Assets.xcassets */,
 				C10212E928EC4A750005436B /* LaunchScreen.storyboard */,
+				C1E740AB2920DB2500F7106E /* GoogleService-Info.plist */,
 				C10212EC28EC4A750005436B /* Info.plist */,
 			);
 			path = Weabo;
@@ -1054,6 +1057,7 @@
 				C10212E828EC4A750005436B /* Assets.xcassets in Resources */,
 				C1DD46BF28FE982A0027AD80 /* ExpletusSans-SemiBoldItalic.ttf in Resources */,
 				C10212FC28EC4C9F0005436B /* Home.storyboard in Resources */,
+				C1E740AC2920DB2500F7106E /* GoogleService-Info.plist in Resources */,
 				C1CBEFD028FEF9390065701C /* Search.storyboard in Resources */,
 				C11D1CD129182555002CD1FD /* ABCGintoNord-HairlineItalic-Trial.otf in Resources */,
 				C11D1C9829182555002CD1FD /* ABCGintoNormal-Bold-Trial.woff in Resources */,
