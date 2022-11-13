@@ -14,7 +14,7 @@ class EpisodeViewCell: UITableViewCell {
     @IBOutlet weak var thumbnailComic: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        thumbnailComic.layer.cornerRadius = 4
+        thumbnailComic.layer.cornerRadius = 8
         thumbnailComic.layer.masksToBounds = true
     }
 
