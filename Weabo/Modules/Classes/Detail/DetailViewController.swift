@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDetailComic()
+        title = comic.title
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ComicDetailViewCell", bundle: nil), forCellReuseIdentifier: "cell_detail")
@@ -82,10 +83,12 @@ extension DetailViewController: UITableViewDataSource {
             EpisodeViewCell
             
             let episode = detailComic?[indexPath.row]
+            let chapter = episode?.chapterNum.removeCharacters(from: CharacterSet.decimalDigits.inverted)
             
             cell.thumbnailComic.kf.setImage(with: URL(string: comic.thumbnailURL))
             cell.titleLabel.text = comic.title
-            cell.chapterLabel.text = episode?.chapterNum
+            
+            cell.chapterLabel.text = "#\(chapter ?? "")"
             cell.dateLabel.text = episode?.chapterDate
             return cell
             
@@ -113,5 +116,17 @@ extension UIViewController{
         viewController.comic = comic
         self.tabBarController?.tabBar.isHidden = true
         navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension String {
+
+    func removeCharacters(from forbiddenChars: CharacterSet) -> String {
+        let passed = self.unicodeScalars.filter { !forbiddenChars.contains($0) }
+        return String(String.UnicodeScalarView(passed))
+    }
+
+    func removeCharacters(from: String) -> String {
+        return removeCharacters(from: CharacterSet(charactersIn: from))
     }
 }

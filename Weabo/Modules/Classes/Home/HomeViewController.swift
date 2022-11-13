@@ -85,8 +85,8 @@ extension HomeViewController: UICollectionViewDataSource {
         case 3:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "bottomCell", for: indexPath) as!
                 BottomViewCell
-            
-                cell.titleLabel.text = "Sedang Trending"
+            cell.delegate = self
+            cell.titleLabel.text = "Sedang Trending"
             
         return cell
             
@@ -170,6 +170,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         }
         return UICollectionReusableView()
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         if section == 4 {
             return CGSize(width: collectionView.frame.width, height: 30)
@@ -182,17 +183,11 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
-// MARK: - Code Broken
-extension HomeViewController: MidViewCellDelegate {
-    func midViewCellSeeAllButtonTapped() {
-        presentCategoryPage()
-    }
-    
-}
 
-extension HomeViewController: FirstViewCellDelegate {
-    func readButton() {
-        presentCategoryPage()
+
+extension HomeViewController: BottomViewCellDelegate {
+    func navigateToDetail(_ cell: BottomViewCell, _ popular: Comic) {
+        presentDetailViewController(popular)
     }
     
 }

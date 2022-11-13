@@ -8,9 +8,13 @@
 import UIKit
 import Kingfisher
 
+protocol BottomViewCellDelegate: AnyObject {
+    func navigateToDetail(_ cell: BottomViewCell, _ popular: Comic)
+}
+
 class BottomViewCell: UICollectionViewCell {
     var popular: [Comic]?
-    
+    weak var delegate: BottomViewCellDelegate?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bottomCollectionView: UICollectionView!
     override func awakeFromNib() {
@@ -73,5 +77,14 @@ extension BottomViewCell: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
+    }
+}
+
+extension BottomViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+       
+        if let popular = popular?[indexPath.row] {
+            delegate?.navigateToDetail(self, popular)
+        }
     }
 }
