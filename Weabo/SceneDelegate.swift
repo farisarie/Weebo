@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,8 +19,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
+        
+        if Auth.auth().currentUser == nil{
+            window?.rootViewController = UINavigationController(rootViewController: OnBoardingViewController())
+        } else {
+            let storyboard = UIStoryboard(name: "Tabbar", bundle: nil) //Akses story board
+            let viewController = storyboard.instantiateViewController(withIdentifier: "Tabbar") //akses viewcontroller
+          
+                let window = UIApplication.shared.windows.first
+                window?.rootViewController = viewController
+        }
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: OnBoardingViewController())
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

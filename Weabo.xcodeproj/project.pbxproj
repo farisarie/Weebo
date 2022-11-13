@@ -229,6 +229,8 @@
 		C1E71115291ABE7E003DE7F0 /* ListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */; };
 		C1E71117291AC194003DE7F0 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E71116291AC194003DE7F0 /* ListModel.swift */; };
 		C1E740AC2920DB2500F7106E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E740AB2920DB2500F7106E /* GoogleService-Info.plist */; };
+		C1E740AE2920DF3D00F7106E /* GoogleSignInExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E740AD2920DF3D00F7106E /* GoogleSignInExtensions.swift */; };
+		C1E740B02920E05700F7106E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E740AF2920E05700F7106E /* UIViewControllerExtension.swift */; };
 		C1E94B22291776450077E6CE /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E94B21291776450077E6CE /* Collection.storyboard */; };
 		C1E94B24291776550077E6CE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E94B23291776550077E6CE /* CollectionViewController.swift */; };
 		C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */; };
@@ -464,6 +466,8 @@
 		C1E71113291ABE7E003DE7F0 /* ListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCollectionViewCell.xib; sourceTree = "<group>"; };
 		C1E71116291AC194003DE7F0 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 		C1E740AB2920DB2500F7106E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1E740AD2920DF3D00F7106E /* GoogleSignInExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInExtensions.swift; sourceTree = "<group>"; };
+		C1E740AF2920E05700F7106E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		C1E94B21291776450077E6CE /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
 		C1E94B23291776550077E6CE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C1EA939F2914FF3600A2655F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
@@ -841,6 +845,8 @@
 				C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */,
 				C1C6A61029179465006256E7 /* UISegmentView.swift */,
 				C144F51C291D202D0003E2AF /* UISearchBar.swift */,
+				C1E740AF2920E05700F7106E /* UIViewControllerExtension.swift */,
+				C1E740AD2920DF3D00F7106E /* GoogleSignInExtensions.swift */,
 				C19D982E291A11DF00F3D4B2 /* SecondaryButton.swift */,
 				C11D1CF42918323A002CD1FD /* WeeboTextField.swift */,
 			);
@@ -1270,6 +1276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */,
+				C1E740AE2920DF3D00F7106E /* GoogleSignInExtensions.swift in Sources */,
 				C1CBEFD228FEF9470065701C /* SearchViewController.swift in Sources */,
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
 				C1916090291EB32F00B17170 /* detailComic.swift in Sources */,
@@ -1298,6 +1305,7 @@
 				C1C6A61129179465006256E7 /* UISegmentView.swift in Sources */,
 				C143A2FE291A8DBE0031279D /* ComicProvider.swift in Sources */,
 				C17DE218291EC6F300E429ED /* ReadViewCell.swift in Sources */,
+				C1E740B02920E05700F7106E /* UIViewControllerExtension.swift in Sources */,
 				C16E687A28ED463E00B1F6C3 /* BottomViewCell.swift in Sources */,
 				C19541562915804B00295FFF /* SearchBarReusableView.swift in Sources */,
 				C10212DF28EC4A730005436B /* AppDelegate.swift in Sources */,
