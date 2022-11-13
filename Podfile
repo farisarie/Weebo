@@ -9,6 +9,10 @@ target 'Weabo' do
 
   # networking
   pod 'Alamofire' , '~> 5.5'
+ 
+  # Firebase
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 
   # image
   pod 'Kingfisher'

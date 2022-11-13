@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
@@ -66,6 +68,31 @@ class LoginViewController: UIViewController {
         navigateToHome()
     }
     
+    func showTextInputPrompt(withMessage message: String,
+                               completionBlock: @escaping ((Bool, String?) -> Void)) {
+        let prompt = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+          completionBlock(false, nil)
+        }
+        weak var weakPrompt = prompt
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+          guard let text = weakPrompt?.textFields?.first?.text else { return }
+          completionBlock(true, text)
+        }
+        prompt.addTextField(configurationHandler: nil)
+        prompt.addAction(cancelAction)
+        prompt.addAction(okAction)
+        present(prompt, animated: true, completion: nil)
+      }  //Google Sign In
+    
+    
+    @IBAction func googleButtonTapped(_ sender: Any) {
+        loginWithGoogle()
+    }
+    
+    func loginWithGoogle(){
+        setupGoogle()
+    }
     
     @IBAction func LoginButtonTapped(_ sender: Any) {
 //        if isValid() {
