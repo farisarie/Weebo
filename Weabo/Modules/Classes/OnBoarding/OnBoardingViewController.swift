@@ -56,3 +56,12 @@ class OnBoardingViewController: UIViewController {
     }
 }
 
+extension UIViewController{
+    func navigateToBoarding() {
+   
+    let viewController = OnBoardingViewController(nibName: "OnBoardingViewController", bundle: nil)
+        let window = UIApplication.shared.windows.first
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        
+    }}
+

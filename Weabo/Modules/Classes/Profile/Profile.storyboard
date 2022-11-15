@@ -12,6 +12,9 @@
         <array key="Inter-Regular.otf">
             <string>Inter-Regular</string>
         </array>
+        <array key="whitneysemibold.otf">
+            <string>Whitney-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Profile-->
@@ -131,8 +134,26 @@
                             <constraint firstItem="Loz-x0-niE" firstAttribute="top" secondItem="1HZ-UA-OEy" secondAttribute="bottom" constant="44" id="xx4-yj-Mfs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VGh-87-Yw2"/>
+                    <navigationItem key="navigationItem" id="VGh-87-Yw2">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ZkM-2J-knN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KP1-uX-zxc">
+                                <rect key="frame" x="302" y="6.5" width="92" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Whitney-Semibold" family="Whitney" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.34509803919999998" green="0.39607843139999999" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nqY-1T-fTd"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="emailLabel" destination="Udc-sP-dDM" id="KmJ-Ku-NPH"/>
+                        <outlet property="nameLabel" destination="ggx-AM-m0I" id="5hI-9f-sJx"/>
+                        <outlet property="profileImage" destination="0le-nM-WU3" id="IoW-gV-2ji"/>
                         <outlet property="xStackView" destination="Loz-x0-niE" id="eFQ-pq-6Fu"/>
                     </connections>
                 </viewController>

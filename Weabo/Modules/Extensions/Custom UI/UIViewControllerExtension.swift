@@ -21,9 +21,17 @@ extension UIViewController{
 extension UIViewController{
     public func presentAlert(title: String?, message: String?, actionTitle: String? = nil, handler: (() -> Void)? = nil){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: actionTitle ?? "OK", style: .cancel, handler: { _ in
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
             handler?()
         }))
+        
+        alert.addAction(UIAlertAction(title: actionTitle ?? "OK", style: .destructive, handler: { _ in
+            handler?()
+        }))
+        
+       
+        
         present(alert, animated: true, completion: nil)
     }
 }
