@@ -18,12 +18,20 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDetailComic()
+        setupViews()
         title = comic.title
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ComicDetailViewCell", bundle: nil), forCellReuseIdentifier: "cell_detail")
         tableView.register(UINib(nibName: "EpisodeViewCell", bundle: nil), forCellReuseIdentifier: "episodeCell")
     }
+    
+    func setupViews(){
+        
+        let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonTapped(_:)))
+        navigationItem.leftBarButtonItem = backButton
+    }
+    
     func loadDetailComic() {
         ComicProvider.shared.detailDescribe(comic.comicURL) { [weak self] (result) in
             switch result {

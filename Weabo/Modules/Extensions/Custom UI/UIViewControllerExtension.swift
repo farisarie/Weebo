@@ -11,6 +11,7 @@ import UIKit
 extension UIViewController{
     @IBAction func backButtonTapped(_ sender: Any){
         navigationController?.popViewController(animated: true)
+        self.tabBarController?.tabBar.isHidden = false
     }
     @IBAction func closeButtonTapped(_ sender: Any){
         dismiss(animated: true, completion: nil)
