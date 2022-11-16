@@ -13,6 +13,7 @@ target 'Weabo' do
   # Firebase
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'IQKeyboardManagerSwift'
 
   # image
   pod 'Kingfisher'
