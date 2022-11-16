@@ -55,6 +55,7 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.2)
+  - IQKeyboardManagerSwift (6.5.10)
   - Kingfisher (7.2.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.5)
   - Firebase/Auth
   - GoogleSignIn
+  - IQKeyboardManagerSwift
   - Kingfisher
 
 SPEC REPOS:
@@ -83,6 +85,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - IQKeyboardManagerSwift
     - Kingfisher
     - nanopb
     - PromisesObjC
@@ -100,10 +103,11 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMAppAuth: 4d8f864896f3646f0c33baf38a28362f4c601e15
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   Kingfisher: 7c084bebf7d548c623ad41bcf765fb200efed369
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
 
-PODFILE CHECKSUM: 195148da6403c4c80be2d91bf14e3f9e8becf247
+PODFILE CHECKSUM: e85b7d980623f56a0a2eba791a258962b270de9e
 
 COCOAPODS: 1.11.2
