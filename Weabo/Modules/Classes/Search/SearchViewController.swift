@@ -59,8 +59,6 @@ class SearchViewController: UIViewController {
         searchController.searchBar.delegate = self
         
         
-//        var config = UICollectionLayoutListConfiguration(appearance: .sidebar)
-//        config.headerMode = .supplementary
     }
     
     func loadSearch(_ term: String) {
@@ -88,7 +86,6 @@ extension SearchViewController: UICollectionViewDataSource {
             return comic == nil ? rank.count : 0
         case 1:
             return comic == nil ? category.count : 0
-            
         case 2:
             return comic?.count ?? 0
             
@@ -171,7 +168,7 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-//            if indexPath.section == 1 {
+
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? NewestHeaderReusableView {
                 
                 headerView.headerLabel.text = "Kategori Komik"
@@ -181,14 +178,7 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
                 
                 return headerView
                 }
-//            } else if indexPath.section == 0 {
-//                if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "searchCell", for: indexPath) as? SearchBarReusableView
-//                {
-//                    headerView.searchBar.delegate = self
-//
-//                    return headerView
-//            }
-//        }
+
         default:
             return UICollectionReusableView()
         }
@@ -220,8 +210,6 @@ extension SearchViewController: UISearchBarDelegate {
             
         }
     }
-    
-    
 }
 
 

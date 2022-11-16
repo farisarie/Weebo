@@ -19,10 +19,11 @@ class BottomViewCell: UICollectionViewCell {
     @IBOutlet weak var bottomCollectionView: UICollectionView!
     override func awakeFromNib() {
         let nibCell = UINib(nibName: "ThirdViewCell", bundle: nil)
+        popularComic()
         self.bottomCollectionView.register(nibCell, forCellWithReuseIdentifier: "ThirdCell")
         self.bottomCollectionView.dataSource = self
         self.bottomCollectionView.delegate = self
-        popularComic()
+       popularComic()
     }
     
     func popularComic(){
@@ -52,11 +53,11 @@ extension BottomViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdCell", for: indexPath) as! ThirdViewCell
-            let comicApi = popular?[indexPath.item]
-            cell.titleLabel.text = comicApi?.title
-            cell.categoryLabel.text = comicApi?.typeComic
-            cell.comicImage.kf.setImage(with: URL(string: comicApi?.thumbnailURL ?? ""))
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdCell", for: indexPath) as! ThirdViewCell
+        let comicApi = popular?[indexPath.row]
+        cell.titleLabel.text = comicApi?.title
+        cell.categoryLabel.text = comicApi?.typeComic
+        cell.comicImage.kf.setImage(with: URL(string: comicApi?.thumbnailURL ?? ""))
             return cell
             
     }
@@ -81,10 +82,12 @@ extension BottomViewCell: UICollectionViewDelegateFlowLayout{
 }
 
 extension BottomViewCell: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-       
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let popular = popular?[indexPath.row] {
-            delegate?.navigateToDetail(self, popular)
+                  bottomCollectionView.reloadData()
+                  delegate?.navigateToDetail(self, popular)
         }
+    
     }
 }
