@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         customTitle()
+        emailTextField.textColor = .black
+        passwordTextField.textColor = .black
         let screenWidth = UIScreen.main.bounds.width
         let lowestScreenWidth: CGFloat = 375.0
         rightWidthConstraint.constant = screenWidth > lowestScreenWidth ? 154 : 145
@@ -39,7 +41,7 @@ class LoginViewController: UIViewController {
     func isValid() -> Bool {
         
         guard let email = emailTextField.text, email.isValidEmail  else {
-           
+                
                 self.emailTextField.layer.borderColor = UIColor.red.cgColor
                 self.emailTextField.layer.borderWidth = 0.5
                 self.emailTextField.layer.cornerRadius = 5
@@ -94,34 +96,41 @@ class LoginViewController: UIViewController {
         setupGoogle()
     }
     
-    @IBAction func LoginButtonTapped(_ sender: Any) {
-//        if isValid() {
-//            navigatePage()
-//        }
-//        else {
-//            let error = UIAlertController(title: "Login Error", message: "Your email or password still empty", preferredStyle: .alert)
-//            error.addAction(UIAlertAction(title: "OK", style: .cancel))
-//            present(error, animated: true)
-//
-//            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
-//                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
-//                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
-//            }
-//
-//        }
-//    }
-        navigatePage()
-    }
-}
-
-extension String {
-    var isValidEmail: Bool {
-        let regEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let predicate = NSPredicate(format:"SELF MATCHES %@", regEx)
-        return predicate.evaluate(with: self)
+    func signIn() {
+        Auth.auth().signIn(withEmail: emailTextField.text ?? "", password: passwordTextField.text ?? "") { (authResult, error) in
+            if let error = error {
+                // Error. If error.code == .MissingOrInvalidNonce, make sure
+                // you're sending the SHA256-hashed nonce as a hex string with
+                // your request to Apple.
+                print(error.localizedDescription)
+                return
+            }
+            // User is signed in to Firebase with Apple.
+            // ...
+            print("User is signed in to Firebase with Apple.")
+            self.navigatePage()
+        }
     }
     
-}
+    @IBAction func LoginButtonTapped(_ sender: Any) {
+        if isValid() {
+            signIn()
+        }
+        else {
+            let error = UIAlertController(title: "Login Error", message: "Your email or password still empty", preferredStyle: .alert)
+            error.addAction(UIAlertAction(title: "OK", style: .cancel))
+            present(error, animated: true)
+
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
+                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
+            }
+
+        }
+    }
+        
+    }
+
 
 //MARK: - UIViewController
 extension UIViewController{
