@@ -219,6 +219,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
 
 
 extension HomeViewController: BottomViewCellDelegate {
+    func seeAllButtonTapped(_ cell: BottomViewCell) {
+        presentTrendingViewController()
+    }
+    
     func navigateToDetail(_ cell: BottomViewCell, _ popular: Comic) {
         presentDetailViewController(popular)
     }
