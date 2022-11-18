@@ -10,13 +10,17 @@ import Kingfisher
 
 protocol BottomViewCellDelegate: AnyObject {
     func navigateToDetail(_ cell: BottomViewCell, _ popular: Comic)
+    func seeAllButtonTapped(_ cell: BottomViewCell)
 }
+
+
 
 class BottomViewCell: UICollectionViewCell {
     var popular: [Comic]?
     weak var delegate: BottomViewCellDelegate?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bottomCollectionView: UICollectionView!
+    
     override func awakeFromNib() {
         let nibCell = UINib(nibName: "ThirdViewCell", bundle: nil)
         popularComic()
@@ -39,6 +43,9 @@ class BottomViewCell: UICollectionViewCell {
         }
     }
     
+    @IBAction func seeAllButtonTapped(_ sender: Any) {
+        delegate?.seeAllButtonTapped(self)
+    }
 }
 
 extension BottomViewCell: UICollectionViewDataSource {
