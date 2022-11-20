@@ -110,10 +110,18 @@ extension DetailViewController: UITableViewDataSource {
 extension DetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let detailComics = detailComic?[indexPath.row] {
-            presentReadViewController(detailComics, comic)
+        switch indexPath.section {
+        case 0:
+            tableView.deselectRow(at: indexPath, animated: true)
             
+        case 1:
+            if let detailComics = detailComic?[indexPath.row] {
+                presentReadViewController(detailComics, comic)
+            }
+        default:
+            break
         }
+       
     }
 }
 
