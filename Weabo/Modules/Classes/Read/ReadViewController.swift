@@ -60,6 +60,10 @@ extension ReadViewController: UITableViewDelegate{
         return UIScreen.main.bounds.height
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }
 
 extension UIViewController{

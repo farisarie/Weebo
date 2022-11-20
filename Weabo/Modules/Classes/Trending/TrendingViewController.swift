@@ -40,9 +40,6 @@ class TrendingViewController: UIViewController {
             }
         }
     }
-
-    
-
 }
 
 extension TrendingViewController: UITableViewDataSource{
