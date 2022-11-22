@@ -12,13 +12,16 @@ class HomeViewController: UIViewController {
 
     weak var searchController : UISearchController!
     var comic: [Comic]?
+    var allComic: [Datum]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        listAllComic()
     }
     
     func setup() {
+
         collectionView.register(UINib(nibName: "NewestHeaderReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCell")
         collectionView.register(UINib(nibName: "SearchBarReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "searchCell")
         collectionView.register(UINib(nibName: "ListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "listCell")
@@ -52,6 +55,18 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    func listAllComic(){
+        ComicProvider.shared.listComic { [weak self] (result) in
+            switch result {
+            case .success(let data):
+                self?.allComic = data
+                self?.collectionView.reloadData()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
 
     
     @objc func notificationButtonTapped(_ sender: Any) {
@@ -80,7 +95,7 @@ extension HomeViewController: UICollectionViewDataSource {
             return comic == nil ? 1 : 0
             
         case 4:
-            return comic == nil ? 4 : 0
+            return comic == nil ? allComic?.count ?? 0 : 0
             
         case 5:
             return comic?.count ?? 0
@@ -120,9 +135,10 @@ extension HomeViewController: UICollectionViewDataSource {
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newestCell", for: indexPath) as!
                 NewestViewCell
-            cell.imageView.image = UIImage(named: "chainsawman")
-            cell.categoryLabel.text = "Kategori"
-            cell.comicTitle.text = "Chainsawman"
+            let all = allComic?[indexPath.row]
+            cell.imageView.kf.setImage(with: URL(string: all?.thumbnailURL ?? ""))
+            cell.categoryLabel.text = all?.typeComic
+            cell.comicTitle.text = all?.title
             cell.accessDateLabel.text = "Shigeo Kageyama atau lebih akrab disebut adalah seorang anak kelas 2 SMP yang mendam-bakan kehidupan yang normal namun..."
             return cell
             

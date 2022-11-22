@@ -14,6 +14,9 @@ target 'Weabo' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'IQKeyboardManagerSwift'
+  
+  # Persisten Container
+  pod 'RealmSwift'
 
   # image
   pod 'Kingfisher'

@@ -9,22 +9,96 @@ import UIKit
 
 class ReadViewController: UIViewController {
     var readComic : [ImageURL]?
-    var comicUrl: ChapterList!
-    var titleComic: Comic!
+    var comicUrl: String!
+    var titleComic: String!
+    @IBOutlet weak var containerView: UIView!
+    var movePage: Read!
+
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = titleComic.title
+        containerViewRound()
+        nextPageComic()
         loadReadComic()
+        setupTable()
+        self.setNeedsStatusBarAppearanceUpdate()
+        setupTitle()
+    }
+ 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+           setNeedsStatusBarAppearanceUpdate()
+        setupColorNavigation()
+    }
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent //.default for black style
+    }
+    
+    
+    func containerViewRound(){
+        containerView.layer.cornerRadius = 8
+        containerView.layer.masksToBounds = true
+    }
+    
+    func setupTable(){
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ReadViewCell", bundle: nil), forCellReuseIdentifier: "read_cell")
-        
+    }
+    
+    func setupColorNavigation(){
+        view.backgroundColor = UIColor(hex: "16171D")
+        navigationController?.navigationBar.barTintColor = UIColor(hex: "16171D")
+        navigationController?.navigationBar.tintColor = .white
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        tableView.backgroundColor = .clear
+    }
+    
+    func setupTitle(){
+        title = titleComic
+        titleComic = ""
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    @IBAction func previousButtonTapped(_ sender: Any) {
+        let chapter = movePage.prevURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
+        let titleComic = titleComic + " Eps." + chapter
+        if movePage.prevURL.isEmpty {
+            print("damn my love life like a shit")
+        } else {
+          
+         presentReadViewController(movePage.prevURL, titleComic) }
+    
+    }
+    
+    @IBAction func nextPageButtonTapped(_ sender: Any) {
+        let chapter = movePage.nextURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
+        let titleComic = titleComic + " Eps." + chapter
+        if movePage.nextURL.isEmpty {
+            print("damn my love life like a shit")
+        } else {
+            presentReadViewController(movePage.nextURL, titleComic) }
+    }
+    
+    func nextPageComic(){
+        ComicProvider.shared.movePage(comicUrl) { [weak self] (result) in
+            switch result{
+            case .success(let data):
+                self?.movePage = data
+                self?.tableView.reloadData()
+    
+            case .failure(let error):
+                break
+            }
+        }
     }
     
     func loadReadComic() {
-        ComicProvider.shared.readComic(comicUrl.chapterURL) { [weak self] (result) in
+        ComicProvider.shared.readComic(comicUrl) { [weak self] (result) in
             switch result {
             case .success(let data):
                 self?.readComic = data
@@ -64,10 +138,12 @@ extension ReadViewController: UITableViewDelegate{
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+
+    
 }
 
 extension UIViewController{
-    func presentReadViewController(_ comic: ChapterList, _ title: Comic) {
+    func presentReadViewController(_ comic: String, _ title: String = "Untitled") {
         let viewController = ReadViewController(nibName: "ReadViewController", bundle: nil)
         viewController.comicUrl = comic
         viewController.titleComic = title

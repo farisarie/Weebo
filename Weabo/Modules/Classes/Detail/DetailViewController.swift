@@ -26,8 +26,24 @@ class DetailViewController: UIViewController {
         tableView.register(UINib(nibName: "EpisodeViewCell", bundle: nil), forCellReuseIdentifier: "episodeCell")
     }
     
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent //.default for black style
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setupNavColor()
+    }
+    
+    func setupNavColor(){
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.tintColor = .black
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor : UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
+    
     func setupViews(){
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
         let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonTapped(_:)))
         navigationItem.leftBarButtonItem = backButton
     }
@@ -115,8 +131,11 @@ extension DetailViewController: UITableViewDelegate {
             tableView.deselectRow(at: indexPath, animated: true)
             
         case 1:
+        
             if let detailComics = detailComic?[indexPath.row] {
-                presentReadViewController(detailComics, comic)
+                let eps = detailComics.chapterURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
+
+                presentReadViewController(detailComics.chapterURL, " Eps. " + eps )
             }
         default:
             break

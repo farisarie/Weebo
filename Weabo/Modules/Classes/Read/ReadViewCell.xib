@@ -30,6 +30,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="containerView" destination="H2p-sc-9uM" id="EwW-YW-UoV"/>
                 <outlet property="imgView" destination="htN-eI-TFG" id="V7S-Ej-5B9"/>
             </connections>
             <point key="canvasLocation" x="5.7971014492753632" y="103.79464285714285"/>
