@@ -135,7 +135,7 @@ extension DetailViewController: UITableViewDelegate {
             if let detailComics = detailComic?[indexPath.row] {
                 let eps = detailComics.chapterURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
 
-                presentReadViewController(detailComics.chapterURL, " Eps. " + eps )
+                presentReadViewController(detailComics.chapterURL, " Eps. " + eps, comic.title, comic.thumbnailURL)
             }
         default:
             break

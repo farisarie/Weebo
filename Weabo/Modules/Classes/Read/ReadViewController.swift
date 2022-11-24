@@ -4,17 +4,19 @@
 //
 //  Created by yoga arie on 12/11/22.
 //
-
+import RealmSwift
 import UIKit
 
 class ReadViewController: UIViewController {
     var readComic : [ImageURL]?
     var comicUrl: String!
     var titleComic: String!
-    @IBOutlet weak var containerView: UIView!
     var movePage: Read!
-
+    var realmTitle: String!
+    var chapterComic: String!
+    var imgView: String!
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +26,49 @@ class ReadViewController: UIViewController {
         setupTable()
         self.setNeedsStatusBarAppearanceUpdate()
         setupTitle()
+        setupSaveButton()
     }
  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
            setNeedsStatusBarAppearanceUpdate()
         setupColorNavigation()
+        save()
     }
     
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return UIStatusBarStyle.lightContent //.default for black style
     }
     
+    func setupSaveButton() {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(systemName: "plus"), for: .normal)
+        button.tintColor = UIColor.white
+        
+        button.frame = CGRect(x: 0, y: 0, width: 26, height: 26)
+        button.addTarget(self, action: #selector(self.saveButtonTapped(_:)), for: .touchUpInside)
+        let barItem = UIBarButtonItem(customView:  button)
+        navigationItem.rightBarButtonItem = barItem
+    }
+    
+    func save(){
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        let task = RecentComic()
+        task.title = realmTitle
+        task.Url = comicUrl
+        task.chapter = chapterComic
+        task.imgUrl = imgView ?? ""
+        
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(task)
+        }
+    }
+    
+    @objc func saveButtonTapped(_ sender: Any) {
+        save()
+    }
     
     func containerViewRound(){
         containerView.layer.cornerRadius = 8
@@ -62,16 +95,18 @@ class ReadViewController: UIViewController {
         title = titleComic
         titleComic = ""
         navigationController?.navigationBar.prefersLargeTitles = true
+        let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonTapped(_:)))
+        navigationItem.leftBarButtonItem = backButton
     }
     
     @IBAction func previousButtonTapped(_ sender: Any) {
         let chapter = movePage.prevURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
         let titleComic = titleComic + " Eps." + chapter
         if movePage.prevURL.isEmpty {
-            print("damn my love life like a shit")
+            print("test test")
         } else {
           
-         presentReadViewController(movePage.prevURL, titleComic) }
+            presentReadViewController(movePage.prevURL, titleComic, realmTitle, imgView) }
     
     }
     
@@ -79,9 +114,9 @@ class ReadViewController: UIViewController {
         let chapter = movePage.nextURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
         let titleComic = titleComic + " Eps." + chapter
         if movePage.nextURL.isEmpty {
-            print("damn my love life like a shit")
+            print("test test ")
         } else {
-            presentReadViewController(movePage.nextURL, titleComic) }
+            presentReadViewController(movePage.nextURL, titleComic, realmTitle, imgView) }
     }
     
     func nextPageComic(){
@@ -143,10 +178,13 @@ extension ReadViewController: UITableViewDelegate{
 }
 
 extension UIViewController{
-    func presentReadViewController(_ comic: String, _ title: String = "Untitled") {
+    func presentReadViewController(_ comic: String, _ chapter: String = "Untitled", _ title: String? = nil, _ imgView: String? = nil) {
         let viewController = ReadViewController(nibName: "ReadViewController", bundle: nil)
         viewController.comicUrl = comic
-        viewController.titleComic = title
+        viewController.titleComic = chapter
+        viewController.chapterComic = chapter
+        viewController.realmTitle = title
+        viewController.imgView = imgView
         self.tabBarController?.tabBar.isHidden = true
         navigationController?.pushViewController(viewController, animated: true)
     }

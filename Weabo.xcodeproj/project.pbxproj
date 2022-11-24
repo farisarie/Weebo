@@ -162,6 +162,7 @@
 		C143A2FE291A8DBE0031279D /* ComicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2FC291A8DBE0031279D /* ComicProvider.swift */; };
 		C143A2FF291A8DBE0031279D /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C143A2FD291A8DBE0031279D /* ApiProvider.swift */; };
 		C144F51D291D202D0003E2AF /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144F51C291D202D0003E2AF /* UISearchBar.swift */; };
+		C15BD397292C80B4002F8D14 /* RecentComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15BD396292C80B4002F8D14 /* RecentComic.swift */; };
 		C1640317291968DD000FF732 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1640315291968DD000FF732 /* CategoryViewController.swift */; };
 		C1640318291968DD000FF732 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1640316291968DD000FF732 /* CategoryViewController.xib */; };
 		C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */; };
@@ -403,6 +404,7 @@
 		C143A2FC291A8DBE0031279D /* ComicProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicProvider.swift; sourceTree = "<group>"; };
 		C143A2FD291A8DBE0031279D /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		C144F51C291D202D0003E2AF /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
+		C15BD396292C80B4002F8D14 /* RecentComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentComic.swift; sourceTree = "<group>"; };
 		C1640315291968DD000FF732 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C1640316291968DD000FF732 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		C16E687428ED219600B1F6C3 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -778,6 +780,7 @@
 		C12A24562918B7CB0097B048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C15BD393292C7EFF002F8D14 /* Realm */,
 				C143A2F8291A8DAC0031279D /* ListComic.swift */,
 				C1E71110291AA5BA003DE7F0 /* PopularComic.swift */,
 				C143A2F7291A8DAC0031279D /* searchComic.swift */,
@@ -796,6 +799,14 @@
 				C143A2FD291A8DBE0031279D /* ApiProvider.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		C15BD393292C7EFF002F8D14 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				C15BD396292C80B4002F8D14 /* RecentComic.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		C164031029194CA7000FF732 /* Category */ = {
@@ -1299,6 +1310,7 @@
 			files = (
 				C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */,
 				C1E740AE2920DF3D00F7106E /* GoogleSignInExtensions.swift in Sources */,
+				C15BD397292C80B4002F8D14 /* RecentComic.swift in Sources */,
 				C1CBEFD228FEF9470065701C /* SearchViewController.swift in Sources */,
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
 				C1916090291EB32F00B17170 /* detailComic.swift in Sources */,

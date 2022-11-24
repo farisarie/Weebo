@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol AdsViewCellDelegate: NSObjectProtocol {
+    func readButtonTapped(_ cell: AdsViewCell)
+}
+
+
 class AdsViewCell: UICollectionViewCell {
-    
+    weak var delegate: AdsViewCellDelegate?
     @IBOutlet weak var continouReadButton: UIButton!
     @IBOutlet weak var labelTwo: UILabel!
     @IBOutlet weak var labelOne: UILabel!
@@ -22,5 +27,8 @@ class AdsViewCell: UICollectionViewCell {
         adsView.layer.cornerRadius = 6
         adsView.layer.masksToBounds = true
         adsView.backgroundColor = UIColor(hex: "#949CF7")
+    }
+    @IBAction func continueReadButtonTapped(_ sender: Any) {
+        delegate?.readButtonTapped(self)
     }
 }

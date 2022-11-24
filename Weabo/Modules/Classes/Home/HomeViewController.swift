@@ -6,6 +6,8 @@
 //`
 
 import UIKit
+import RealmSwift
+import Kingfisher
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -13,11 +15,28 @@ class HomeViewController: UIViewController {
     weak var searchController : UISearchController!
     var comic: [Comic]?
     var allComic: [Datum]?
+    var continueRead: Results<RecentComic>?
+    
+
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         setup()
         listAllComic()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        continuesRead()
+    }
+    
+   
+    func continuesRead(){
+       
+        continueRead = realm.objects(RecentComic.self)
+        collectionView.reloadData()
     }
     
     func setup() {
@@ -121,7 +140,11 @@ extension HomeViewController: UICollectionViewDataSource {
             
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "adsCell", for: indexPath) as! AdsViewCell
-            cell.comicThumbnail.image = UIImage(named: "chainsawman")
+            let realm = continueRead?.last
+            cell.comicThumbnail.kf.setImage(with: URL(string: realm?.imgUrl ?? ""))
+            cell.labelTwo.text = realm?.title
+            cell.labelOne.text = realm?.chapter
+            cell.delegate = self
             return cell
             
         case 3:
@@ -269,5 +292,14 @@ extension HomeViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         comic = nil
         collectionView.reloadData()
+    }
+}
+
+// MARK: - Cell Delegate
+extension HomeViewController: AdsViewCellDelegate {
+    func readButtonTapped(_ cell: AdsViewCell) {
+        if let realm = continueRead?.last {
+            presentReadViewController(realm.Url, realm.chapter, realm.title, realm.imgUrl)
+        }
     }
 }
