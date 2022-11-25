@@ -127,4 +127,22 @@ class ComicProvider {
         }
     }
     }
+    
+    func movePage(_ urlComic: String, completion: @escaping (Result<Read, Error>) -> Void) {
+        let parameters: [String: Any] = ["comic_url" : urlComic]
+        ApiProvider.shared.post(url: baseUrl + readComic, parameters: parameters) { (result) in
+            switch result {
+            case .success(let data):
+                let decoder = JSONDecoder()
+                do {
+                    let response = try decoder.decode(ReadComic.self, from: data)
+                    completion(.success(response.data))
+                } catch{
+                    completion(.failure(error))
+            }
+            case .failure(let error):
+                completion(.failure(error))
+        }
+    }
+    }
 }

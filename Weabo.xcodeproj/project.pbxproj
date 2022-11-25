@@ -25,6 +25,7 @@
 		C104E3F228FFDA0C007BAF9D /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */; };
 		C106FC39291A68C100671BA7 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C106FC37291A68C000671BA7 /* CategoryTableViewCell.swift */; };
 		C106FC3A291A68C100671BA7 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C106FC38291A68C100671BA7 /* CategoryTableViewCell.xib */; };
+		C11B16EF2930C9BC00AD6B42 /* RecentComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B16EE2930C9BC00AD6B42 /* RecentComic.swift */; };
 		C11D1BF12918254E002CD1FD /* whitneylight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BE82918254E002CD1FD /* whitneylight.otf */; };
 		C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */; };
 		C11D1BF32918254E002CD1FD /* whitneybookitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */; };
@@ -266,6 +267,7 @@
 		C104E3F028FFDA0C007BAF9D /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
 		C106FC37291A68C000671BA7 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		C106FC38291A68C100671BA7 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		C11B16EE2930C9BC00AD6B42 /* RecentComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentComic.swift; sourceTree = "<group>"; };
 		C11D1BE82918254E002CD1FD /* whitneylight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneylight.otf; sourceTree = "<group>"; };
 		C11D1BE92918254E002CD1FD /* WhitneySemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WhitneySemiboldItalic.otf; sourceTree = "<group>"; };
 		C11D1BEA2918254E002CD1FD /* whitneybookitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitneybookitalic.otf; sourceTree = "<group>"; };
@@ -591,6 +593,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		C11B16ED2930C9AB00AD6B42 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				C11B16EE2930C9BC00AD6B42 /* RecentComic.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		C11D1BE72918254E002CD1FD /* whitneyFont-MUATEX */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,6 +788,7 @@
 		C12A24562918B7CB0097B048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C11B16ED2930C9AB00AD6B42 /* Realm */,
 				C143A2F8291A8DAC0031279D /* ListComic.swift */,
 				C1E71110291AA5BA003DE7F0 /* PopularComic.swift */,
 				C143A2F7291A8DAC0031279D /* searchComic.swift */,
@@ -1299,6 +1310,7 @@
 			files = (
 				C1723CA32914C658000882E5 /* LoginViewController.swift in Sources */,
 				C1E740AE2920DF3D00F7106E /* GoogleSignInExtensions.swift in Sources */,
+				C11B16EF2930C9BC00AD6B42 /* RecentComic.swift in Sources */,
 				C1CBEFD228FEF9470065701C /* SearchViewController.swift in Sources */,
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
 				C1916090291EB32F00B17170 /* detailComic.swift in Sources */,
