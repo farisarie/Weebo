@@ -15,6 +15,9 @@ target 'Weabo' do
   pod 'GoogleSignIn'
   pod 'IQKeyboardManagerSwift'
 
+  # Database
+  pod 'RealmSwift'
+
   # image
   pod 'Kingfisher'
 end

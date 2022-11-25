@@ -11,7 +11,11 @@ import UIKit
 extension UIViewController{
     @IBAction func backButtonTapped(_ sender: Any){
         navigationController?.popViewController(animated: true)
-        self.tabBarController?.tabBar.isHidden = false
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.tintColor = .black
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor : UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
     @IBAction func closeButtonTapped(_ sender: Any){
         dismiss(animated: true, completion: nil)

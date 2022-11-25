@@ -6,23 +6,32 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ReadViewController: UIViewController {
     var readComic : [ImageURL]?
-    var comicUrl: ChapterList!
-    var titleComic: Comic!
+    var comicUrl: String!
+    var titleComic: String!
+    var movePage: Read!
+    var realmTitle: String!
+    var chapterComic: String!
+    var imgView: String!
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = titleComic.title
-        loadReadComic()
-        
+        containerViewRound()
+          nextPageComic()
+          loadReadComic()
+          setupTable()
+          setupTitle()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupColorNavigation()
+        save()
     }
     
     func setupColorNavigation(){
@@ -35,14 +44,77 @@ class ReadViewController: UIViewController {
         tableView.backgroundColor = .clear
     }
     
+    func nextPageComic(){
+        ComicProvider.shared.movePage(comicUrl) { [weak self] (result) in
+            switch result{
+            case .success(let data):
+                self?.movePage = data
+                self?.tableView.reloadData()
+                
+            case .failure(let error):
+                break
+            }
+        }
+    }
+    
+    func save(){
+          print(Realm.Configuration.defaultConfiguration.fileURL)
+          
+          let task = RecentComic()
+          task.title = realmTitle
+          task.Url = comicUrl
+          task.chapter = chapterComic
+          task.imgUrl = imgView ?? ""
+        
+          
+          let realm = try! Realm()
+          try! realm.write {
+              realm.add(task)
+          }
+      }
+    
+    func containerViewRound(){
+        containerView.layer.cornerRadius = 12
+        containerView.layer.masksToBounds = true
+        containerView.backgroundColor = UIColor(hex: "16171D")
+    }
+    
+    func setupTitle(){
+        title = titleComic
+        titleComic = ""
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonTapped(_:)))
+        navigationItem.leftBarButtonItem = backButton
+    }
+    
     func setupTable() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ReadViewCell", bundle: nil), forCellReuseIdentifier: "read_cell")
     }
     
+    @IBAction func previousButtonTapped(_ sender: Any) {
+        let chapter = movePage.prevURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
+        let titleComic = titleComic + " Eps." + chapter
+        if movePage.prevURL.isEmpty {
+            print("test test")
+        } else {
+            
+            presentReadViewController(movePage.prevURL, titleComic, realmTitle, imgView) }
+    }
+    
+    @IBAction func nextPageButtonTapped(_ sender: Any) {
+        let chapter = movePage.nextURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
+        let titleComic = titleComic + " Eps." + chapter
+        if movePage.nextURL.isEmpty {
+            print("test test ")
+        } else {
+            presentReadViewController(movePage.nextURL, titleComic, realmTitle, imgView) }
+    }
+    
+    
     func loadReadComic() {
-        ComicProvider.shared.readComic(comicUrl.chapterURL) { [weak self] (result) in
+        ComicProvider.shared.readComic(comicUrl) { [weak self] (result) in
             switch result {
             case .success(let data):
                 self?.readComic = data
@@ -85,10 +157,13 @@ extension ReadViewController: UITableViewDelegate{
 }
 
 extension UIViewController{
-    func presentReadViewController(_ comic: ChapterList, _ title: Comic) {
+    func presentReadViewController(_ comic: String, _ chapter: String = "Untitled", _ title: String? = nil, _ imgView: String? = nil) {
         let viewController = ReadViewController(nibName: "ReadViewController", bundle: nil)
         viewController.comicUrl = comic
-        viewController.titleComic = title
+        viewController.titleComic = chapter
+        viewController.chapterComic = chapter
+        viewController.realmTitle = title
+        viewController.imgView = imgView
         self.tabBarController?.tabBar.isHidden = true
         navigationController?.pushViewController(viewController, animated: true)
     }

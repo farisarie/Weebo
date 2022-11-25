@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReadViewController" customModule="Weabo" customModuleProvider="target">
             <connections>
+                <outlet property="containerView" destination="vGL-Jk-alv" id="Nrw-Hh-nf7"/>
                 <outlet property="tableView" destination="ETT-S6-fsY" id="b21-Y4-ySR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,22 +22,69 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ETT-S6-fsY">
-                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="784"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGL-Jk-alv">
+                    <rect key="frame" x="0.0" y="832" width="414" height="30"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-Yn-UrH">
+                            <rect key="frame" x="369" y="4" width="30" height="22"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfQ-aV-Gd1">
+                                    <rect key="frame" x="0.0" y="0.0" width="12.5" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Tnb-lr-iHe"/>
+                                        <constraint firstAttribute="width" constant="12.5" id="sfZ-v8-Xuk"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="chevron.left" catalog="system"/>
+                                    <connections>
+                                        <action selector="previousButtonTapped:" destination="-1" eventType="touchUpInside" id="U0m-7r-boz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH5-sQ-hPy">
+                                    <rect key="frame" x="17.5" y="0.0" width="12.5" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="PvE-q4-K0O"/>
+                                        <constraint firstAttribute="width" constant="12.5" id="UWy-5v-tf5"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="chevron.right" catalog="system"/>
+                                    <connections>
+                                        <action selector="nextPageButtonTapped:" destination="-1" eventType="touchUpInside" id="Ysp-C6-Fs9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="wpV-Yn-UrH" firstAttribute="centerY" secondItem="vGL-Jk-alv" secondAttribute="centerY" id="G3t-9e-Mft"/>
+                        <constraint firstAttribute="trailing" secondItem="wpV-Yn-UrH" secondAttribute="trailing" constant="15" id="PCe-Nm-liS"/>
+                        <constraint firstAttribute="height" constant="30" id="oEt-0n-UbR"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="ETT-S6-fsY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0Ue-A9-qdG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vGL-Jk-alv" secondAttribute="trailing" id="3Bo-zx-PaZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ETT-S6-fsY" secondAttribute="trailing" id="Lxy-pu-2H6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vGL-Jk-alv" secondAttribute="bottom" id="ZUV-4E-rRW"/>
                 <constraint firstItem="ETT-S6-fsY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nHY-uF-q2d"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ETT-S6-fsY" secondAttribute="bottom" id="qWD-o6-kGm"/>
+                <constraint firstItem="vGL-Jk-alv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r0Q-gu-3fe"/>
+                <constraint firstItem="vGL-Jk-alv" firstAttribute="top" secondItem="ETT-S6-fsY" secondAttribute="bottom" id="zfm-V0-HZf"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="124"/>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </view>
     </objects>
     <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
