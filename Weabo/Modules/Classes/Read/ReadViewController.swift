@@ -17,10 +17,28 @@ class ReadViewController: UIViewController {
         super.viewDidLoad()
         title = titleComic.title
         loadReadComic()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupColorNavigation()
+    }
+    
+    func setupColorNavigation(){
+        view.backgroundColor = UIColor(hex: "16171D")
+        navigationController?.navigationBar.barTintColor = UIColor(hex: "16171D")
+        navigationController?.navigationBar.tintColor = .white
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor : UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        tableView.backgroundColor = .clear
+    }
+    
+    func setupTable() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ReadViewCell", bundle: nil), forCellReuseIdentifier: "read_cell")
-        
     }
     
     func loadReadComic() {
