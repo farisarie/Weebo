@@ -6,21 +6,34 @@
 //`
 
 import UIKit
+import RealmSwift
+import Kingfisher
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     weak var searchController : UISearchController!
     var comic: [Comic]?
+    var allComic: [Datum]?
+    var continueRead: Results<RecentComic>?
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        listAllComic()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
+        continuesRead()
+    }
+    
+    func continuesRead(){
+    
+        continueRead = realm.objects(RecentComic.self)
+        collectionView.reloadData()
     }
     
     func setup() {
@@ -57,6 +70,18 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    func listAllComic(){
+           ComicProvider.shared.listComic { [weak self] (result) in
+               switch result {
+               case .success(let data):
+                   self?.allComic = data
+                   self?.collectionView.reloadData()
+               case .failure(let error):
+                   print(error.localizedDescription)
+               }
+           }
+       }
 
     
     @objc func notificationButtonTapped(_ sender: Any) {
@@ -85,7 +110,7 @@ extension HomeViewController: UICollectionViewDataSource {
             return comic == nil ? 1 : 0
             
         case 4:
-            return comic == nil ? 4 : 0
+            return comic == nil ? allComic?.count ?? 0 : 0
             
         case 5:
             return comic?.count ?? 0
@@ -111,7 +136,11 @@ extension HomeViewController: UICollectionViewDataSource {
             
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "adsCell", for: indexPath) as! AdsViewCell
-            cell.comicThumbnail.image = UIImage(named: "chainsawman")
+            let realm = continueRead?.last
+            cell.labelTwo.text = realm?.title
+            cell.labelOne.text = realm?.chapter
+            cell.comicThumbnail.kf.setImage(with: URL(string: realm?.imgUrl ?? ""))
+            cell.delegate = self
             return cell
             
         case 3:
@@ -125,9 +154,10 @@ extension HomeViewController: UICollectionViewDataSource {
         case 4:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newestCell", for: indexPath) as!
                 NewestViewCell
-            cell.imageView.image = UIImage(named: "chainsawman")
-            cell.categoryLabel.text = "Kategori"
-            cell.comicTitle.text = "Chainsawman"
+            let all = allComic?[indexPath.row]
+            cell.imageView.kf.setImage(with: URL(string: all?.thumbnailURL ?? ""))
+            cell.categoryLabel.text = all?.typeComic
+            cell.comicTitle.text = all?.title
             cell.accessDateLabel.text = "Shigeo Kageyama atau lebih akrab disebut adalah seorang anak kelas 2 SMP yang mendam-bakan kehidupan yang normal namun..."
             return cell
             
@@ -260,3 +290,13 @@ extension HomeViewController: UISearchBarDelegate {
         collectionView.reloadData()
     }
 }
+
+// MARK: - Cell Delegate
+extension HomeViewController: AdsViewCellDelegate {
+    func readButtonTapped(_ cell: AdsViewCell) {
+        if let realm = continueRead?.last {
+            presentReadViewController(realm.Url, realm.chapter, realm.title, realm.imgUrl)
+        }
+    }
+}
+
