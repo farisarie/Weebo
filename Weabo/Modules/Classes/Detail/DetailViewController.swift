@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var comic: Comic!
+    var allComic: Datum!
     var detailComic: [ChapterList]?
     var detailDescribe: DetailClass?
     
@@ -19,7 +20,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         loadDetailComic()
         setupViews()
-        title = comic.title
+        detailData()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ComicDetailViewCell", bundle: nil), forCellReuseIdentifier: "cell_detail")
@@ -29,6 +30,14 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavColor()
+    }
+    
+    func detailData(){
+        if comic != nil {
+            title = comic.title
+        } else if allComic != nil {
+            title = allComic.title
+        }
     }
     
     func setupNavColor(){
@@ -46,23 +55,46 @@ class DetailViewController: UIViewController {
     }
     
     func loadDetailComic() {
-        ComicProvider.shared.detailDescribe(comic.comicURL) { [weak self] (result) in
-            switch result {
-            case .success(let data):
-                self?.detailDescribe = data
-                self?.tableView.reloadData()
-            case .failure(let error):
-                print(error.localizedDescription)
+        if comic != nil {
+            ComicProvider.shared.detailDescribe(comic.comicURL) { [weak self] (result) in
+                switch result {
+                case .success(let data):
+                    self?.detailDescribe = data
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
             }
-        }
-        
-        ComicProvider.shared.detailChapterList(comic.comicURL) { [weak self] (result) in
-            switch result {
-            case .success(let data):
-                self?.detailComic = data
-                self?.tableView.reloadData()
-            case .failure(let error):
-                print(error.localizedDescription)
+            
+            ComicProvider.shared.detailChapterList(comic.comicURL) { [weak self] (result) in
+                switch result {
+                case .success(let data):
+                    self?.detailComic = data
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+        } else if allComic != nil {
+            
+            ComicProvider.shared.detailDescribe(allComic.comicURL) { [weak self] (result) in
+                switch result {
+                case .success(let data):
+                    self?.detailDescribe = data
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+            
+            ComicProvider.shared.detailChapterList(allComic.comicURL) { [weak self] (result) in
+                switch result {
+                case .success(let data):
+                    self?.detailComic = data
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
             }
         }
     }
@@ -93,7 +125,11 @@ extension DetailViewController: UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell_detail", for: indexPath) as! ComicDetailViewCell
-            cell.comicImageView.kf.setImage(with: URL(string: comic.thumbnailURL))
+            if comic != nil {
+                cell.comicImageView.kf.setImage(with: URL(string: comic.thumbnailURL))
+            } else if allComic != nil {
+                cell.comicImageView.kf.setImage(with: URL(string: allComic.thumbnailURL))
+            }
             cell.titleLabel.text = detailDescribe?.title
             cell.descLabel.text = detailDescribe?.dataDescription
             cell.ratingLabel.text = detailDescribe?.rating
@@ -105,9 +141,15 @@ extension DetailViewController: UITableViewDataSource {
             
             let episode = detailComic?[indexPath.row]
             let chapter = episode?.chapterNum.removeCharacters(from: CharacterSet.decimalDigits.inverted)
-            
-            cell.thumbnailComic.kf.setImage(with: URL(string: comic.thumbnailURL))
-            cell.titleLabel.text = comic.title
+            if comic != nil {
+                cell.thumbnailComic.kf.setImage(with: URL(string: comic.thumbnailURL))
+                cell.titleLabel.text = comic.title
+            } else if allComic != nil {
+                cell.thumbnailComic.kf.setImage(with: URL(string: allComic.thumbnailURL))
+                cell.titleLabel.text = allComic.title
+            }
+          
+          
             
             cell.chapterLabel.text = "#\(chapter ?? "")"
             cell.dateLabel.text = episode?.chapterDate
@@ -130,8 +172,12 @@ extension DetailViewController: UITableViewDelegate {
         case 1:
             if let detailComics = detailComic?[indexPath.row] {
                 let eps = detailComics.chapterURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
-                
-                presentReadViewController(detailComics.chapterURL, " Eps. " + eps, comic.title, comic.thumbnailURL)
+                if comic != nil {
+                    presentReadViewController(detailComics.chapterURL, " Eps. " + eps, comic.title, comic.thumbnailURL)
+                } else if allComic != nil {
+                    presentReadViewController(detailComics.chapterURL, " Eps. " + eps, allComic.title, allComic.thumbnailURL)
+                }
+            
             }
         default:
             break
@@ -142,9 +188,10 @@ extension DetailViewController: UITableViewDelegate {
 
 
 extension UIViewController{
-    func presentDetailViewController(_ comic: Comic) {
+    func presentDetailViewController(_ comic: Comic? = nil, _ url: Datum? = nil) {
         let viewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
         viewController.comic = comic
+        viewController.allComic = url
         self.tabBarController?.tabBar.isHidden = true
         navigationController?.pushViewController(viewController, animated: true)
     }

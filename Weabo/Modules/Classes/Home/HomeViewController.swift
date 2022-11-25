@@ -252,6 +252,24 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
 }
 
+// MARK: - UICollectionViewDelegate
+extension HomeViewController: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 4:
+            if let comics = allComic?[indexPath.row] {
+                presentDetailViewController(nil, comics)
+            }
+        case 5:
+            if let comics = comic?[indexPath.row] {
+                presentDetailViewController(comics)
+            }
+            
+        default:
+            break
+        }
+    }
+}
 
 extension HomeViewController: BottomViewCellDelegate {
     func seeAllButtonTapped(_ cell: BottomViewCell) {
@@ -263,6 +281,8 @@ extension HomeViewController: BottomViewCellDelegate {
     }
     
 }
+
+
 
 extension HomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -277,13 +297,6 @@ extension HomeViewController: UISearchBarDelegate {
         return true
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.deselectItem(at: indexPath, animated: true)
-        if let comics = comic?[indexPath.row] {
-            presentDetailViewController(comics)
-            
-        }
-    }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         comic = nil
