@@ -238,6 +238,8 @@
 		C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */; };
 		C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA93A429150E6500A2655F /* RegisterViewController.swift */; };
 		C1EA93A729150E6500A2655F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A529150E6500A2655F /* RegisterViewController.xib */; };
+		C1EDFCFC293616B600D26133 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDFCFA293616B600D26133 /* NewViewController.swift */; };
+		C1EDFCFD293616B600D26133 /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EDFCFB293616B600D26133 /* NewViewController.xib */; };
 		C1F82C03292735E900D84AD6 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F82C01292735E900D84AD6 /* TrendingViewController.swift */; };
 		C1F82C04292735E900D84AD6 /* TrendingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1F82C02292735E900D84AD6 /* TrendingViewController.xib */; };
 		C1F82C072927394000D84AD6 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F82C052927394000D84AD6 /* ListTableViewCell.swift */; };
@@ -480,6 +482,8 @@
 		C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
 		C1EA93A429150E6500A2655F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C1EA93A529150E6500A2655F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		C1EDFCFA293616B600D26133 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		C1EDFCFB293616B600D26133 /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		C1F82C01292735E900D84AD6 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		C1F82C02292735E900D84AD6 /* TrendingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingViewController.xib; sourceTree = "<group>"; };
 		C1F82C052927394000D84AD6 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -843,6 +847,7 @@
 		C18AE2B12918B56E009C3499 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C1EDFCF92936169600D26133 /* New */,
 				C1F82BF8292734B900D84AD6 /* Trending */,
 				C17DE210291EC68E00E429ED /* Read */,
 				C1916084291EABD500B17170 /* Detail */,
@@ -999,6 +1004,15 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		C1EDFCF92936169600D26133 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDFCFA293616B600D26133 /* NewViewController.swift */,
+				C1EDFCFB293616B600D26133 /* NewViewController.xib */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
 		C1F82BF8292734B900D84AD6 /* Trending */ = {
 			isa = PBXGroup;
 			children = (
@@ -1109,6 +1123,7 @@
 				C11D1CB429182555002CD1FD /* ABCGintoNord-MediumIta-Trial.woff2 in Resources */,
 				C1DD46BE28FE982A0027AD80 /* ExpletusSans-SemiBold.ttf in Resources */,
 				C1CBEFBE28FEF3840065701C /* Inter-Thin.otf in Resources */,
+				C1EDFCFD293616B600D26133 /* NewViewController.xib in Resources */,
 				C11D1CE129182555002CD1FD /* ABCGintoNord-RegularItalic-Trial.otf in Resources */,
 				C11D1BF22918254E002CD1FD /* WhitneySemiboldItalic.otf in Resources */,
 				C11D1CF129182555002CD1FD /* ABCGintoNord-Thin-Trial.otf in Resources */,
@@ -1315,6 +1330,7 @@
 				C1DD46AF28FE81370027AD80 /* NewestHeaderReusableView.swift in Sources */,
 				C1916090291EB32F00B17170 /* detailComic.swift in Sources */,
 				C16E687528ED219600B1F6C3 /* UIColorExtensions.swift in Sources */,
+				C1EDFCFC293616B600D26133 /* NewViewController.swift in Sources */,
 				C1E71117291AC194003DE7F0 /* ListModel.swift in Sources */,
 				C1EA93A12914FF3600A2655F /* OnBoardingViewController.swift in Sources */,
 				C102130628EC95A50005436B /* TopViewCell.swift in Sources */,
