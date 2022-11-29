@@ -11,7 +11,7 @@ import Kingfisher
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-
+    var previousController: UIViewController?
     weak var searchController : UISearchController!
     var comic: [Comic]?
     var allComic: [Datum]?
@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        tabBarController?.delegate = self
         listAllComic()
     }
     
@@ -317,5 +318,26 @@ extension HomeViewController: AdsViewCellDelegate {
 extension HomeViewController: NewestHeaderDelegate {
     func seeAllButtonTapped(_ header: NewestHeaderReusableView) {
         pushNewVC()
+    }
+}
+
+// MARK: - UITabBarControllerDelegate
+extension HomeViewController: UITabBarControllerDelegate{
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if previousController == viewController {
+            if let navVC = viewController as? UINavigationController, let vc = navVC.viewControllers.first as? HomeViewController {
+
+                if vc.isViewLoaded && (vc.view.window != nil) {
+                      // viewController is visible
+                      vc.collectionView.setContentOffset(CGPointZero, animated: true)
+                  }
+
+                  print("same")
+              }
+          }else{
+              print("No same")
+          }
+
+          previousController = viewController
     }
 }
