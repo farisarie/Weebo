@@ -1,56 +1,51 @@
 //
-//  TrendingViewController.swift
+//  NewViewController.swift
 //  Weabo
 //
-//  Created by yoga arie on 18/11/22.
+//  Created by yoga arie on 29/11/22.
 //
 
 import UIKit
-import Kingfisher
 
-class TrendingViewController: UIViewController {
+class NewViewController: UIViewController {
 
-    var popular: [Comic]?
+    var new: [Datum]?
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Sedang Trending"
-        setupViews()
+        title = "Komik Terbaru"
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "list_cell")
-        popularComic()
+        loadData()
     }
     
-    func setupViews(){
-        
-        let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(self.backButtonTapped(_:)))
-        navigationItem.leftBarButtonItem = backButton
-    }
-    
-    func popularComic(){
-        ComicProvider.shared.popularComic { [weak self] (result) in
+    func loadData(){
+        ComicProvider.shared.listComic { [weak self] (result) in
             switch result {
             case .success(let data):
-                self?.popular = data
+                self?.new = data
                 self?.tableView.reloadData()
                 
             case .failure(let error):
-                print(error.localizedDescription)
+                break
             }
         }
     }
+    
+    
 }
 
-extension TrendingViewController: UITableViewDataSource{
+// MARK: - UITableViewDataSource
+extension NewViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return popular?.count ?? 0
+        return new?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "list_cell", for: indexPath) as! ListTableViewCell
-        let comicApi = popular?[indexPath.row]
+        let comicApi = new?[indexPath.row]
         cell.category.text = comicApi?.typeComic
         cell.descLabel.text = "Shigeo Kageyama atau lebih akrab disebut mob adalah seorang anak kelas 2 SMP yang mendam-bakan kehidupan yang normal namun..."
         cell.imgView.kf.setImage(with: URL(string: comicApi?.thumbnailURL ?? ""))
@@ -60,20 +55,18 @@ extension TrendingViewController: UITableViewDataSource{
 }
 
 // MARK: - UITableViewDelegate
-extension TrendingViewController: UITableViewDelegate {
+extension NewViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let populars = popular?[indexPath.row] {
-            presentDetailViewController(populars, nil)
+        if let data = new?[indexPath.row] {
+            presentDetailViewController(nil, data)
         }
-       
     }
 }
 
-// MARK: - UIViewController
 extension UIViewController {
-    func presentTrendingViewController() {
-        let vc = TrendingViewController()
+    func pushNewVC(){
+        let vc = NewViewController()
         self.tabBarController?.tabBar.isHidden = true
         navigationController?.pushViewController(vc, animated: true)
     }

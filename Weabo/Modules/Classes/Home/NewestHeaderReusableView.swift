@@ -7,8 +7,13 @@
 
 import UIKit
 
-class NewestHeaderReusableView: UICollectionReusableView {
+protocol NewestHeaderDelegate: AnyObject {
+    func seeAllButtonTapped(_ header: NewestHeaderReusableView)
+}
 
+class NewestHeaderReusableView: UICollectionReusableView {
+    
+    weak var delegate: NewestHeaderDelegate?
     @IBOutlet weak var seeAllLabel: UIButton!
     @IBOutlet weak var headerLabel: UILabel!
     
@@ -18,7 +23,7 @@ class NewestHeaderReusableView: UICollectionReusableView {
     }
     
     @IBAction func seeAllButtonTapped(_ sender: Any) {
-        
+        delegate?.seeAllButtonTapped(self)
     }
     
     func configureHeader(title: String) {

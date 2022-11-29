@@ -31,7 +31,6 @@ class HomeViewController: UIViewController {
     }
     
     func continuesRead(){
-    
         continueRead = realm.objects(RecentComic.self)
         collectionView.reloadData()
     }
@@ -229,6 +228,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? NewestHeaderReusableView {
+                headerView.delegate = self
                 headerView.headerLabel.text = "Komik Terbaru"
                 headerView.headerLabel.isHidden = comic == nil ? false : true
                 return headerView
@@ -313,3 +313,9 @@ extension HomeViewController: AdsViewCellDelegate {
     }
 }
 
+// MARK: - Header Delegate
+extension HomeViewController: NewestHeaderDelegate {
+    func seeAllButtonTapped(_ header: NewestHeaderReusableView) {
+        pushNewVC()
+    }
+}
