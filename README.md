@@ -9,11 +9,14 @@ Weebo is an iOS application that allows users to read various manga on their mob
 
 # Features
 app features includes;
-- under development 🛠
-
+- using realm for storing data
+- firebase for auth
+- read the newest manga 
 
 # Screenshots!
 ![CleanShot 2022-11-04 at 11 13 17@2x](https://user-images.githubusercontent.com/79908524/199886710-bd305cb3-d05c-4cba-845e-79ee41920101.png)
+![CleanShot 2022-12-07 at 08 05 56@2x](https://user-images.githubusercontent.com/79908524/206062514-52a05522-5bd2-4882-9c71-a48d9df44767.png)
+![CleanShot 2022-12-07 at 08 10 14@2x](https://user-images.githubusercontent.com/79908524/206062986-e6a2bfbc-d8ac-470f-a3ae-cc5d1970b136.png)
 
 
 
@@ -22,6 +25,7 @@ app features includes;
 
  ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
       
+
 
 
  
