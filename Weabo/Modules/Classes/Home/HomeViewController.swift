@@ -3,11 +3,12 @@
 //  Weabo
 //
 //  Created by yoga arie on 04/10/22.
-//`
+//
 
 import UIKit
 import RealmSwift
 import Kingfisher
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -323,10 +324,10 @@ extension HomeViewController: NewestHeaderDelegate {
 
 // MARK: - UITabBarControllerDelegate
 extension HomeViewController: UITabBarControllerDelegate{
+    
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if previousController == viewController {
             if let navVC = viewController as? UINavigationController, let vc = navVC.viewControllers.first as? HomeViewController {
-
                 if vc.isViewLoaded && (vc.view.window != nil) {
                       // viewController is visible
                       vc.collectionView.setContentOffset(CGPointZero, animated: true)

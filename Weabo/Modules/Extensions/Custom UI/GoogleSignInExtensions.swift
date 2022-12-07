@@ -10,6 +10,7 @@ import UIKit
 import GoogleSignIn
 import FirebaseAuth
 import Firebase
+import RealmSwift
 
 extension LoginViewController{
     @objc func setupGoogle(){
@@ -101,8 +102,15 @@ extension LoginViewController{
                   // ...
                   return
                 }
-                // User is signed in
-                // ...
+                let userData = User()
+                userData.userid = authResult?.user.uid ?? ""
+                userData.username = authResult?.user.displayName ?? ""
+                userData.email = authResult?.user.email ?? ""
+                
+                let realm = try! Realm()
+                try! realm.write {
+                  realm.add(userData, update: .modified)
+                }
                 navigatePage()
             }
         }

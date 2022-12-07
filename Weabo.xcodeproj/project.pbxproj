@@ -238,6 +238,7 @@
 		C1EA93A22914FF3600A2655F /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */; };
 		C1EA93A629150E6500A2655F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EA93A429150E6500A2655F /* RegisterViewController.swift */; };
 		C1EA93A729150E6500A2655F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EA93A529150E6500A2655F /* RegisterViewController.xib */; };
+		C1ED303D294027C300B4EFD8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED303C294027C300B4EFD8 /* User.swift */; };
 		C1EDFCFC293616B600D26133 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EDFCFA293616B600D26133 /* NewViewController.swift */; };
 		C1EDFCFD293616B600D26133 /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1EDFCFB293616B600D26133 /* NewViewController.xib */; };
 		C1F82C03292735E900D84AD6 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F82C01292735E900D84AD6 /* TrendingViewController.swift */; };
@@ -482,6 +483,7 @@
 		C1EA93A02914FF3600A2655F /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
 		C1EA93A429150E6500A2655F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C1EA93A529150E6500A2655F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		C1ED303C294027C300B4EFD8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C1EDFCFA293616B600D26133 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		C1EDFCFB293616B600D26133 /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		C1F82C01292735E900D84AD6 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 			isa = PBXGroup;
 			children = (
 				C11B16EE2930C9BC00AD6B42 /* RecentComic.swift */,
+				C1ED303C294027C300B4EFD8 /* User.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -1364,6 +1367,7 @@
 				C102130328EC93AB0005436B /* SecondViewCell.swift in Sources */,
 				C11D1CF52918323A002CD1FD /* WeeboTextField.swift in Sources */,
 				C1916087291EAC3000B17170 /* DetailViewController.swift in Sources */,
+				C1ED303D294027C300B4EFD8 /* User.swift in Sources */,
 				C144F51D291D202D0003E2AF /* UISearchBar.swift in Sources */,
 				C10212FF28EC92B50005436B /* FirstViewCell.swift in Sources */,
 				C143A2F9291A8DAC0031279D /* searchComic.swift in Sources */,

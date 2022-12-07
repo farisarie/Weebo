@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import FirebaseAuth
 
 class ReadViewController: UIViewController {
     var readComic : [ImageURL]?

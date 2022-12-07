@@ -8,16 +8,17 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
+import RealmSwift
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var rightWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var leftWidthConstraint: NSLayoutConstraint!
-  
+    
     @IBOutlet weak var passwordTextField: WeeboTextField!
     @IBOutlet weak var emailTextField: WeeboTextField!
     
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customTitle()
@@ -41,11 +42,11 @@ class LoginViewController: UIViewController {
     func isValid() -> Bool {
         
         guard let email = emailTextField.text, email.isValidEmail  else {
-                
-                self.emailTextField.layer.borderColor = UIColor.red.cgColor
-                self.emailTextField.layer.borderWidth = 0.5
-                self.emailTextField.layer.cornerRadius = 5
-                self.emailTextField.layer.masksToBounds = true
+            
+            self.emailTextField.layer.borderColor = UIColor.red.cgColor
+            self.emailTextField.layer.borderWidth = 0.5
+            self.emailTextField.layer.cornerRadius = 5
+            self.emailTextField.layer.masksToBounds = true
             
             
             return false
@@ -58,11 +59,11 @@ class LoginViewController: UIViewController {
             self.passwordTextField.layer.borderWidth = 0.5
             self.passwordTextField.layer.cornerRadius = 5
             self.passwordTextField.layer.masksToBounds = true
-        
-        
+            
+            
             return false
         }
-
+        
         return true
     }
     
@@ -71,23 +72,29 @@ class LoginViewController: UIViewController {
     }
     
     func showTextInputPrompt(withMessage message: String,
-                               completionBlock: @escaping ((Bool, String?) -> Void)) {
+                             completionBlock: @escaping ((Bool, String?) -> Void)) {
         let prompt = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
-          completionBlock(false, nil)
+            completionBlock(false, nil)
         }
         weak var weakPrompt = prompt
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-          guard let text = weakPrompt?.textFields?.first?.text else { return }
-          completionBlock(true, text)
+            guard let text = weakPrompt?.textFields?.first?.text else { return }
+            completionBlock(true, text)
         }
         prompt.addTextField(configurationHandler: nil)
         prompt.addAction(cancelAction)
         prompt.addAction(okAction)
         present(prompt, animated: true, completion: nil)
-      }  //Google Sign In
+    }  //Google Sign In
     
     
+    @IBAction func loginWithApple(_ sender: Any) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
+    }
     @IBAction func googleButtonTapped(_ sender: Any) {
         loginWithGoogle()
     }
@@ -108,8 +115,9 @@ class LoginViewController: UIViewController {
             let user = authResult!.user
             let userId = user.uid
             let userEmail = user.email
-
+            
             print("User is signed in to Firebase with Apple.")
+            User.saveUserData()
             self.navigatePage()
         }
     }
@@ -122,16 +130,18 @@ class LoginViewController: UIViewController {
             let error = UIAlertController(title: "Login Error", message: "Your email or password still empty", preferredStyle: .alert)
             error.addAction(UIAlertAction(title: "OK", style: .cancel))
             present(error, animated: true)
-
+            
             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
                 self.emailTextField.layer.borderColor = UIColor.clear.cgColor
                 self.emailTextField.layer.borderColor = UIColor.clear.cgColor
             }
-
+            
         }
     }
-        
-    }
+}
+    
+   
+    
 
 
 //MARK: - UIViewController

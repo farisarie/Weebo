@@ -8,9 +8,12 @@
 import Foundation
 import RealmSwift
 
-class RecentComic: Object, Codable {
-    @objc dynamic var Url = ""
-    @objc dynamic var chapter = ""
-    @objc dynamic var title = ""
-    @objc dynamic var imgUrl = ""
+class RecentComic: Object {
+    @Persisted(primaryKey: true) var _id = ObjectId()
+    @Persisted var Url = ""
+    @Persisted var chapter = ""
+    @Persisted var title = ""
+    @Persisted var imgUrl = ""
+    @Persisted var userid = ""
+    var parentCategory = LinkingObjects(fromType: User.self, property: "recentComics")
 }
