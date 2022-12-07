@@ -105,8 +105,10 @@ class LoginViewController: UIViewController {
                 print(error.localizedDescription)
                 return
             }
-            // User is signed in to Firebase with Apple.
-            // ...
+            let user = authResult!.user
+            let userId = user.uid
+            let userEmail = user.email
+
             print("User is signed in to Firebase with Apple.")
             self.navigatePage()
         }
