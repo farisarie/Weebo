@@ -18,7 +18,7 @@ app features includes;
 ![CleanShot 2022-12-07 at 08 05 56@2x](https://user-images.githubusercontent.com/79908524/206062514-52a05522-5bd2-4882-9c71-a48d9df44767.png)
 ![CleanShot 2022-12-07 at 08 10 14@2x](https://user-images.githubusercontent.com/79908524/206062986-e6a2bfbc-d8ac-470f-a3ae-cc5d1970b136.png)
 ![CleanShot 2022-12-07 at 08 14 47@2x](https://user-images.githubusercontent.com/79908524/206063567-d0059048-8002-4713-9182-737470746499.png)
-
+![CleanShot 2022-12-07 at 08 27 13@2x](https://user-images.githubusercontent.com/79908524/206065120-7e6e1e5b-80c4-4e55-9de2-0b2887e75db7.png)
 
 
 # Tech Used
