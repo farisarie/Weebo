@@ -52,7 +52,7 @@ extension TrendingViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "list_cell", for: indexPath) as! ListTableViewCell
         let comicApi = popular?[indexPath.row]
         cell.category.text = comicApi?.typeComic
-        cell.descLabel.text = "Shigeo Kageyama atau lebih akrab disebut mob adalah seorang anak kelas 2 SMP yang mendam-bakan kehidupan yang normal namun..."
+        cell.descLabel.text = "Shigeo Kageyama atau lebih akrab disebut mob adalah seorang anak kelas 2 SMP yang mendam-bakan kehidupan yang normal namuns..."
         cell.imgView.kf.setImage(with: URL(string: comicApi?.thumbnailURL ?? ""))
         cell.titleComic.text = comicApi?.title
         return cell
