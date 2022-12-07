@@ -5,7 +5,7 @@
 <p align="center"> <a href="https://twitter.com/farisariep" target="_blank"><img alt="" src="https://img.shields.io/badge/Twitter-1DA1F2?style=normal&logo=twitter&logoColor=white" style="vertical-align:center" /></a> <a href="https://www.linkedin.com/in/farisarie/" target="_blank"><img alt="" src="https://img.shields.io/badge/LinkedIn-0077B5?style=normal&logo=linkedin&logoColor=white" style="vertical-align:center" /></a> </p>
 
 # Description
-տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած 1500-ականներից` Lorem Ipsum-ը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է: Այս տեքստը ոչ միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ` մնալով էապես անփոփոխ: Այն հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում, իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ:
+Weebo is an iOS application that allows users to read various manga on their mobile devices. With Weebo, users can easily access and read their favorite manga titles from a wide selection of genres, including action, romance, and horror. The app's user-friendly interface makes it easy to navigate and find the manga you want to read. Additionally, Weebo offers the ability to bookmark your favorite manga, so you can easily pick up where you left off. Whether you are a die-hard manga fan or simply looking for a new way to enjoy your favorite comics, Weebo has something for everyone.:
 
 # Features
 app features includes;
