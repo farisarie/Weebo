@@ -19,7 +19,7 @@ class User: Object {
       }
       
       class func saveUserData() {
-        let user = Auth.auth().currentUser
+          let user = Auth.auth().currentUser
         
         let userData = User()
         userData.userid = user?.uid ?? ""

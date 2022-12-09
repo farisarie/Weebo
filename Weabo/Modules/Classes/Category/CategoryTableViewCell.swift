@@ -9,6 +9,7 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var categoryComic: UILabel!
     @IBOutlet weak var titleComic: UILabel!
     @IBOutlet weak var totalLikesComic: UILabel!

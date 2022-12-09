@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryViewController: UIViewController {
 
+    var new: [Comic]?
+    var manga: [Comic]?
+    var manhwa: [Comic]?
     @IBOutlet weak var segmentedControl: UISegmentView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,7 +30,44 @@ class CategoryViewController: UIViewController {
         tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "category_comic")
         tableView.dataSource = self
         tableView.delegate = self
+        loadData()
+       
     }
+    
+    @IBAction func segmentSelected(_ sender: Any) {
+        let index = segmentedControl.selectedSegmentIndex
+        if index == 1 {
+            self.mangaMap()
+            
+        } else {
+            self.manhwaMap()
+        }
+    }
+    
+    func loadData(){
+        ComicProvider.shared.popularComic { [weak self] (result) in
+            switch result {
+            case .success(let data):
+                self?.new = data
+                self?.tableView.reloadData()
+                self?.mangaMap()
+                self?.manhwaMap()
+            case .failure(let error):
+                break
+            }
+        }
+    }
+    
+    func mangaMap(){
+        manga = new?.filter { $0.typeComic == "Manga" }
+        tableView.reloadData()
+    }
+    
+    func manhwaMap(){
+        manhwa = new?.filter { $0.typeComic == "Manhwa" || $0.typeComic == "Manhua" }
+        tableView.reloadData()
+    }
+    
     @IBAction func scrollViewDidChange(_ sender: Any) {
         segmentedControl.underlinePosition()
     }
@@ -36,18 +77,49 @@ class CategoryViewController: UIViewController {
 extension CategoryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        let selectedIndex = self.segmentedControl.selectedSegmentIndex
+           switch selectedIndex
+           {
+           case 0:
+               return manga?.count ?? 0
+           case 1:
+               return manhwa?.count ?? 0
+   
+           default:
+               return 0
+           }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "category_comic", for: indexPath) as! CategoryTableViewCell
-        cell.titleComic.text = "Chainsawman"
-        cell.descComic.text = "Bercerita seputar kehidupan tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiper..."
-        
-        cell.categoryComic.text = "Action"
-        cell.totalLikesComic.text = "200"
-        
-        return cell
+        let selectedIndex = self.segmentedControl.selectedSegmentIndex
+        switch selectedIndex {
+            case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "category_comic", for: indexPath) as! CategoryTableViewCell
+            
+            let allComic = manga?[indexPath.row]
+            cell.titleComic.text = allComic?.title
+            cell.descComic.text = "Bercerita seputar kehidupan tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiper..."
+            cell.imgView.kf.setImage(with: URL(string: allComic?.thumbnailURL ?? ""))
+            cell.categoryComic.text = allComic?.typeComic
+            cell.totalLikesComic.text = allComic?.rating
+            
+            return cell
+            
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "category_comic", for: indexPath) as! CategoryTableViewCell
+            
+            let allComic = manhwa?[indexPath.row]
+            cell.titleComic.text = allComic?.title
+            cell.descComic.text = "Bercerita seputar kehidupan tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiper..."
+            cell.imgView.kf.setImage(with: URL(string: allComic?.thumbnailURL ?? ""))
+            cell.categoryComic.text = allComic?.typeComic
+            cell.totalLikesComic.text = allComic?.rating
+            
+            return cell
+            
+        default:
+                return UITableViewCell()
+        }
     }
     
     
@@ -64,7 +136,19 @@ extension CategoryViewController: UITableViewDelegate {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         label.textColor = UIColor(hex: "#292B2F")
-        label.text = "10 Komik"
+         let selectedIndex = self.segmentedControl.selectedSegmentIndex
+        switch selectedIndex {
+        case 0 :
+            if let allComic = manga {
+                label.text = "\(allComic.count) Komik"
+            }
+        case 1 :
+            if let allComic = manhwa {
+                label.text = "\(allComic.count) Komik"
+            }
+        default:
+            break
+        }
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -98,6 +182,9 @@ extension CategoryViewController: UITableViewDelegate {
 extension UIViewController{
     func presentCategoryPage() {
         let viewController = CategoryViewController(nibName: "CategoryViewController", bundle: nil)
+        self.tabBarController?.tabBar.isHidden = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
+
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -98,6 +98,7 @@
             <connections>
                 <outlet property="categoryComic" destination="V6s-Sn-lWE" id="Pne-K9-Io9"/>
                 <outlet property="descComic" destination="VvR-nT-22E" id="ziO-h8-Zk0"/>
+                <outlet property="imgView" destination="mWC-bV-yny" id="jPL-hh-L9C"/>
                 <outlet property="titleComic" destination="5lG-Zu-xQ7" id="3rb-oU-UO4"/>
                 <outlet property="totalLikesComic" destination="bRm-iK-VdC" id="3Us-az-oDC"/>
             </connections>
@@ -106,6 +107,6 @@
     </objects>
     <resources>
         <image name="denji" width="407" height="640"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
     </resources>
 </document>

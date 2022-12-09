@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,20 +22,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nwJ-wc-oX0">
-                    <rect key="frame" x="0.0" y="75" width="414" height="787"/>
+                    <rect key="frame" x="0.0" y="79" width="414" height="783"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y5F-xX-6v6" customClass="UISegmentView" customModule="Weabo" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                    <rect key="frame" x="0.0" y="48" width="414" height="32"/>
                     <segments>
-                        <segment title="Comedy"/>
-                        <segment title="Action"/>
-                        <segment title="Drama"/>
-                        <segment title="Fantasy"/>
-                        <segment title="Romance"/>
+                        <segment title="Manga"/>
+                        <segment title="Manhwa"/>
                     </segments>
                     <connections>
                         <action selector="scrollViewDidChange:" destination="-1" eventType="valueChanged" id="1Yi-ep-wWx"/>
+                        <action selector="segmentSelected:" destination="-1" eventType="valueChanged" id="eKV-h8-qU6"/>
                     </connections>
                 </segmentedControl>
             </subviews>

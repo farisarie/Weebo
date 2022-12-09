@@ -17,6 +17,10 @@ class ReadViewController: UIViewController {
     var realmTitle: String!
     var chapterComic: String!
     var imgView: String!
+    var currentUser: Results<User>?
+    var recentComic: Results<RecentComic>?
+    let realm = try! Realm()
+    let user = Auth.auth().currentUser?.displayName
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
@@ -27,12 +31,20 @@ class ReadViewController: UIViewController {
           loadReadComic()
           setupTable()
           setupTitle()
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupColorNavigation()
+        getUserRealm()
         save()
+    }
+    
+    func getUserRealm(){
+        currentUser = realm.objects(User.self)
+            //.filter("username == %@", user)
+        tableView.reloadData()
     }
     
     func setupColorNavigation(){
@@ -66,11 +78,9 @@ class ReadViewController: UIViewController {
           task.Url = comicUrl
           task.chapter = chapterComic
           task.imgUrl = imgView ?? ""
-        
-          
-          let realm = try! Realm()
+        task.userid = currentUser?.first?.userid ?? ""
           try! realm.write {
-              realm.add(task)
+              self.currentUser?.first?.recentComics.append(task)
           }
       }
     

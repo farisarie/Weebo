@@ -25,6 +25,14 @@ class RegisterViewController: UIViewController {
             signUp()
         }
         else {
+            let error = UIAlertController(title: "Login Error", message: "Your email or password still empty", preferredStyle: .alert)
+            error.addAction(UIAlertAction(title: "OK", style: .cancel))
+            present(error, animated: true)
+            
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
+                self.emailTextField.layer.borderColor = UIColor.clear.cgColor
+            }
             
         }
     }
@@ -35,16 +43,19 @@ class RegisterViewController: UIViewController {
         
         
         guard let email = emailTextField.text, email.isValidEmail else {
+            presentError(title: "Error", message: "Email is empty or not valid!")
             print("email is not valid")
             return false
         }
         
         guard let password = passwordTextField.text, password.isValidPassword else {
+            presentError(title: "Error", message: "Password is empty or not valid!")
             print("password is not valid")
             return false
         }
         
         guard let repeatPassword = repeatPassword.text, repeatPassword == password else{
+            presentError(title: "Error", message: "Confirm password is different")
             print("password is not same")
             return false
         }
@@ -54,13 +65,23 @@ class RegisterViewController: UIViewController {
     
     func signUp() {
         Auth.auth().createUser(withEmail: emailTextField.text ?? "", password: passwordTextField.text ?? "") { (authResult, error) in
-            if let error = error {
-                // Error. If error.code == .MissingOrInvalidNonce, make sure
-                // you're sending the SHA256-hashed nonce as a hex string with
-                // your request to Apple.
-                print(error.localizedDescription)
-                return
+            if let x = error {
+                let err = x as NSError
+                switch err.code {
+                case AuthErrorCode.wrongPassword.rawValue:
+                    self.presentError(title: "Wrong Password !", message: "")
+                case AuthErrorCode.invalidEmail.rawValue:
+                    self.presentError(title: "Invalid Email !", message: "")
+                    print("invalid email")
+                case AuthErrorCode.accountExistsWithDifferentCredential.rawValue:
+                    print("accountExistsWithDifferentCredential")
+                case AuthErrorCode.emailAlreadyInUse.rawValue: //<- Your Error
+                    self.presentError(title: "Email Already In Use !", message: "")
+                default:
+                    print("unknown error: \(err.localizedDescription)")
+                }
             }
+            
             // User is signed in to Firebase with Apple.
             // ...
             let request = authResult?.user.createProfileChangeRequest()
@@ -75,13 +96,15 @@ class RegisterViewController: UIViewController {
     }
     
 }
-
-
-//MARK: - UIViewController
-extension UIViewController{
-    func showRegisterViewController() {
-        let viewController = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
-        navigationController?.pushViewController(viewController, animated: true)
+    
+    
+    
+    
+    //MARK: - UIViewController
+    extension UIViewController{
+        func showRegisterViewController() {
+            let viewController = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
-}
-      
+

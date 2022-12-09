@@ -11,3 +11,4 @@ struct Category {
     let categoryImage: String
     let name: String
 }
+
