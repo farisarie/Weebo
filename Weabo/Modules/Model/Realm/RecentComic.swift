@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class RecentComic: Object {
-    @Persisted(primaryKey: true) var _id = ObjectId()
+    @Persisted(primaryKey: true) var comicId: Int = 0
     @Persisted var Url = ""
     @Persisted var chapter = ""
     @Persisted var title = ""
