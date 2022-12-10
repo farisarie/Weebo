@@ -133,6 +133,7 @@ extension HomeViewController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "subCell", for: indexPath) as!
             MidViewCell
             cell.seeAllButtonOutlet.addTarget(self, action: #selector(self.notificationButtonTapped(_:)), for: .touchUpInside)
+            cell.delegate = self
             return cell
             
         case 2:
@@ -191,7 +192,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         )
             
         case 1:
-        return CGSize(width: self.view.frame.width, height: 130)
+        return CGSize(width: self.view.frame.width, height: 90)
             
         case 2:
             return CGSize(width: self.view.frame.width, height: 115)
@@ -340,5 +341,11 @@ extension HomeViewController: UITabBarControllerDelegate{
           }
 
           previousController = viewController
+    }
+}
+
+extension HomeViewController: MidViewCellDelegate {
+    func navigateToCategory(_ cell: MidViewCell) {
+        presentCategoryPage()
     }
 }

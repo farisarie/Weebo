@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Code Broken
 protocol MidViewCellDelegate: AnyObject {
-    func midViewCellSeeAllButtonTapped()
+    func navigateToCategory(_ cell: MidViewCell)
 }
 
 class MidViewCell: UICollectionViewCell {
@@ -21,11 +21,8 @@ class MidViewCell: UICollectionViewCell {
     let lowestScreenWidth: CGFloat = 375.0
     
     let categoryHome: [Category] = [
-        Category(categoryImage: "action", name: "Action"),
-        Category(categoryImage: "comedy", name: "Comedy"),
-        Category(categoryImage: "drama", name: "Drama"),
-        Category(categoryImage: "fantasy", name: "Fantasi"),
-        Category(categoryImage: "romantic", name: "Romantic"),
+        Category(categoryImage: "action", name: "Manga"),
+        Category(categoryImage: "comedy", name: "Manhwa")
     ]
     
     
@@ -38,7 +35,7 @@ class MidViewCell: UICollectionViewCell {
     }
     
     @IBAction func seeAllButtonTapped(_ sender: Any) {
-        delegate?.midViewCellSeeAllButtonTapped()
+     
     }
     
 }
@@ -55,7 +52,6 @@ extension MidViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondCell", for: indexPath) as! SecondViewCell
         let cellCategory = categoryHome[indexPath.item]
-        cell.imageView.image = UIImage(named: cellCategory.categoryImage)
         cell.descText.text = cellCategory.name
         return cell
     }
@@ -63,7 +59,7 @@ extension MidViewCell: UICollectionViewDataSource {
 
 extension MidViewCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-       return CGSize(width: 55, height: 90)
+       return CGSize(width: 178, height: 51)
    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -71,11 +67,18 @@ extension MidViewCell: UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 19
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 19
+        return 5
     }
 
+}
+
+extension MidViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        midCollectionView.reloadData()
+        delegate?.navigateToCategory(self)
+    }
 }

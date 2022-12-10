@@ -38,7 +38,6 @@ class CategoryViewController: UIViewController {
         let index = segmentedControl.selectedSegmentIndex
         if index == 1 {
             self.mangaMap()
-            
         } else {
             self.manhwaMap()
         }
