@@ -13,12 +13,15 @@ class CategoryViewController: UIViewController {
     var new: [Comic]?
     var manga: [Comic]?
     var manhwa: [Comic]?
+    var selectedIndex: Int?
+    
     @IBOutlet weak var segmentedControl: UISegmentView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Category"
+        self.segmentedControl.selectedSegmentIndex = selectedIndex ?? 0
         self.segmentedControl.frame = CGRect(
             x: self.segmentedControl.frame.minX,
             y: self.segmentedControl.frame.minY,
@@ -179,9 +182,10 @@ extension CategoryViewController: UITableViewDelegate {
 }
 
 extension UIViewController{
-    func presentCategoryPage() {
+    func presentCategoryPage(selectedIndex: Int) {
         let viewController = CategoryViewController(nibName: "CategoryViewController", bundle: nil)
         self.tabBarController?.tabBar.isHidden = true
+        viewController.selectedIndex = selectedIndex
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

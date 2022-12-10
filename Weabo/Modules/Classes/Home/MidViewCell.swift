@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Code Broken
 protocol MidViewCellDelegate: AnyObject {
-    func navigateToCategory(_ cell: MidViewCell)
+    func navigateToCategory(_ cell: MidViewCell, _ index: Int)
 }
 
 class MidViewCell: UICollectionViewCell {
@@ -79,6 +79,6 @@ extension MidViewCell: UICollectionViewDelegateFlowLayout{
 extension MidViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         midCollectionView.reloadData()
-        delegate?.navigateToCategory(self)
+        delegate?.navigateToCategory(self, indexPath.row)
     }
 }

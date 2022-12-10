@@ -86,7 +86,7 @@ class HomeViewController: UIViewController {
 
     
     @objc func notificationButtonTapped(_ sender: Any) {
-        presentCategoryPage()
+        presentCategoryPage(selectedIndex: 0)
     }
 }
 
@@ -345,7 +345,8 @@ extension HomeViewController: UITabBarControllerDelegate{
 }
 
 extension HomeViewController: MidViewCellDelegate {
-    func navigateToCategory(_ cell: MidViewCell) {
-        presentCategoryPage()
+    func navigateToCategory(_ cell: MidViewCell, _ index: Int) {
+        presentCategoryPage(selectedIndex: index)
     }
+    
 }
