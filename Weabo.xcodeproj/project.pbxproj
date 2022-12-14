@@ -561,7 +561,7 @@
 				C143A2FB291A8DBE0031279D /* Providers */,
 				C12A24562918B7CB0097B048 /* Model */,
 				C16E687628ED219B00B1F6C3 /* Extensions */,
-				C18AE2B12918B56E009C3499 /* Classes */,
+				C18AE2B12918B56E009C3499 /* Views */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -847,7 +847,7 @@
 			path = Read;
 			sourceTree = "<group>";
 		};
-		C18AE2B12918B56E009C3499 /* Classes */ = {
+		C18AE2B12918B56E009C3499 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C1EDFCF92936169600D26133 /* New */,
@@ -864,7 +864,7 @@
 				C10212F828EC4C820005436B /* Home */,
 				C10212F728EC4C7A0005436B /* TabBar */,
 			);
-			path = Classes;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C18FCCFE2917A30A00E8B2FF /* Custom UI */ = {

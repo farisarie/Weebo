@@ -26,6 +26,7 @@ class HomeViewController: UIViewController {
         listAllComic()
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
@@ -36,6 +37,7 @@ class HomeViewController: UIViewController {
         continueRead = realm.objects(RecentComic.self)
         collectionView.reloadData()
     }
+    
     
     func setup() {
         collectionView.register(UINib(nibName: "NewestHeaderReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerCell")

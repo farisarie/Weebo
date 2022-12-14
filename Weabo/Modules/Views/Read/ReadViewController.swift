@@ -31,7 +31,7 @@ class ReadViewController: UIViewController {
           loadReadComic()
           setupTable()
           setupTitle()
-     
+        getUserRealm()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,7 +43,6 @@ class ReadViewController: UIViewController {
     
     func getUserRealm(){
         currentUser = realm.objects(User.self)
-            //.filter("username == %@", user)
         tableView.reloadData()
     }
     

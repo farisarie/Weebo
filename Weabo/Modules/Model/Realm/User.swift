@@ -12,7 +12,7 @@ class User: Object {
     @Persisted var username: String = ""
     @Persisted var email: String = ""
     @Persisted(primaryKey: true) var userid: String = ""
-  var recentComics = List<RecentComic>()
+  let recentComics = List<RecentComic>()
     
     override static func primaryKey() -> String? {
         return "userId"
