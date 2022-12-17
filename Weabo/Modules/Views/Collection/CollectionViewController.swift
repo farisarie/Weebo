@@ -4,13 +4,15 @@
 //
 //  Created by yoga arie on 06/11/22.
 //
-
+import RealmSwift
 import UIKit
 
 class CollectionViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentView!
     @IBOutlet weak var collectionView: UICollectionView!
+    let realm = try! Realm()
+    var history: Results<RecentComic>?
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Collection"
@@ -26,6 +28,16 @@ class CollectionViewController: UIViewController {
         segmentedControl.highlightSelectedSegment()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadHistory()
+    }
+    
+    func loadHistory(){
+        history = realm.objects(RecentComic.self)
+        collectionView.reloadData()
+    }
+    
     
     @IBAction func segmentControlDidChange(_ sender: Any) {
        
@@ -36,14 +48,15 @@ class CollectionViewController: UIViewController {
 
 extension CollectionViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return history?.count ?? 0
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newestCell", for: indexPath) as!
         NewestViewCell
-    cell.imageView.image = UIImage(named: "chainsawman")
-    cell.categoryLabel.text = "Kategori"
-    cell.comicTitle.text = "Chainsawman"
+        let historyComic = history?[indexPath.row]
+        cell.imageView.kf.setImage(with: URL(string: historyComic?.imgUrl ?? ""))
+        cell.categoryLabel.text = historyComic?.chapter
+        cell.comicTitle.text = historyComic?.title
     cell.accessDateLabel.text = "Diakses pada 9 September 2022"
     return cell
     }

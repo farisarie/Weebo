@@ -27,10 +27,10 @@ class ReadViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         containerViewRound()
-          nextPageComic()
-          loadReadComic()
-          setupTable()
-          setupTitle()
+        nextPageComic()
+        loadReadComic()
+        setupTable()
+        setupTitle()
         getUserRealm()
     }
     
@@ -70,18 +70,19 @@ class ReadViewController: UIViewController {
     }
     
     func save(){
-          print(Realm.Configuration.defaultConfiguration.fileURL)
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         
-          let task = RecentComic()
-          task.title = realmTitle
-          task.Url = comicUrl
-          task.chapter = chapterComic
-          task.imgUrl = imgView ?? ""
+        let task = RecentComic()
+        task.title = realmTitle
+        task.Url = comicUrl
+        task.chapter = chapterComic
+        task.imgUrl = imgView ?? ""
         task.userid = currentUser?.first?.userid ?? ""
-          try! realm.write {
-              self.currentUser?.first?.recentComics.append(task)
-          }
-      }
+        try! realm.write {
+            //              self.currentUser?.first?.recentComics.append(task)
+            realm.add(task, update: .modified)
+        }
+    }
     
     func containerViewRound(){
         containerView.layer.cornerRadius = 12
@@ -134,7 +135,7 @@ class ReadViewController: UIViewController {
             }
         }
     }
-        
+    
 }
 
 extension ReadViewController: UITableViewDataSource{

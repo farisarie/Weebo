@@ -28,8 +28,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGL-Jk-alv">
                     <rect key="frame" x="0.0" y="832" width="414" height="30"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-Yn-UrH">
-                            <rect key="frame" x="369" y="4" width="30" height="22"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-Yn-UrH">
+                            <rect key="frame" x="366" y="4" width="33" height="22"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfQ-aV-Gd1">
                                     <rect key="frame" x="0.0" y="0.0" width="12.5" height="22"/>
@@ -45,7 +45,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VH5-sQ-hPy">
-                                    <rect key="frame" x="17.5" y="0.0" width="12.5" height="22"/>
+                                    <rect key="frame" x="20.5" y="0.0" width="12.5" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="22" id="PvE-q4-K0O"/>
                                         <constraint firstAttribute="width" constant="12.5" id="UWy-5v-tf5"/>
