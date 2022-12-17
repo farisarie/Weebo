@@ -57,7 +57,7 @@ extension CollectionViewController : UICollectionViewDataSource {
         cell.imageView.kf.setImage(with: URL(string: historyComic?.imgUrl ?? ""))
         cell.categoryLabel.text = historyComic?.chapter
         cell.comicTitle.text = historyComic?.title
-    cell.accessDateLabel.text = "Diakses pada 9 September 2022"
+    cell.accessDateLabel.text = "Diakses pada 9 September 2023"
     return cell
     }
 }
