@@ -28,23 +28,25 @@ class ReadViewController: UIViewController {
         super.viewDidLoad()
         containerViewRound()
         nextPageComic()
-        loadReadComic()
+       
         setupTable()
         setupTitle()
-        getUserRealm()
+//        getUserRealm()
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupColorNavigation()
-        getUserRealm()
+//        getUserRealm()
+        loadReadComic()
         save()
     }
     
-    func getUserRealm(){
-        currentUser = realm.objects(User.self)
-        tableView.reloadData()
-    }
+//    func getUserRealm(){
+//        currentUser = realm.objects(User.self)
+//        tableView.reloadData()
+//    }
     
     func setupColorNavigation(){
         view.backgroundColor = UIColor(hex: "16171D")
@@ -78,9 +80,10 @@ class ReadViewController: UIViewController {
         task.chapter = chapterComic
         task.imgUrl = imgView ?? ""
         task.userid = currentUser?.first?.userid ?? ""
+        
         try! realm.write {
             //              self.currentUser?.first?.recentComics.append(task)
-            realm.add(task, update: .modified)
+            realm.add(task)
         }
     }
     
@@ -108,7 +111,7 @@ class ReadViewController: UIViewController {
         let chapter = movePage.prevURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
         let titleComic = titleComic + " Eps." + chapter
         if movePage.prevURL.isEmpty {
-            print("test test")
+            print("")
         } else {
             
             presentReadViewController(movePage.prevURL, titleComic, realmTitle, imgView) }
@@ -118,7 +121,7 @@ class ReadViewController: UIViewController {
         let chapter = movePage.nextURL.removeCharacters(from: CharacterSet.decimalDigits.inverted)
         let titleComic = titleComic + " Eps." + chapter
         if movePage.nextURL.isEmpty {
-            print("test test ")
+            print("")
         } else {
             presentReadViewController(movePage.nextURL, titleComic, realmTitle, imgView) }
     }
@@ -168,6 +171,7 @@ extension ReadViewController: UITableViewDelegate{
 }
 
 extension UIViewController{
+    
     func presentReadViewController(_ comic: String, _ chapter: String = "Untitled", _ title: String? = nil, _ imgView: String? = nil) {
         let viewController = ReadViewController(nibName: "ReadViewController", bundle: nil)
         viewController.comicUrl = comic

@@ -93,7 +93,6 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UICollectionViewDataSource {
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 6
     }
@@ -173,7 +172,6 @@ extension HomeViewController: UICollectionViewDataSource {
             cell.descComic.text = list?.chapter
             cell.titleComic.text = list?.title
             return cell
-            
             
         default:
             return UICollectionViewCell()

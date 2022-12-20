@@ -83,7 +83,9 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as? NewestHeaderReusableView {
-                headerView.headerLabel.text = "10 Komik"
+                if let histories = history?.count {
+                    headerView.headerLabel.text = String("\(histories) Komik")
+                }
                 return headerView
                 }
             
