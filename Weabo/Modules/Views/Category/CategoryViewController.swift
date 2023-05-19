@@ -100,7 +100,7 @@ extension CategoryViewController: UITableViewDataSource {
             
             let allComic = manga?[indexPath.row]
             cell.titleComic.text = allComic?.title
-            cell.descComic.text = "Bercerita seputar kehidupan tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiper..."
+            cell.descComic.text = "Bercerita seputar kehidupan taar tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiper..."
             cell.imgView.kf.setImage(with: URL(string: allComic?.thumbnailURL ?? ""))
             cell.categoryComic.text = allComic?.typeComic
             cell.totalLikesComic.text = allComic?.rating
